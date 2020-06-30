@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1045 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1045">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It does not seem as if Whitman was appointed merely to make the Bush administration seem more interested in the environment or at least in traditional environmentalist solutions than it was</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1051"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1052"/>
+        <aif:creationDate>2012-04-12 18:20:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1046 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1046">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>At times it seemed as if Ms. Whitman had been appointed merely to make the Bush administration seem more interested in the environment or at least in traditional environmentalist solutions than it was.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1051"/>
+        <aif:creationDate>2012-04-12 18:20:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1047 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1047">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Whitman did not really disagree with some of the decisions on environmental issues made by the government</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1053"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1052"/>
+        <aif:creationDate>2012-04-12 18:20:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1048 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1048">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Whitman did not really disagree with some of the government&#039;s decisions on environmental issues it does not seem as if Whitman was appointed merely to make the Bush administration seem more interested in the environment or at least in traditional environmentalist solutions than it was</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1052"/>
+        <aif:creationDate>2012-04-12 18:20:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1049 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1049">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if she really disagreed with some of the decisions it seems strange that Ms. Whitman stayed in her job as long as she did.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1053"/>
+        <aif:creationDate>2012-04-12 18:20:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1050 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1050">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It does not seem strange that Ms. Whitman stayed in her job as long as she did.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1053"/>
+        <aif:creationDate>2012-04-12 18:20:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1051 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1051">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1046"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1045"/>
+        <aif:creationDate>2012-04-12 18:20:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1052 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1052">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1047"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1048"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1045"/>
+        <aif:creationDate>2012-04-12 18:20:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1053 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1053">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1049"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1050"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1047"/>
+        <aif:creationDate>2012-04-12 18:20:51</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

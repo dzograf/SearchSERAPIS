@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You should vote for me</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2928"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3073"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3196"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2958 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2958">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our commitment to improve the school is real we keep our promises</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2968"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:creationDate>2012-04-12 18:27:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2959 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2959">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We&#039;ll reform our high schools to make sure a high school diploma means something. We will expand math and science education so our young people can compete in a high tech world. We will expand the use of the Internet to bring high-level training into our classrooms. With four more years we&#039;ll help a rising generation gain the skills and the confidence to achieve the American Dream.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2960 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2960">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Americans need a high school reform</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2970"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2961 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2961">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>And today children across America are showing real substantial progress in reading and math.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2969"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2968"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2962 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2962">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>When it comes to improving America&#039;s public schools we are turning the corner and we&#039;re not turning back</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2968"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2963 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2963">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>When we came to office three-and-a-half years ago too many of our children were being shuffled from grade to grade year after year without learning the basics.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2969"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2964 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2964">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We&#039;re challenging the soft bigotry of low expectations. We&#039;ve raised the bar. We&#039;re setting high standards. We&#039;re focusing on results. We&#039;re insisting on accountability. We&#039;re empowering parents. We&#039;re making sure local folks are in charge of schools.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2969"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2965 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2965">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This world of ours is changing. The jobs of the future will require greater knowledge and higher level skills.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2970"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2966 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2966">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to ensure to our children a better future is to reform high schools</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2970"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2967 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2967">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2958"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2959"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2960"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2768"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2968 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2968">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2961"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2962"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2958"/>
+        <aif:creationDate>2012-04-12 18:27:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2969 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2969">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2963"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2964"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2961"/>
+        <aif:creationDate>2012-04-12 18:27:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2970 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2970">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2965"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2966"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2960"/>
+        <aif:creationDate>2012-04-12 18:27:37</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

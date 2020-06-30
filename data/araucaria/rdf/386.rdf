@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3578 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3578">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to carry out the project of a nuclear industry is to encourage a public debate</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3588"/>
+        <aif:creationDate>2012-04-12 18:29:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3579 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3579">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We therefore need to encourage a sensible public debate based on science and good information</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3588"/>
+        <aif:creationDate>2012-04-12 18:29:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3580 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3580">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should encourage the nuclear industry</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3589"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3590"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3588"/>
+        <aif:creationDate>2012-04-12 18:29:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3581 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3581">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Does the Minister agree that British Energy needs all the help and support that it can get as it faces the future and that we need to start building a consensus on the energy gap that we face on Kyoto and on the question of where we are going to derive our energy source from?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3589"/>
+        <aif:creationDate>2012-04-12 18:29:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3582 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3582">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to face the energy gap is to develop nuclear power</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3589"/>
+        <aif:creationDate>2012-04-12 18:29:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3583 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3583">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We want to improve British economy</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3590"/>
+        <aif:creationDate>2012-04-12 18:29:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3584 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3584">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we do not encourage the British nuclear industry we are likely to see in addition to the Liberal Democrats wishing to cut electricity cables from France through which we receive nuclear-generated energy bids from Electricit  de France to build nuclear power stations in this country</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3591"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3590"/>
+        <aif:creationDate>2012-04-12 18:29:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3585 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3585">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We will need nuclear energy</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3591"/>
+        <aif:creationDate>2012-04-12 18:29:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3586 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3586">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>we will have lost the capability</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3591"/>
+        <aif:creationDate>2012-04-12 18:29:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3587 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3587">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we need energy and we cannot build nuclear stations we will ask energy from France</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3591"/>
+        <aif:creationDate>2012-04-12 18:29:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3588 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3588">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3579"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3580"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3578"/>
+        <aif:creationDate>2012-04-12 18:29:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3589 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3589">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3581"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3582"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3580"/>
+        <aif:creationDate>2012-04-12 18:29:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3590 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3590">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3583"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3584"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3580"/>
+        <aif:creationDate>2012-04-12 18:29:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3591 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3591">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3585"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3586"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3587"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3584"/>
+        <aif:creationDate>2012-04-12 18:29:38</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

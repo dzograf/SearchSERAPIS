@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1054 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1054">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the problems here flow out of its having tried to proceed according to the most universally accepted standards available to it.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1066"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2073"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2271"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1055 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1055">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if it has tried to proceed according to the Constitution doing so will have caused problems</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1067"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2074"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1066"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2073"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1056 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1056">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It has tried to proceed in accordance with the Constitution</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1066"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2073"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1057 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1057">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the government&#039;s interests in not allowing Moussaoui to talk to Binalshibi are real and there is no question that the defense could have access to such a witness according to the Constitution then if it has tried to proceed according to the Constitution doing so will have caused problems</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1067"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2074"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1058 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1058">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Under normal circumstances there would be no question that the defense could have access to such a witness -- nor constitutionally speaking should there be such question now.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1068"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2075"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2272"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1067"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2074"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2271"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1059 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1059">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the government&#039;s other interests here are very real.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1069"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2076"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1067"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2074"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1060 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1060">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Sixth Amendment makes clear that  the accused shall enjoy the right . . . to have compulsory process for obtaining witnesses in his favor.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1068"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2075"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2272"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1061 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1061">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Sixth Amendment makes clear that  the accused shall enjoy the right...to have compulsory process for obtaining witnesses in his favor  and admits no national security exception and the defense argues that Binalshibh&#039;s testimony would be in his favor then according to the constitution there should be no question that the defense could have access to such a witness.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1068"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2075"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1062 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1062">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mr. Binalshibh&#039;s testimony the defense argues would lessen a jury&#039;s sense of Mr. Moussaoui&#039;s culpability and make it less inclined to impose the death penalty.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1068"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2075"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1063 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1063">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Constitution&#039;s language is absolute after all and admits no national security exception. Fair-trial rights in American courts cannot be contingent on other governmental interests even pressing ones.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1068"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2075"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1064 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1064">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mr. Moussaoui is representing himself meaning that he would personally talk to a terrorist confederate in any deposition. It isn&#039;t unreasonable for the government to regard this as an unacceptable risk.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1069"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2076"/>
+        <aif:creationDate>2012-04-12 18:20:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1065 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1065">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Moussaoui would personally talk to a terrorist confederate and this is not unreasonably regarded as an unacceptable risk the government&#039;s interests in not allowing Moussaoui to talk to Binalshibh are very real</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1069"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2076"/>
+        <aif:creationDate>2012-04-12 18:20:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1066 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1066">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1055"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1056"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1054"/>
+        <aif:creationDate>2012-04-12 18:20:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1067 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1067">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1057"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1058"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1059"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1055"/>
+        <aif:creationDate>2012-04-12 18:20:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1068 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1068">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1060"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1061"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1062"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1063"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1058"/>
+        <aif:creationDate>2012-04-12 18:20:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1069 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1069">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1064"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1065"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1059"/>
+        <aif:creationDate>2012-04-12 18:20:54</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

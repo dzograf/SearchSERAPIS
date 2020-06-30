@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5318 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5318">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>What are the Government doing to boost the incomes of people on the hills who look after our famous landscapes in for example the Pennines</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5326"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5319 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5319">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>People do not want to farm the hills</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5327"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5329"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5326"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5320 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5320">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we want people to farm the hills we have to encourage them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5326"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5321 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5321">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>one cannot easily keep body and soul together on such an income.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5328"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5327"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5322 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5322">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the consequences of hill farming are negative people do not want to begin a hill-farming activity</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5327"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5329"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5323 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5323">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I am told that net farm income for hill farmers in the less favoured areas is some  12000 a year</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5328"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5324 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5324">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the income is low living is extremely difficult</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5328"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5325 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5325">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the average age of hill farmers is close to 60</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5329"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5326 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5326">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5319"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5320"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5318"/>
+        <aif:creationDate>2012-04-12 18:35:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5327 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5327">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5321"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5322"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5319"/>
+        <aif:creationDate>2012-04-12 18:35:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5328 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5328">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5323"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5324"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5321"/>
+        <aif:creationDate>2012-04-12 18:35:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5329 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5329">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5322"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5325"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5319"/>
+        <aif:creationDate>2012-04-12 18:35:26</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

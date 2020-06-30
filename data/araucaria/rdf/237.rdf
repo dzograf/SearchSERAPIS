@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1028 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1028">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is crucial that this specialized  form of bankruptcy relief for family  farmers not be allowed to sunset</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1037"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1038"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2247"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2248"/>
+        <aif:creationDate>2012-04-12 18:20:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1029 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1029">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>family  farmers absent chapter 12 would be  forced to file for bankruptcy relief  under the Bankruptcy Code&#039;s other al-ternatives  none of which work as well  for them as does chapter 12.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2244"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2245"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1037"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2247"/>
+        <aif:creationDate>2012-04-12 18:20:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1033 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1033">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>recent statistics dem-onstrate  that there is not only a con-tinuing  need for chapter 12 but that  this need is apparently increasing.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1040"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2249"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1039"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2248"/>
+        <aif:creationDate>2012-04-12 18:20:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2237 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2237">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Chapter VII of the Bankruptcy Code  for instance would require a farmer to  liquidate; that is sell the family farm  to pay the claims of the farmer&#039;s credi-tors.  Many farmers would be precluded  from choosing bankruptcy relief under  chapter 13 of the Bankruptcy Code be-cause  of its restrictive eligibility  standards.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2244"/>
+        <aif:creationDate>2012-04-12 18:25:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2238 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2238">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Furthermore Chapter XI  the Bankruptcy Code&#039;s business reorga-nization  alternative is not farmer-friendly  in various respects as it often  entails an expensive and time-con-suming  process that does not readily  accommodate the special needs of  farmers.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2245"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2239 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2239">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Ac-cording  to the Administrative Office of  the United States Courts chapter 12  bankruptcy filings jumped by more  than 62 percent over the past year</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2246"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2240 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2240">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the sunset of the chapter 12 has negative consequences the sunset of the chapter should not be brought about</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2247"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2241 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2241">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Maintaining what people need is a good way to help them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2248"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2242 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2242">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Chapter 12 jumped by more than 62 percent over the past year</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2246"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2249"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2243 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2243">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If people need the chapter they fill it in</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2249"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2244 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2244">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2237"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1029"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2245 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2245">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2238"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1029"/>
+        <aif:creationDate>2012-04-12 18:25:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2246 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2246">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2239"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2242"/>
+        <aif:creationDate>2012-04-12 18:25:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2247 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2247">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1029"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2240"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1028"/>
+        <aif:creationDate>2012-04-12 18:25:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2248 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2248">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1033"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2241"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1028"/>
+        <aif:creationDate>2012-04-12 18:25:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2249 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2249">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2242"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2243"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1033"/>
+        <aif:creationDate>2012-04-12 18:25:11</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

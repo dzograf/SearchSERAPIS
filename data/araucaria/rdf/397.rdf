@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3657 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3657">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I owe my life to Britain... I want to give Britain just a tiny bit back for what Britain has given me.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3662"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3658 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3658">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He would have been punished in a LAGER</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3663"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3662"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3659 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3659">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He said he would have been one of those killed in a concentration camp if it wasn&#039;t for Winston Churchill and for Britain</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3662"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3660 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3660">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mr Howard hit a personal note as he described how his mother-in-law had died from a hospital-acquired infection and how his grandmother had been killed in a Nazi concentration camp.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3663"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3661 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3661">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If his grandmother met the requirements to be punished in a LAGER he would have met the requirements as well</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3663"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3662 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3662">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3658"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3659"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3657"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3663 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3663">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3660"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3661"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3658"/>
+        <aif:creationDate>2012-04-12 18:29:53</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

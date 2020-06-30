@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/445 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/445">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>by a majority of two to one the decision of Silber J was set aside.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/449"/>
+        <aif:creationDate>2012-04-12 18:18:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/446 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/446">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The majority of the Court of Appeal Lord Phillips of Worth Matravers MR and Longmore LJ considered there had been no contempt.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/449"/>
+        <aif:creationDate>2012-04-12 18:18:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/447 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/447">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the minority Simon Brown LJ would have upheld the judgment of Silber J.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/449"/>
+        <aif:creationDate>2012-04-12 18:18:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/448 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/448">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is a majority that is comprised of Lord Phillips and of Longmore along and a minority comprised of Brown there is a majority of 2 to 1.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/449"/>
+        <aif:creationDate>2012-04-12 18:18:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/449 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/449">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/446"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/447"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/448"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/445"/>
+        <aif:creationDate>2012-04-12 18:18:58</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

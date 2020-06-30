@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4115 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4115">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The idea of a pre-existing creator is refuted by scientists</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4126"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4127"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4116 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4116">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Suppose that a skeptic argues that evidence for biological creation by natural selection is obviously lacking and that in the circumstances we ought to give serious consideration to the possibility that the development of life required some input from a pre-existing purposeful creator.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4123"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4117 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4117">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it suggests the possibility that this creator may have communicated in some way with humans.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4125"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4124"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4118 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4118">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is advanced the claim of the existence of a creator</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4125"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4119 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4119">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it invokes an entity unknown to science.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4123"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4126"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4120 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4120">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To scientific naturalists this suggestion is  creationist  and therefore unacceptable in principle</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4126"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4121 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4121">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In that case there could be real prophets-persons with a genuine knowledge of God who are neither frauds nor dreamers</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4124"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4127"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4122 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4122">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Such persons could conceivably be dangerous rivals for the scientists as cultural authorities.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4127"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4123 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4123">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4116"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4119"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4124 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4124">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4117"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4121"/>
+        <aif:creationDate>2012-04-12 18:31:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4125 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4125">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4118"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4117"/>
+        <aif:creationDate>2012-04-12 18:31:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4126 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4126">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4119"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4120"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4115"/>
+        <aif:creationDate>2012-04-12 18:31:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4127 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4127">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4121"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4122"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4115"/>
+        <aif:creationDate>2012-04-12 18:31:28</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

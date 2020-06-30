@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3250 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3250">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Therefore Mahomet was a false prophet</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3255"/>
+        <aif:creationDate>2012-04-12 18:28:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3251 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3251">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mahomet told the false</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3256"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3257"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3255"/>
+        <aif:creationDate>2012-04-12 18:28:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3252 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3252">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>for not agreeing with what they have said of Jesus Christ</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3256"/>
+        <aif:creationDate>2012-04-12 18:28:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3253 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3253">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Koran said Saint Matthew was an honest man</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3257"/>
+        <aif:creationDate>2012-04-12 18:28:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3254 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3254">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>for calling honest men wicked</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3257"/>
+        <aif:creationDate>2012-04-12 18:28:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3255 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3255">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3251"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3250"/>
+        <aif:creationDate>2012-04-12 18:28:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3256 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3256">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3252"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3251"/>
+        <aif:creationDate>2012-04-12 18:28:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3257 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3257">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3253"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3254"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3251"/>
+        <aif:creationDate>2012-04-12 18:28:33</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

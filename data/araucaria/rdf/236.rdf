@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1014 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1014">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>we  are not sent here by our people to let  the President or the White House or  any party control us or dictate to us.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2230"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1018"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2208 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2208">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>No  President elects any Member of this  body.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2227"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2209 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2209">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The President did not bring any of us  here. The President did not elect any of  the Members of this body.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2228"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2210 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2210">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if the president can control a power he can have that power</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2229"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2211 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2211">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if the constitution allows it Senators should let the President control them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2230"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2212 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2212">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The president is not allowed by the law to control the Senate</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2231"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2230"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2213 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2213">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A person can try to control the parliament only if he has the power to do that.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2231"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2214 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2214">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>he is no king</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2232"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2231"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2215 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2215">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>many Senators feel  that they are under great pressure</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2235"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2231"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2216 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2216">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The President has not the legislative power</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2233"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2232"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2217 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2217">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The President does not control the legislative power</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2234"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2232"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2218 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2218">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if the president has the executive and legislative power he can be considered a king</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2232"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2219 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2219">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This is an  independent body. This is an inde-pendent  branch of Government. This is  a separate branch of Government.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2227"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2228"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2233"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2220 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2220">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the President cannot control the legislative body he has not the legislative power</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2229"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2233"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2221 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2221">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The President is just the Chief  Executive of the land</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2234"/>
+        <aif:creationDate>2012-04-12 18:25:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2222 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2222">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a person is only the chief Executive he cannot be the chief Legislative</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2234"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2223 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2223">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>apparently some Senators here  vote as though they think the Presi-dent  is king</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2236"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2235"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2224 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2224">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the president behaves as a king putting the Senators under great pressure the Senators vote as though they think the President is king</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2235"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2225 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2225">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>But still they believe  they have to follow the President&#039;s di-rection.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2236"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2226 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2226">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a person thinks that the president is the king he follows his directions</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2236"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2227 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2227">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2208"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2219"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2228 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2228">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2209"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2219"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2229 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2229">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2210"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2220"/>
+        <aif:creationDate>2012-04-12 18:25:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2230 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2230">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2211"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2212"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1014"/>
+        <aif:creationDate>2012-04-12 18:25:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2231 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2231">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2213"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2214"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2215"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2212"/>
+        <aif:creationDate>2012-04-12 18:25:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2232 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2232">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2216"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2217"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2218"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2214"/>
+        <aif:creationDate>2012-04-12 18:25:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2233 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2233">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2219"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2220"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2216"/>
+        <aif:creationDate>2012-04-12 18:25:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2234 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2234">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2221"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2222"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2217"/>
+        <aif:creationDate>2012-04-12 18:25:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2235 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2235">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2223"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2224"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2215"/>
+        <aif:creationDate>2012-04-12 18:25:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2236 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2236">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2225"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2226"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2223"/>
+        <aif:creationDate>2012-04-12 18:25:08</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

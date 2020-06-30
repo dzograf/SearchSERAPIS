@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/960 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/960">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>California &#039;s law extends  the time in which prosecution is allowedauthorizes prosecutions  that the passage of time has previously barredand was enacted after  prior limitations periods for Stogner &#039; s alleged offenses had expired.  Such features produce the kind of retroactivity that the Constitution  forbids</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/975"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/976"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/979"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/961 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/961">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Clause protects liberty by preventing govern-  ments from enacting statutes with  manifestly unjust and oppressive    retroactive effects</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/975"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/962 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/962">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the law&#039;s resurrection of time-barred prosecution threatens manifestly unjust and oppressive retroactive effects</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/975"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/963 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/963">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Clause bars time-barred prosecution</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/977"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/976"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/964 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/964">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This law allows time-barred prosecution</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/976"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/965 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/965">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>numerous legislators  courtsand commentators have long believed it well settled that the  Clause forbids resurrection of a time-barred prosecution.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/978"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/977"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/966 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/966">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If numerous legislators courts and commentators have long believed it well settled that the Clause forbids resurrection of time-barred prosecution the Clause bars time-barred prosecution</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/977"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/967 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/967">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Recon-  struction Congress of 1867 rejected a bill that would have revived  time-barred treason prosecutions against Jefferson Davis and others  passing instead a law extending unexpired limitations periods.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/978"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/968 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/968">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>State Supreme Courts echoed the view  that laws reviving time-barred prosecutions are ex post facto</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/978"/>
+        <aif:creationDate>2012-04-12 18:20:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/969 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/969">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Reconstruction Congress rejected a bill that would have revived  time-barred treason prosecutions State Supreme Courts echoed the view that laws reviving time-barred prosecutions are ex post facto and even courts that have upheld extensions of unexpired statutes of limitations have consistently distinguished situations where periods have expired then it follows that numerous legislators courts and commentators have long believed it settled that the Ex Post Facto Clause forbids resurrection of a time barred prosecution.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/978"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/970 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/970">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Even  courts that have upheld extensions of unexpired statutes of limita-  tions have consistently distinguished situations where the periods  have expired often using language that suggests a presumption that  reviving time-barred criminal cases is not allowed.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/978"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/971 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/971">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the law  falls literally within the categorical descriptions of ex post facto laws  that Justice Chase set forth more than 200 years ago in Calder v.  Bull</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/979"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/972 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/972">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is an accurate account of the Clause&#039;s scope</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/980"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/979"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/973 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/973">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>which this Court has recognized as an authoritative account of  the Clause &#039;s scopeCollins v.Youngblood497 U.S.3746</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/980"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/974 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/974">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Court recognizes a decision as authoritative it is</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/980"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/975 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/975">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/961"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/962"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/960"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/976 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/976">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/963"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/964"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/960"/>
+        <aif:creationDate>2012-04-12 18:20:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/977 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/977">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/965"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/966"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/963"/>
+        <aif:creationDate>2012-04-12 18:20:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/978 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/978">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/967"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/968"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/969"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/970"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/965"/>
+        <aif:creationDate>2012-04-12 18:20:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/979 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/979">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/971"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/972"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/960"/>
+        <aif:creationDate>2012-04-12 18:20:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/980 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/980">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/973"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/974"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/972"/>
+        <aif:creationDate>2012-04-12 18:20:37</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

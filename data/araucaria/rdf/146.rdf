@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1106 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1106">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I am required to pay to meet emission standards on my car</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1108"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1372"/>
+        <aif:creationDate>2012-04-12 18:21:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1367 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1367">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>all oil companies must be forced to pay for double hull tankers immediately.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1372"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1368 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1368">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The law is for all the same</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1372"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1369 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1369">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Oil companies fall under the categories concerned by the law</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1373"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1372"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1370 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1370">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Double hull tankers do not meet emissions standards</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1373"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1371 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1371">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Who does not meet emission standards falls under the category mentioned in the law</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1373"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1372 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1372">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1106"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1368"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1369"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1367"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1373 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1373">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1370"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1371"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1369"/>
+        <aif:creationDate>2012-04-12 18:21:59</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

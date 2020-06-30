@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You should vote for me</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2928"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3073"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3196"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2924 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2924">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We&#039;ll offer America&#039;s workers a lifetime of learning and help them get training for jobs of the future at places like our community colleges. The education and training they offered can bridge -- can be the bridge between people&#039;s lives as they are and people&#039;s lives as they want them to be.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2930"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2928"/>
+        <aif:creationDate>2012-04-12 18:27:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2925 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2925">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today I met Kristin Heydt. She&#039;s from Springfield as well. She used to be a bank teller. With the tax relief she and her family had as a result of the tax cuts she went back to school.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2929"/>
+        <aif:creationDate>2012-04-12 18:27:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2926 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2926">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Tax relief helps people to improve their education</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2929"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2930"/>
+        <aif:creationDate>2012-04-12 18:27:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2927 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2927">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>She&#039;s now a nurse. She completed a program. She now makes three times the amount of money she made before because of education.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2930"/>
+        <aif:creationDate>2012-04-12 18:27:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2928 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2928">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2924"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2768"/>
+        <aif:creationDate>2012-04-12 18:27:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2929 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2929">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2925"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2926"/>
+        <aif:creationDate>2012-04-12 18:27:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2930 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2930">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2926"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2927"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2924"/>
+        <aif:creationDate>2012-04-12 18:27:30</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

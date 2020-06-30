@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You should vote for me</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2928"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3073"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3196"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3055 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3055">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We have more to do to wage and win the war against terror. America&#039;s future depends on our willingness to lead in the world.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3074"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3073"/>
+        <aif:creationDate>2012-04-12 18:27:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3056 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3056">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I am seriously committed to save America</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3075"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3073"/>
+        <aif:creationDate>2012-04-12 18:27:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3057 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3057">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If America shows uncertainty and weakness in this decade the world will drift toward tragedy.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3074"/>
+        <aif:creationDate>2012-04-12 18:27:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3058 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3058">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We cannot accept the tragedy of America</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3074"/>
+        <aif:creationDate>2012-04-12 18:27:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3059 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3059">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The world -- the world changed on a terrible September morning. And since that day we changed the world.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3076"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3077"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3078"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3079"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3080"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3075"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3060 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3060">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This will not happen on my watch</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3075"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3061 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3061">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If I saved America from tragedy in these years my commitment to save America from tragedy in the following years is reliable</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3075"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3062 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3062">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Before September the 11th Afghanistan served as the home base for al Qaeda which trained and deployed thousands of killers and set up terror cells in dozens of countries including our own.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3076"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3063 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3063">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today Afghanistan is a rising democracy an ally in the war on terror a place where many young girls go to school for the first time. And as a result of our actions America and the world are safer.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3076"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3064 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3064">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We brought about that change</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3076"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3077"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3078"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3079"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3080"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3065 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3065">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Before September the 11th Pakistan was a safe transit point for terrorists.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3077"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3066 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3066">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today Pakistani forces are aggressively helping to round up the terrorists and America and the world are safer.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3077"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3067 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3067">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Before September the 11th in Saudi Arabia terrorists were raising money and recruiting and operating with little opposition.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3078"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3068 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3068">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today the Saudi government has taken the fight to al Qaeda and America and the world are safer.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3078"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3069 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3069">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Before September the 11th Libya was spending millions to acquire weapons of mass destruction.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3079"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3070 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3070">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today because America and our allies have sent a strong and clear massage the leader of Libya has abandoned his pursuit of weapons of mass destruction and America and the world are safer.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3079"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3071 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3071">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Before September the 11th the ruler of Iraq was a sworn enemy of America. He was defying the world. He was firing weapons at American pilots and forcing the world to sanctions. He has pursued and used weapons of mass destruction against his own people. He had harbored terrorists he invaded his neighbors he subsidized the families of suicide bombers. He had murdered tens of thousands of his own citizens. He was a source of great instability in the world&#039;s most vulnerable region.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3080"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3072 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3072">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Now Iraq is not a threat anymore</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3080"/>
+        <aif:creationDate>2012-04-12 18:27:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3073 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3073">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3055"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3056"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2768"/>
+        <aif:creationDate>2012-04-12 18:27:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3074 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3074">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3057"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3058"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3055"/>
+        <aif:creationDate>2012-04-12 18:27:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3075 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3075">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3059"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3060"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3061"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3056"/>
+        <aif:creationDate>2012-04-12 18:27:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3076 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3076">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3062"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3063"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3064"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3059"/>
+        <aif:creationDate>2012-04-12 18:27:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3077 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3077">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3064"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3065"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3066"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3059"/>
+        <aif:creationDate>2012-04-12 18:27:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3078 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3078">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3064"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3067"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3068"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3059"/>
+        <aif:creationDate>2012-04-12 18:27:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3079 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3079">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3064"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3069"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3070"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3059"/>
+        <aif:creationDate>2012-04-12 18:27:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3080 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3080">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3064"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3071"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3072"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3059"/>
+        <aif:creationDate>2012-04-12 18:27:58</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

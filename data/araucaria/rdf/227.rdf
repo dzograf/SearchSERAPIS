@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/821 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/821">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it is difficult to understand Reid Birley&#039;s claims that allegations against her are without substance.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/830"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2139"/>
+        <aif:creationDate>2012-04-12 18:20:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/824 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/824">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is also a matter of record that two very senior managers recruited from an historically disadvantaged university and who can scarcely be said to be anti-transformation reactionaries have distanced themselves from Reid Birley.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/830"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2142"/>
+        <aif:creationDate>2012-04-12 18:20:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/828 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/828">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Multiple Wits sources of varied ideological and other hues say that signs emerged very early in Reid Birley&#039;s tenure that she was extraordinarily difficult to work with and that the unanimous initial goodwill towards her steadily dissipated among those who had to interact with her daily.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/832"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2137"/>
+        <aif:creationDate>2012-04-12 18:20:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2129 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2129">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We report this week that senior Wits academics whom we name with their permission and whose own transformation and gender credentials are impeccable despairingly recount that Reid Birley repeatedly rejected long-term attempts at constructive intervention.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2138"/>
+        <aif:creationDate>2012-04-12 18:24:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2130 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2130">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Reid Birley behaved in an asocial and bad manner therefore allegations are supported by evidence</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2140"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2141"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2142"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2139"/>
+        <aif:creationDate>2012-04-12 18:24:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2131 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2131">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If allegations are supported they are not without substance</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2139"/>
+        <aif:creationDate>2012-04-12 18:24:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2132 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2132">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Reid Birley was a problem for people that were working with her</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2137"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2140"/>
+        <aif:creationDate>2012-04-12 18:24:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2133 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2133">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A bad asocial  behaviour causes socialization problems</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2140"/>
+        <aif:creationDate>2012-04-12 18:24:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2134 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2134">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Reid Birley rejected long-termattempts at constructive intervention</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2138"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2141"/>
+        <aif:creationDate>2012-04-12 18:24:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2135 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2135">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Refusal of attempts at contructive intervention is a bad behaviour</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2141"/>
+        <aif:creationDate>2012-04-12 18:24:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2136 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2136">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a person is not sociable at all even the most open-minded people distance themselves from him or her</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2142"/>
+        <aif:creationDate>2012-04-12 18:24:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2137 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2137">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/828"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2132"/>
+        <aif:creationDate>2012-04-12 18:24:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2138 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2138">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2129"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2134"/>
+        <aif:creationDate>2012-04-12 18:24:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2139 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2139">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2130"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2131"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/821"/>
+        <aif:creationDate>2012-04-12 18:24:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2140 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2140">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2132"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2133"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2130"/>
+        <aif:creationDate>2012-04-12 18:24:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2141 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2141">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2134"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2135"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2130"/>
+        <aif:creationDate>2012-04-12 18:24:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2142 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2142">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/824"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2136"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2130"/>
+        <aif:creationDate>2012-04-12 18:24:48</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

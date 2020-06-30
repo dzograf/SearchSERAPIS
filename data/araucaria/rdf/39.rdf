@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/487 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/487">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A court conceivably could find that the use of cluster bombs in such circumstances is a war crime.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/493"/>
+        <aif:IllocutionaryContent rdf:resource="&http;www.aifdb.org/nodes/174525"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/174527"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/488 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/488">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The ICC treaty outlaws attacks on military targets that cause  clearly excessive  harm to civilians.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/493"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/489 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/489">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If used where civilians are present the size of the area they attack and the difficulty of directing them reliably mean that civilian casualties - sometimes substantial casualties - are foreseeable.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/494"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/493"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/490 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/490">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it is foreseeable that using a certain type of weapon on military targets will cause civilian casualties and sometimes cause substantial civilian casualties and if the ICC treaty outlaws such use of weapons a court could conceivably find that such use is a war crime.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/493"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/491 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/491">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A typical cluster bomb is a container that opens in mid-air and scatters up to 200 bomblets over an area the size of half a soccer field. Even in their new  wind-corrected  form cluster bombs are not precision weapons</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/494"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/492 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/492">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a weapon spreads bomblets over half a football field then if it is used there will be civilian casualties and sometimes there will be substantial civilian casualties.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/494"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/493 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/493">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/488"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/489"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/490"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/487"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/494 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/494">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/491"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/492"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/489"/>
+        <aif:creationDate>2012-04-12 18:19:06</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

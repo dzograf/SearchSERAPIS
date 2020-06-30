@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/635 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/635">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it seems to me that there should not be a travel advisory out warning tourists against travel</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/641"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/636 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/636">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If having a travel advisory would involve advising them to retreat to another planet and it is absurd to advise that they should do so it seems that there should be no travel advisory out warning tourists against travel</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/641"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/637 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/637">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it seems to me that there should be a travel advisory out warning tourists against travel to any city on this planet. All US Embassies should retreat to safer cover - probably on another planet</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/642"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/641"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/638 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/638">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It would be absurd to require that they retreat to another planet.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/641"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/639 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/639">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it is hard to see where on earth in the US and out of it they would be immune to attack.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/642"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/640 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/640">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is no place on earth where they would be immune from attack then if there is a travel advisory it should advise them to retreat to another planet.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/642"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/641 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/641">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/636"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/637"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/638"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/635"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/642 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/642">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/639"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/640"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/637"/>
+        <aif:creationDate>2012-04-12 18:19:34</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

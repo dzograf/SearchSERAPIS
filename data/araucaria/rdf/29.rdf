@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/412 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/412">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>5 Ropemaker Road was never used as offices</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417"/>
+        <aif:creationDate>2012-04-12 18:18:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/413 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/413">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it suggests his account regarding Ropemaker Road is untrue.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/418"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417"/>
+        <aif:creationDate>2012-04-12 18:18:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/414 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/414">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the presence of at least four telephones at the address</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/418"/>
+        <aif:creationDate>2012-04-12 18:18:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/415 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/415">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mr. O&#039;Donnell on the face of it a close associate of the first defendant is contacting the claimant there in respect of the very matters raised by the alleged agreement between the claimant and the first defendant very shortly after on the claimant&#039;s account that agreement was reached</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/418"/>
+        <aif:creationDate>2012-04-12 18:18:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/416 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/416">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there are four telephones at 5 Roper Road and apparently close associates of the defendant are contacting the claimant there in respect of the matters raised by the alleged agreement then this evidence suggests that it is untrue that 5 Ropemaker Road was never used as an office.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/418"/>
+        <aif:creationDate>2012-04-12 18:18:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/417 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/417">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/413"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/412"/>
+        <aif:creationDate>2012-04-12 18:18:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/418 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/418">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/414"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/415"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/416"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/413"/>
+        <aif:creationDate>2012-04-12 18:18:52</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

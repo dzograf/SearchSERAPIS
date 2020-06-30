@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/865 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/865">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The post-Cold War period may have seen the dissolution of this strategic assumption; but it has not taken us back to the age when nation states fought territorial campaigns.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/868"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1732"/>
+        <aif:creationDate>2012-04-12 18:20:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1725 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1725">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Thus initiating military action against Iraq is not a simple matter of honouring clear treaty obligations (as in 1939; the case can be made though with some awkwardness for the first Gulf conflict) nor of rebutting direct aggression territorial or economic or whatever against ourselves.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1733"/>
+        <aif:creationDate>2012-04-12 18:23:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1726 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1726">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The long-distance delivery of weapons of mass destruction altered the character of war itself</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1730"/>
+        <aif:creationDate>2012-04-12 18:23:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1727 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1727">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Strategy reorganised itself around a balance of terror Mutually Assured Destruction.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1731"/>
+        <aif:creationDate>2012-04-12 18:23:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1728 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1728">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Hiroshima was the start of a process leading to the development of weaponry that made territorial struggles irrelevant.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1730"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1731"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1732"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1733"/>
+        <aif:creationDate>2012-04-12 18:23:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1729 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1729">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the character of the war is completely different from the past the old reasons and matters justifying a war are not longer valid.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1733"/>
+        <aif:creationDate>2012-04-12 18:23:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1730 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1730">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1726"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1728"/>
+        <aif:creationDate>2012-04-12 18:23:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1731 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1731">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1727"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1728"/>
+        <aif:creationDate>2012-04-12 18:23:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1732 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1732">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/865"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1728"/>
+        <aif:creationDate>2012-04-12 18:23:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1733 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1733">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1728"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1729"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1725"/>
+        <aif:creationDate>2012-04-12 18:23:13</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

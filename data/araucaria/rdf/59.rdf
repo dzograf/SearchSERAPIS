@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/613 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/613">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it is hunger that is claiming its victims.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/617"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/618"/>
+        <aif:creationDate>2012-04-12 18:19:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/614 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/614">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the deaths were caused by disease and lack of hygiene rather than by abject poverty and starvation.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/617"/>
+        <aif:creationDate>2012-04-12 18:19:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/615 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/615">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>for anyone who visits Rajasthan&#039;s Baran district the apathy of the district administration and the failure of the Public Distribution System (pds) is clear to see</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/618"/>
+        <aif:creationDate>2012-04-12 18:19:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/616 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/616">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the public food distribution system has failed hunger is claiming its victims.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/618"/>
+        <aif:creationDate>2012-04-12 18:19:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/617 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/617">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/614"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/613"/>
+        <aif:creationDate>2012-04-12 18:19:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/618 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/618">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/615"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/616"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/613"/>
+        <aif:creationDate>2012-04-12 18:19:29</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

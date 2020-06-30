@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/528 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/528">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This can&#039;t be called a National Democratic Alliance government</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/532"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/533"/>
+        <aif:creationDate>2012-04-12 18:19:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/529 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/529">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>And they still call this a National Democratic Alliance government?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1782"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/532"/>
+        <aif:creationDate>2012-04-12 18:19:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/530 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/530">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Consider the Vajpayee government today. A BJP prime minister a BJP deputy prime minister in charge of home a BJP minister of finance external affairs HRD information and broadcasting health commerce and industries petroleum rural development civil aviation surface transport law. Now add agriculture.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/533"/>
+        <aif:creationDate>2012-04-12 18:19:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/531 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/531">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is a BJP prime minister a BJP deputy prime minister a BJP minister in charge of home and BJP ministers of finance external affairs HRD information and broadcasting health commerce and industries petroleum rural development civil aviation surface transport law and agricuture - then the government cannot be called a National Democratic Alliance</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/533"/>
+        <aif:creationDate>2012-04-12 18:19:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/532 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/532">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/529"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/528"/>
+        <aif:creationDate>2012-04-12 18:19:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/533 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/533">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/530"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/531"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/528"/>
+        <aif:creationDate>2012-04-12 18:19:13</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

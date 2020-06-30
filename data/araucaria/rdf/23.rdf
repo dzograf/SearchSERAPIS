@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/347 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/347">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>What Muhammad received was of divine origin</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/361"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/364"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/348 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/348">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Divine revelation accounts for this</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/362"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/361"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/349 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/349">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If divine revelation accounts for this what Muhammad received was of divine origin</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/361"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/350 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/350">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>something has to accomodate for this.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/363"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/362"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/351 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/351">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Accounts for change that are so positive that they involve coming to know God and what is good are accounts in terms of divine revelation.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/362"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/352 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/352">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Not even did the blessed Biblical prophets nor Jesus himself change the behavior of a people so steeped in immorality and idolatry.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/363"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1351"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344652"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/353 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/353">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If you would take a look at the society in which Muhammad grew up in which differing warring tribes fought bloody wars over the slightest of percieved insults. Where the various peoples were steeped in immorality and idolatry and yet 40 years later the whole of Arabia was unified as one. Quite a feat I would imagine.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/363"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/354 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/354">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a society changes radically for the better and does so to an extent that the Biblical Prophets and Jesus did not succeed in bringing about in their societies something must accomodate for this.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/363"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/355 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/355">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They as well believed with all their hearts that this man whom they slept with whom they ate with and whom they fought with was in fact recieving Revelation from GOD. They knew because of his outstanding moral character and from his trustworthy personality</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/365"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/364"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/356 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/356">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If they knew he received divine revelation he did.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/364"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/357 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/357">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>During his childhood Muhammad garnered quite a reputation for his outstanding moral character so much that he was titled al-Amin or &#039;The Faithful&#039;. Sir William Muir once stated  Our authorities all agree in ascribing to the youth of Muhammad a modesty of deportment and purity of manners rare among Meccans.  During his youth Muhammad never once touched wine nor engaged in any game of gambling nor did he even begin to develop a liking to war in which the Arabs of his time were constantly engaged in. Certainly these characteristics were unusual in a man surrounded by a society indulged in all forms of idolatry and immorality.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/365"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/358 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/358">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Nor did Muhammad develop a fond of wealth and not once was he energetic in pursuit of riches. Muhammad would&#039;ve have rather spent his time in prayer or in solitude during much of his youth. When young he become a member of the Hilfal-Fudzul an alliance formed to vindicate the rights of the weak and help the plight of the poor. He spent to help those who were poor after marrying the wealthy widow Khadija and in every instance did he free a slave who entered his household.     Imam Ghazali the great Islamic scholar summed up the Prophet (saas)&#039;s treatment of those around him in light of the information found in the hadiths:  ... Everyone thought that the Prophet honoured him more...  He was affectionate towards everyone never interupted their speech no matter how short or long always was the first to stretch his hand to greet and the last to let go. He greeted everyone with a smile and left with a smile.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/365"/>
+        <aif:creationDate>2012-04-12 18:18:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/359 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/359">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If someone who claims to have received divine revelation is known by those who are close to him to have an outstanding moral character and a trustworthy personality that person is known by them to have received divine revelation.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/365"/>
+        <aif:creationDate>2012-04-12 18:18:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/360 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/360">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Muhammad claimed to have received divine revelation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/365"/>
+        <aif:creationDate>2012-04-12 18:18:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/361 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/361">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/348"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/349"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/347"/>
+        <aif:creationDate>2012-04-12 18:18:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/362 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/362">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/350"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/351"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/348"/>
+        <aif:creationDate>2012-04-12 18:18:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/363 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/363">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/352"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/353"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/354"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/350"/>
+        <aif:creationDate>2012-04-12 18:18:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/364 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/364">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/355"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/356"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/347"/>
+        <aif:creationDate>2012-04-12 18:18:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/365 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/365">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/357"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/358"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/359"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/360"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/355"/>
+        <aif:creationDate>2012-04-12 18:18:41</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

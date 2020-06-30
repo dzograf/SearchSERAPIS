@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2362 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2362">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The protection of Israel is not the best explanation of the war</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2380"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2363 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2363">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>most experts agreed that Iran was closer to being a nuclear threat to Israel than Iraq</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2378"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2364 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2364">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Syria was a bigger conventional threat than Saddam s regime because of its contiguous border with the Jewish state.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2379"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2365 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2365">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Some have alleged the war was a neo-conservative plan to take out a potential enemy of Israel.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2380"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2366 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2366">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if the explanation given actually explains the phenomenon it can be considered the best explanation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2380"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2367 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2367">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There was no need of a war against Iraq in order to protect and guarantee the existence of Israel</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2381"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2380"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2368 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2368">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is to protect Israel against its biggest existential threat</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2381"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2369 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2369">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to protect it is to attack its biggest threat</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2381"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2370 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2370">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Israel is now relatively secure from existential threats.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2382"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2383"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2381"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2371 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2371">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraq was not the bigger threat for Israel</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2378"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2379"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2381"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2372 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2372">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>making peace with the most menacing Arab nation-Egypt</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2382"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2373 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2373">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a nation makes peace with its most menacing enemy the nation is relatively secure</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2382"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2374 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2374">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Israel is extremely powerful under the military point of view</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2384"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2383"/>
+        <aif:creationDate>2012-04-12 18:25:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2375 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2375">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a nation is military powerful deters the other nations from attacking it</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2383"/>
+        <aif:creationDate>2012-04-12 18:25:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2376 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2376">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>purportedly possessing hundreds of nuclear weapons</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2384"/>
+        <aif:creationDate>2012-04-12 18:25:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2377 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2377">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The proportion between the arms potential and the military force is similar</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2384"/>
+        <aif:creationDate>2012-04-12 18:25:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2378 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2378">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2363"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2371"/>
+        <aif:creationDate>2012-04-12 18:25:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2379 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2379">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2364"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2371"/>
+        <aif:creationDate>2012-04-12 18:25:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2380 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2380">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2365"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2366"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2367"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2362"/>
+        <aif:creationDate>2012-04-12 18:25:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2381 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2381">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2368"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2369"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2370"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2371"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2367"/>
+        <aif:creationDate>2012-04-12 18:25:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2382 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2382">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2372"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2373"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2370"/>
+        <aif:creationDate>2012-04-12 18:25:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2383 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2383">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2374"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2375"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2370"/>
+        <aif:creationDate>2012-04-12 18:25:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2384 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2384">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2376"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2377"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2374"/>
+        <aif:creationDate>2012-04-12 18:25:40</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

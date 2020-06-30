@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2507 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2507">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>there is virtually no chance a prison labor camp will be located in Siskiyou county to improve the badly neglected Klamath River</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2514"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2578"/>
+        <aif:creationDate>2012-04-12 18:26:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2508 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2508">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The camp is located either in Los Angeles or in Siskiyou</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2513"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2578"/>
+        <aif:creationDate>2012-04-12 18:26:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2511 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2511">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Board of Prison directors announced this week that a prison labor camp would be located in Palomar Park near Los Angeles to build a recreation center</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2515"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2578"/>
+        <aif:creationDate>2012-04-12 18:26:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2512 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2512">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the camp is located in Los Angeles it won&#039;t be located in Siskiyou</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2513"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2515"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2578"/>
+        <aif:creationDate>2012-04-12 18:26:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2578 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2578">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2508"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2511"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2512"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2507"/>
+        <aif:creationDate>2012-04-12 18:26:21</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3592 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3592">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You should not rely on their statements</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3595"/>
+        <aif:creationDate>2012-04-12 18:29:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3593 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3593">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We have seen historically that the Liberal Democrats jump on any old passing bandwagon.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3595"/>
+        <aif:creationDate>2012-04-12 18:29:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3594 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3594">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Democrats stated that they intend to abolish the nuclear power</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3595"/>
+        <aif:creationDate>2012-04-12 18:29:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3595 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3595">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3593"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3594"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3592"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

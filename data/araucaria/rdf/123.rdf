@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1125 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1125">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the public has never been allowed in jury rooms and with good reason</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1141"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1143"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1146"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1126 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1126">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Allowing cameras in the jury room would also harm the deliberative process.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1142"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1141"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1127 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1127">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a Judge&#039;s action would harm the deliberative process of the jury that is a reason not to carry out the action.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1141"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1128 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1128">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Jurors especially less educated and articulate ones may be wary of speaking out if they know they are being judged by an audience at home. They may be more reluctant to question the credibility of a witness or to take an unpopular stand like holding out for an acquittal or against the death penalty.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1142"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1129 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1129">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Jurors may be more reluctant to speak out in front of cameras then if cameras are allowed into the jury room the deliberative process will be harmed</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1142"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1130 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1130">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Televising jury deliberations will skew the composition of juries by removing people who do not want to reach a verdict - and in this case possibly impose the death penalty - on a public stage</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1144"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1143"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1131 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1131">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a Judge&#039;s action would skew the composition of the jury that is a reason not to carry out the action.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1143"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1132 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1132">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Telivising Mr. Harrison&#039;s case has skewed the jury by removing people who do not want to reach a verdict on a public stage.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1145"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1144"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1133 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1133">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If televising Mr. Harrison&#039;s case has skewed the jury by removing people who do not want to reach a verdict on a public stage it is likely that televising jury deliberations in the future will have the same effect</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1144"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1134 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1134">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If one removes all those who do not want to reach a verdict on a public stage from a jury and these people may be precisely the ones best suited to serve its composition will thus be skewed.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1145"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1135 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1135">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>So far at least 14 out of 110 prospective jurors in Mr. Harrison&#039;s case have been excused for reasons related to the presence of cameras.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1145"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1136 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1136">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>These jurors may be precisely the ones best suited to serve</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1145"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1137 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1137">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Those who fulfill the role of jurors are entitled to privacy in doing so</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1147"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1146"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1138 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1138">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If those who fulfill a duty are entitled to privacy in doing so there is a reason not to take this privacy away from them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1146"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1139 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1139">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Jurors are not government officials and do not perform a representational function. Being a juror is more akin to voting a civic duty that occurs in private. Like voters in an exit poll jurors ought to be free to speak afterward about their deliberations but they are not obligated to.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1147"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1140 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1140">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a civic duty is not representational those who fulfill it are entitled to privacy in doing so.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1147"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1141 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1141">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1126"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1127"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1125"/>
+        <aif:creationDate>2012-04-12 18:21:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1142 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1142">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1128"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1129"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1126"/>
+        <aif:creationDate>2012-04-12 18:21:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1143 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1143">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1130"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1131"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1125"/>
+        <aif:creationDate>2012-04-12 18:21:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1144 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1144">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1132"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1133"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1130"/>
+        <aif:creationDate>2012-04-12 18:21:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1145 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1145">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1134"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1135"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1136"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1132"/>
+        <aif:creationDate>2012-04-12 18:21:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1146 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1146">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1137"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1138"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1125"/>
+        <aif:creationDate>2012-04-12 18:21:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1147 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1147">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1139"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1140"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1137"/>
+        <aif:creationDate>2012-04-12 18:21:08</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

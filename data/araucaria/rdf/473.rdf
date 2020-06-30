@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4208 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4208">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God provides the best explanation for the complex order in the universe</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4213"/>
+        <aif:creationDate>2012-04-12 18:31:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4209 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4209">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Robert Jastrow the head of NASA&#039;s Goddard Institute for Space Studies has called this the most powerful evidence for the existence of God  ever to come out of science.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4212"/>
+        <aif:creationDate>2012-04-12 18:31:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4210 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4210">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Donald Page one of America&#039;s eminent cosmologists has calculated the odds of our universe existing as on the order of one chance out of 1010(123) a number which is so inconceivable that to call it astronomical would be a wild understatement</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4213"/>
+        <aif:creationDate>2012-04-12 18:31:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4211 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4211">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Once again the view that Christian theists have always held that there is an intelligent designer of the Cosmos seems to me to be much more plausible than the atheistic interpretation of chance.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4212"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4213"/>
+        <aif:creationDate>2012-04-12 18:31:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4212 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4212">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4209"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4211"/>
+        <aif:creationDate>2012-04-12 18:31:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4213 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4213">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4210"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4211"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4208"/>
+        <aif:creationDate>2012-04-12 18:31:45</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

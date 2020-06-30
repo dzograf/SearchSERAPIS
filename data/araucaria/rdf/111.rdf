@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1019 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1019">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The evidence  shows there is no reasonable case for  such exemptions.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1026"/>
+        <aif:creationDate>2012-04-12 18:20:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1020 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1020">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The environmental  laws already allow the Department of  Defense to apply for exemptions on a  case-by-case basis if they really need  it.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1026"/>
+        <aif:creationDate>2012-04-12 18:20:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1021 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1021">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There is no evi-dence  that the military has ever been  refused an exemption from laws that  were necessary and that they sought it.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1026"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1022 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1022">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the evidence is that environmental laws have not affected military readiness the military can apply for exemptions from such laws where necessary and there is no evidence that the military has ever been refused such an exemption then the evidence shows that there is no reasonable case for the military to be exempted from environmental laws</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1026"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1023 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1023">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The evidence is that environmental laws have not affected military readiness</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1027"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1026"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1024 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1024">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The testimony of the GAO and of the Administrator Whitman is the evidence regarding whether the environmental laws have affected the military</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1027"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1025 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1025">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Both the GAO and EPA Adminis-  trator Whitman have testified that en-vironmental  laws have not affected  military readiness.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1027"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1026 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1026">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1020"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1021"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1022"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1023"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1019"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1027 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1027">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1024"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1025"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1023"/>
+        <aif:creationDate>2012-04-12 18:20:46</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

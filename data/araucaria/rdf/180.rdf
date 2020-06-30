@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/479 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/479">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>under the UN Refugee Convention to which it is a party China is obligated not to push back asylum seekers in danger of persecution</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/485"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1714"/>
+        <aif:creationDate>2012-04-12 18:19:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/481 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/481">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>At any moment North Koreans risk being picked up by Chinese authorities and returned to North Korea under the terms of a secret 1986 agreement between Beijing and Pyongyang</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/485"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1713"/>
+        <aif:creationDate>2012-04-12 18:19:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1708 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1708">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>China&#039;s behaviour is not respecting the convention</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1713"/>
+        <aif:creationDate>2012-04-12 18:23:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1709 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1709">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>China is obligated not to push back North Koreans</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1714"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1713"/>
+        <aif:creationDate>2012-04-12 18:23:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1710 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1710">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>North Koreans refugees are asylum seekers in danger of prosecution</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1715"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1714"/>
+        <aif:creationDate>2012-04-12 18:23:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1711 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1711">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In North Korea anyone leaving the country without authorization is subject to three years in a labor camp or even the death penalty.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1715"/>
+        <aif:creationDate>2012-04-12 18:23:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1712 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1712">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If somebody is subject to death or prison he is in danger of prosecution</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1715"/>
+        <aif:creationDate>2012-04-12 18:23:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1713 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1713">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/481"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1709"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1708"/>
+        <aif:creationDate>2012-04-12 18:23:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1714 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1714">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/479"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1710"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1709"/>
+        <aif:creationDate>2012-04-12 18:23:09</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1715 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1715">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1711"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1712"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1710"/>
+        <aif:creationDate>2012-04-12 18:23:09</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

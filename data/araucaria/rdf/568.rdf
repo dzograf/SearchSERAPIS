@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5259 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5259">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Peaceful efforts to disarm the Iraqi regime have failed again and again -- because we are not dealing with peaceful men.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5270"/>
+        <aif:creationDate>2012-04-12 18:35:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5260 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5260">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>U.N. weapon inspectors have been threatened by Iraqi officials</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5267"/>
+        <aif:creationDate>2012-04-12 18:35:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5261 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5261">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>electronically bugged</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5268"/>
+        <aif:creationDate>2012-04-12 18:35:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5262 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5262">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>systematically deceived</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5269"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5263 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5263">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Iraqi regime has used diplomacy as a ploy to gain time and advantage</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5271"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5270"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5264 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5264">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best explanation for the failure of peaceful efforts to disarm the regime is that Saddam is not peaceful</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5270"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5265 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5265">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It has uniformly defied Security Council resolutions demanding full disarmament</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5267"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5268"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5269"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5271"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5266 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5266">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best explanation for Iraq&#039;s deceiving the council is that it used diplomacy to gain time</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5271"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5267 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5267">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5260"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5265"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5268 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5268">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5261"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5265"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5269 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5269">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5262"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5265"/>
+        <aif:creationDate>2012-04-12 18:35:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5270 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5270">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5263"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5264"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5259"/>
+        <aif:creationDate>2012-04-12 18:35:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5271 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5271">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5265"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5266"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5263"/>
+        <aif:creationDate>2012-04-12 18:35:15</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

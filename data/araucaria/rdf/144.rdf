@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/352 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/352">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Not even did the blessed Biblical prophets nor Jesus himself change the behavior of a people so steeped in immorality and idolatry.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/363"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1351"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344652"/>
+        <aif:creationDate>2012-04-12 18:18:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1340 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1340">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mohammed&#039;s exceptional personality derived from a Revelation from God</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1349"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1353"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344650"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344654"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344656"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344660"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1341 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1341">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They as well believed with all their hearts that this man whom they slept with whom they ate with and whom they fought with was in fact recieving Revelation from GOD.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1350"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344651"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344657"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1349"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344650"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344656"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1342 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1342">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They knew because of his outstanding moral character and from his trustworthy personality</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1350"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344651"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344657"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1343 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1343">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we were to take a look at Arabia before and after the coming of Muhammad we would see two completely different societies.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1352"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344653"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344659"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1344 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1344">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best explanation for Mohammed&#039;s exceptional moral characteristics is that he has received the Revelation from God</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1353"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344654"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344660"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1345 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1345">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mohammed`s exceptional characteristics changed the society</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1354"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344655"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344661"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1353"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344654"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344660"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1346 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1346">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The changes that happened under Mohammed were incredible</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1351"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1352"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344652"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344653"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344658"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/344659"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1354"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344655"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344661"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1347 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1347">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Now something has to accomodate for this</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1354"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344655"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344661"/>
+        <aif:creationDate>2012-04-12 18:21:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1348 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1348">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if Muhammad exhibited such outstanding moral characteristics that those who were not close to him would come to believe that he was always a trustworthy and honourable person and that they would have no reason to disbelieve in his claim of Divine Revelation.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1354"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344655"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/344661"/>
+        <aif:creationDate>2012-04-12 18:21:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1349 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1349">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1341"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1340"/>
+        <aif:creationDate>2012-04-12 18:21:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1350 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1350">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1342"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1341"/>
+        <aif:creationDate>2012-04-12 18:21:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1351 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1351">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/352"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1346"/>
+        <aif:creationDate>2012-04-12 18:21:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1352 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1352">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1343"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1346"/>
+        <aif:creationDate>2012-04-12 18:21:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1353 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1353">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1344"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1345"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1340"/>
+        <aif:creationDate>2012-04-12 18:21:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1354 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1354">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1346"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1347"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1348"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1345"/>
+        <aif:creationDate>2012-04-12 18:21:55</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

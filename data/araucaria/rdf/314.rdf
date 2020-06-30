@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3032 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3032">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The greater goods defense can easily lead to a kind of cost benefit analysis which is deeply repugnant to our moral sense</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3044"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3033 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3033">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Some distributions just aren&#039;t fair.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3045"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3044"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3034 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3034">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Brothers Karamazov is fiction but to hear about real cases like this you need only listen regularly to the 11 o&#039;clock news</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3044"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3035 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3035">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>For the father to have the opportunity to display moral goodness God must give him the opportunity to choose evil.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3046"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3045"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3036 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3036">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>But notice who gets the good here.  It&#039;s the father.  And notice who suffers the evil. It&#039;s the little girl.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3045"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3037 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3037">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Let us grant for the sake of argument that the benefit outweighs the cost. Freedom is a very great good.  Still it makes some difference who pays the cost.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3045"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3038 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3038">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if goods and evils are distributed in a fair way the distribution can be said to be fair</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3045"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3039 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3039">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The free will defense seems to say in cases of this kind:  well it&#039;s all very unfortunate of course but this is the price we must pay for having freedom.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3046"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3040 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3040">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Perhaps she wets the bed repeatedly and they think she ought to be old enough to control her bladder.  Or perhaps the father is an alcoholic who abuses his daughter sexually.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3047"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3046"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3041 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3041">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the father&#039;s having the opportunity to display moral goodness is such a great good that it outweighs the fact that he chooses evil.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3046"/>
+        <aif:creationDate>2012-04-12 18:27:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3042 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3042">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Consider the kind of case which troubled Ivan in Dostoevsky&#039;s great novel The Brothers Karamazov.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3047"/>
+        <aif:creationDate>2012-04-12 18:27:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3043 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3043">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A little girl is treated quite brutally by her parents who beat her because she has done something which made them angry.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3047"/>
+        <aif:creationDate>2012-04-12 18:27:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3044 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3044">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3033"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3034"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3032"/>
+        <aif:creationDate>2012-04-12 18:27:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3045 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3045">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3035"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3036"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3037"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3038"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3033"/>
+        <aif:creationDate>2012-04-12 18:27:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3046 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3046">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3039"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3040"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3041"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3035"/>
+        <aif:creationDate>2012-04-12 18:27:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3047 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3047">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3042"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3043"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3040"/>
+        <aif:creationDate>2012-04-12 18:27:52</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

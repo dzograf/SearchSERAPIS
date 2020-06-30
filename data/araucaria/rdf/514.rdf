@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4706 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4706">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our policies are extremely good</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4725"/>
+        <aif:creationDate>2012-04-12 18:33:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4707 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4707">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To pay for that spending he is running on a platform of increasing taxes   and that&#039;s the kind of promise a politician usually keeps.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4732"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4724"/>
+        <aif:creationDate>2012-04-12 18:33:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4708 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4708">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Kerry program is not good for electors</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4724"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4726"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4727"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4728"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4729"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4730"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4731"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4725"/>
+        <aif:creationDate>2012-04-12 18:33:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4709 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4709">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>My opponent&#039;s policies are dramatically different from ours</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4725"/>
+        <aif:creationDate>2012-04-12 18:33:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4710 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4710">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Senator Kerry opposed Medicare reform and health savings accounts.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4726"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4711 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4711">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Medicare reform and health saving accounts are good for electors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4726"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4712 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4712">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>After supporting my education reforms he now wants to dilute them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4727"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4713 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4713">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Education reform is good for electors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4727"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4714 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4714">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He opposes legal and medical liability reform.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4728"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4715 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4715">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Legal and medical reform is good for electors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4728"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4716 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4716">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He opposed reducing the marriage penalty</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4729"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4717 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4717">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Increasing the marriage penalty is good for the families</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4729"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4718 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4718">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>opposed doubling the child credit</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4730"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4719 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4719">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Doubling the child credit is good for the electors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4730"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4720 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4720">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>opposed lowering income taxes for all who pay them.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4731"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4721 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4721">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Lowering income taxes is good for electors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4731"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4722 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4722">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>he&#039;s proposed more than two trillion dollars in new federal spending so far and that&#039;s a lot even for a senator from Massachusetts.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4732"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4723 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4723">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a politician wants to spend more money than he can afford he will increase taxes</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4732"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4724 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4724">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4707"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4725 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4725">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4709"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4706"/>
+        <aif:creationDate>2012-04-12 18:33:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4726 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4726">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4710"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4711"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4727 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4727">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4712"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4713"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4728 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4728">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4714"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4715"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4729 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4729">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4716"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4717"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4730 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4730">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4718"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4719"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4731 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4731">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4720"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4721"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4708"/>
+        <aif:creationDate>2012-04-12 18:33:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4732 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4732">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4722"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4723"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4707"/>
+        <aif:creationDate>2012-04-12 18:33:27</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/430 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/430">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>reference to the 1938 Act was omitted because it was regarded as clear that the 1938 Act would continue to operate in cases to which it applied irrespective of the terms of Part V</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/440"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/431 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/431">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is not the case that Reference to the 1938 Act was omitted because it was regarded as clear that the 1938 Act would continue to operate in cases in which it applied irrespective of the terms of Part V</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/441"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/440"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/432 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/432">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They did not regard it as clear that the 1938 Act would continue to operate in cases to which it applied irrespective of the terms of Part V</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/442"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/443"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/441"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/433 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/433">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Since they did not regard it as clear that the 1938 Act would continue to operate in cases to which it applied irrespective of the terms of Part V their reason for omitting reference to the 1938 Act was not that they regarded it as clear that the 1938 Act would continue to operate in cases in which it applied irrespective of the terms of Part V</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/441"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/434 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/434">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>had the draftsman conceived that a secure tenant&#039;s right to buy could be subject to a condition of ministerial consent under section 5 that right would not have been defined in section 118 in the terms quoted in paragraph 7 above and provision would have been made for asserting and admitting or denying and handling claims to exercise the right to buy where ministerial consent was required.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/442"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/435 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/435">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>No provision has been made for asserting admitting or denying and handling claims to exercise the right to buy where ministerial consent was required.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/442"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/436 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/436">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is their practice not to assume that it is clear that an act continues to operate irrespective of later legislation</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/444"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/443"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/437 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/437">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the 1938 Act is an instance of their practice</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/443"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/438 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/438">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it is the practice of parliamentary draftsmen to show an abundance of caution and to favour the avoidance of doubt.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/444"/>
+        <aif:creationDate>2012-04-12 18:18:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/439 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/439">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>For parliamentary draftsment showing an abundance of caution and favouring the absence of doubt involves not assuming that it is clear that acts continue to operate irrespective of later legislation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/444"/>
+        <aif:creationDate>2012-04-12 18:18:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/440 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/440">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/431"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/430"/>
+        <aif:creationDate>2012-04-12 18:18:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/441 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/441">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/432"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/433"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/431"/>
+        <aif:creationDate>2012-04-12 18:18:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/442 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/442">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/434"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/435"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/432"/>
+        <aif:creationDate>2012-04-12 18:18:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/443 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/443">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/436"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/437"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/432"/>
+        <aif:creationDate>2012-04-12 18:18:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/444 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/444">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/438"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/439"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/436"/>
+        <aif:creationDate>2012-04-12 18:18:57</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3596 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3596">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Does the Minister believe that the Government should keep well under review on a regular basis their attitude towards nuclear power?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3603"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3597 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3597">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our goal is to reduce the phenomena causing global warming</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3604"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3603"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3598 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3598">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>we know that a major accelerator is the emission of carbon dioxide and other carbon gases</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3603"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3599 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3599">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>British Energy has pointed out that the generation of about 64 TWh or 64000 GWh by its nuclear power stations avoids the production and generation of about 40 million tonnes of carbon dioxide.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3603"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3600 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3600">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Prime Minister has described global warming as the most serious environmental threat to the planet</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3604"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3601 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3601">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We do not want the disaster to happen</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3604"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3602 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3602">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best way to avoid the disaster is to try to restrict its causes</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3604"/>
+        <aif:creationDate>2012-04-12 18:29:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3603 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3603">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3597"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3598"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3599"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3596"/>
+        <aif:creationDate>2012-04-12 18:29:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3604 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3604">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3600"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3601"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3602"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3597"/>
+        <aif:creationDate>2012-04-12 18:29:41</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

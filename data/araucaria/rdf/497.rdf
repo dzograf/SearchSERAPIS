@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4515 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4515">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God must exist</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4526"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4530"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4516 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4516">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>you have no reason to believe this is God.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4527"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4526"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4517 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4517">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>But if there is we&#039;ve no reason to believe it&#039;s omniscient no reason to believe it&#039;s omnibenevolent and no reason to believe that it&#039;s omnipotent</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4528"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4527"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4518 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4518">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>From the fact that the universe was created all we have some reason to believe is that it is slightly more powerful than its effects.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4531"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4528"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4519 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4519">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Every morning I a lot of you get up and we go to our car and we put the key in the ignition turn it over and the car starts up. You can think of the ignition of the gasoline as somewhat of a big bang. There&#039;s this explosion of gasoline igniting. What&#039;s the cause of the gasoline igniting? The sparkplug.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4529"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4520 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4520">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>this universe had a cause</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4532"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4530"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4521 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4521">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>What Professor Craig has given us is that there is some sort of cosmological sparkplug.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4529"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4531"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4522 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4522">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the thing that caused the universe to exist is a sparkplug it has the characterisics of a sparkplug</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4531"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4523 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4523">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It could be a spark plug of some kind maybe a timeless sparkplug but a sparkplug nevertheless.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4531"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4524 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4524">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the universe had a beginning</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4532"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4525 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4525">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>everything that exists must have had a cause.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4532"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4526 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4526">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4516"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4515"/>
+        <aif:creationDate>2012-04-12 18:32:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4527 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4527">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4517"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4516"/>
+        <aif:creationDate>2012-04-12 18:32:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4528 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4528">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4518"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4517"/>
+        <aif:creationDate>2012-04-12 18:32:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4529 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4529">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4519"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4521"/>
+        <aif:creationDate>2012-04-12 18:32:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4530 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4530">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4520"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4515"/>
+        <aif:creationDate>2012-04-12 18:32:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4531 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4531">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4521"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4522"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4523"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4518"/>
+        <aif:creationDate>2012-04-12 18:32:47</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4532 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4532">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4524"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4525"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4520"/>
+        <aif:creationDate>2012-04-12 18:32:47</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/523 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/523">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if growth remains below par - by which I mean below 6.0 per cent - and inflation moves upwards Singh will see all this praise melt away</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/527"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1254"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1255"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1253"/>
+        <aif:creationDate>2012-04-12 18:19:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/524 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/524">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If nothing angers the middle class more than inflation and their anger would cause Singh&#039;s praise to melt away then - if growth remains below par and inflation moves upwards Singh will lose his support.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/527"/>
+        <aif:creationDate>2012-04-12 18:19:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/525 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/525">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Nothing angers the middle class more than inflation and that is a threat a Singh tenure at the fisc certainly faces.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/527"/>
+        <aif:creationDate>2012-04-12 18:19:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/526 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/526">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the middle class are angry at Singh he will see his praise melt away</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/527"/>
+        <aif:creationDate>2012-04-12 18:19:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/527 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/527">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/524"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/525"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/526"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/523"/>
+        <aif:creationDate>2012-04-12 18:19:12</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

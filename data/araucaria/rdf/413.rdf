@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3799 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3799">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This year s Global Competitiveness Report appears at a crossroads in the evolution of the global economy when the strength of the economic recovery has left many observers pleasantly surprised.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3806"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3807"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3808"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3800 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3800">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Industrial production has been expanding quickly</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3806"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3801 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3801">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is an economic recovery industrial production expands</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3806"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3802 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3802">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>business confidence and investment growth have been buoyant</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3807"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3803 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3803">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is an economic recovery people invest more</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3807"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3804 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3804">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>global trade is growing at rates not seen for a decade</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3808"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3805 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3805">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is an economic recovery global trade grows</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3808"/>
+        <aif:creationDate>2012-04-12 18:30:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3806 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3806">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3800"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3801"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3799"/>
+        <aif:creationDate>2012-04-12 18:30:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3807 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3807">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3802"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3803"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3799"/>
+        <aif:creationDate>2012-04-12 18:30:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3808 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3808">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3804"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3805"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3799"/>
+        <aif:creationDate>2012-04-12 18:30:23</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

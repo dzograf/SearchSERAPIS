@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2901 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2901">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Kerry&#039;s statement should not be accepted as true</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2912"/>
+        <aif:creationDate>2012-04-12 18:27:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2902 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2902">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>My opponent recently announced that he is the candidate of  conservative values  which must have come as a surprise to a lot of his supporters.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2911"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2903 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2903">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Kerry was precedently committed to be a non-conservative</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2913"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2914"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2915"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2912"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2904 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2904">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Kerry is committed to be a conservative</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2911"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2912"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2905 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2905">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If you say the heart and soul of America is found in Hollywood I&#039;m afraid you are not the candidate of conservative values</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2913"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2906 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2906">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Who claims that the heart of America is in Hollywood has not conservative values</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2913"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2907 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2907">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If you voted against the bipartisan Defense of Marriage Act which President Clinton signed you are not the candidate of conservative values.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2914"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2908 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2908">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Who votes against a typical conservative law has not conservative values</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2914"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2909 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2909">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If you gave a speech as my opponent did calling the Reagan presidency eight years of  moral darkness  then you may be a lot of things but the candidate of conservative values is not one of them.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2915"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2910 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2910">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Who claims that one of the most conservative presidencies was a moral darkness has not conservative values</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2915"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2911 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2911">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2902"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2904"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2912 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2912">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2903"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2904"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2901"/>
+        <aif:creationDate>2012-04-12 18:27:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2913 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2913">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2905"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2906"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2903"/>
+        <aif:creationDate>2012-04-12 18:27:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2914 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2914">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2907"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2908"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2903"/>
+        <aif:creationDate>2012-04-12 18:27:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2915 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2915">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2909"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2910"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2903"/>
+        <aif:creationDate>2012-04-12 18:27:26</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

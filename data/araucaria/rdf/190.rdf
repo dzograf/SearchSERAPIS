@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/854 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/854">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The war on terror will be intensified.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/859"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1796"/>
+        <aif:creationDate>2012-04-12 18:20:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/855 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/855">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Indonesia cannot afford to become a haven for an Islamic radicalism</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/860"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1797"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/859"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1796"/>
+        <aif:creationDate>2012-04-12 18:20:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1793 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1793">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Indonesia wants to avoid becoming a haven for Islamic radicalism the war on terror has to be intensified</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1796"/>
+        <aif:creationDate>2012-04-12 18:23:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1794 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1794">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There is a possibility for Indonesia to become a haven for Islamic radicalism</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1797"/>
+        <aif:creationDate>2012-04-12 18:23:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1795 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1795">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>which would wreck the economy and tear the archipelago apart.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1797"/>
+        <aif:creationDate>2012-04-12 18:23:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1796 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1796">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/855"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1793"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/854"/>
+        <aif:creationDate>2012-04-12 18:23:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1797 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1797">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1794"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1795"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/855"/>
+        <aif:creationDate>2012-04-12 18:23:28</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

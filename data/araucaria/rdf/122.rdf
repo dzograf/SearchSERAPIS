@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1118 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1118">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Congress has lost in Gujarat whatever the outcome of the December 12 election in that state</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1123"/>
+        <aif:creationDate>2012-04-12 18:21:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1119 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1119">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Congress has failed to set the political agenda.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1124"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1123"/>
+        <aif:creationDate>2012-04-12 18:21:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1120 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1120">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Congress has failed to set the political agenda in Gujarat they have lost in Gujarat whatever the outcome of the December 12 election</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1123"/>
+        <aif:creationDate>2012-04-12 18:21:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1121 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1121">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It has allowed the vituperative eloquence of Narendra Modi and Company to seep into its consciousness and cause it to second-guess its opponent tread warily speak in whispers. It has allowed itself to be spooked into submission into donning elaborate masks and disguises.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1124"/>
+        <aif:creationDate>2012-04-12 18:21:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1122 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1122">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it has allowed the vituperative eloquence of Modi and Company to seep into its consciousness and cause it to second-guess its opponent tread warily and speak in whispers and it has allowed itself to be spooked into submission then it has failed to set the political agenda</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1124"/>
+        <aif:creationDate>2012-04-12 18:21:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1123 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1123">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1119"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1120"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1118"/>
+        <aif:creationDate>2012-04-12 18:21:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1124 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1124">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1121"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1122"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1119"/>
+        <aif:creationDate>2012-04-12 18:21:05</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2640 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2640">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Saddam should leave the country</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2648"/>
+        <aif:creationDate>2012-04-12 18:26:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2641 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2641">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Saddam Hussein and his sons must leave Iraq within 48 hours</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2648"/>
+        <aif:creationDate>2012-04-12 18:26:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2642 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2642">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Their refusal to do so will result in military conflict commenced at a time of our choosing.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2649"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2648"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2643 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2643">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is Saddam&#039;s leaving the country</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2649"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2644 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2644">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The only means to compel Saddam to leave the county are the pacific advice and the war</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2649"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2645 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2645">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Saddam refused the peaceful means</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2650"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2649"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2646 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2646">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In recent days some governments in the Middle East have been doing their part. They have delivered public and private messages urging the dictator to leave Iraq so that disarmament can proceed peacefully.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2650"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2647 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2647">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He has thus far refused</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2650"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2648 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2648">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2641"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2642"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2640"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2649 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2649">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2643"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2644"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2645"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2642"/>
+        <aif:creationDate>2012-04-12 18:26:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2650 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2650">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2646"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2647"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2645"/>
+        <aif:creationDate>2012-04-12 18:26:35</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

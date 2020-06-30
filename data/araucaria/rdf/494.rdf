@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4462 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4462">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>noi oggi siamo decisi ad affrontare i rischi ed i sacrifici di una guerra</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4475"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4476"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4463 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4463">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Bastava rivedere i trattati per adeguarli alle mutevoli esigenze della vita delle nazioni e non considerarli intangibili per l&#039;eternita`;</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4472"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4464 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4464">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>bastava non iniziare la stolta politica delle garanzie che si e` palesata soprattutto micidiale per coloro che la hanno accettate;</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4473"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4465 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4465">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>bastava non respingere la proposta che il fuhrer fece il 6 ottobre dell&#039;anno scorso dopo finita la campagna di Polonia.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4474"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4466 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4466">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Con voi il mondo intero e` testimone che l&#039;Italia del Littorio ha fatto quanto era umanamente possibile per evitare la tormenta che sconvolge l&#039;Europa; ma tutto fu vano.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4472"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4473"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4474"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4475"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4467 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4467">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>L`unico mezzo per difendere il nostro onore ed i nostri interessi e` la guerra</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4475"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4468 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4468">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>l&#039;onore gli interessi l&#039;avvenire ferramente lo impongono</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4476"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4469 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4469">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>un grande popolo e` veramente tale se considera sacri i suoi impegni e se non evade dalle prove supreme che determinano il corso della storia.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4476"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4470 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4470">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Il nostro scopo e` essere un grande popolo</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4476"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4471 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4471">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>L`unico mezzo per essere un grande popolo e` difendere l`onore</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4476"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4472 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4472">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4463"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4466"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4473 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4473">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4464"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4466"/>
+        <aif:creationDate>2012-04-12 18:32:34</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4474 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4474">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4465"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4466"/>
+        <aif:creationDate>2012-04-12 18:32:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4475 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4475">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4466"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4467"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4462"/>
+        <aif:creationDate>2012-04-12 18:32:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4476 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4476">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4468"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4469"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4470"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4471"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4462"/>
+        <aif:creationDate>2012-04-12 18:32:35</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

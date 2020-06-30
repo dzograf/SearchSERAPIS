@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/850 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/850">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it is essential to ensure that the proposed national treatment plan actually takes place and that as far as possible its implementation is removed from the suffocating hand of the denialists.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/853"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2173"/>
+        <aif:creationDate>2012-04-12 18:20:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2168 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2168">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Denialist are negative under the point of view of campain against HIV</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2174"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2173"/>
+        <aif:creationDate>2012-04-12 18:24:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2169 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2169">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is improve the campaign</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2173"/>
+        <aif:creationDate>2012-04-12 18:24:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2170 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2170">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Eliminating the problem that hinder the goal is the best means to reach the goal</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2173"/>
+        <aif:creationDate>2012-04-12 18:24:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2171 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2171">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>denialism persists.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2174"/>
+        <aif:creationDate>2012-04-12 18:24:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2172 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2172">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Denialists do not recognize the problem and do not improve the campaing of treatments against HIV</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2174"/>
+        <aif:creationDate>2012-04-12 18:24:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2173 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2173">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2168"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2169"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2170"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/850"/>
+        <aif:creationDate>2012-04-12 18:24:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2174 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2174">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2171"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2172"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2168"/>
+        <aif:creationDate>2012-04-12 18:24:55</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

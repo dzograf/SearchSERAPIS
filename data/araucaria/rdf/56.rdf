@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/594 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/594">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Patient power ought to be increased rather than keeping power in the hands of the doctors.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/600"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/595 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/595">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Patient power will mean giving most power to articulate well informed and pushy patients but will also improve standards</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/601"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/600"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/596 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/596">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>keeping power in the hands of doctors and bureaucrats on the other hand will keep standards low while being just as unequal</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/600"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/597 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/597">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a shift in power improves standards while causing no more inequality than keeping power in the hands of doctors there ought to be a shift in power.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/600"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/598 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/598">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>patient power should drive up standards for everyone</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1836"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/601"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1837"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/599 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/599">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>giving more power to patients will mean giving the most power to articulate well-informed and pushy patients who tend to be better-off</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/601"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/600 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/600">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/595"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/596"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/597"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/594"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/601 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/601">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/598"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/599"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/595"/>
+        <aif:creationDate>2012-04-12 18:19:26</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

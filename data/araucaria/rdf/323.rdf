@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3135 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3135">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The June 30th transfer of sovereignty is an essential commitment of our strategy</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3149"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3150"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3136 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3136">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraqis are proud people who resent foreign control of their affairs just as we would</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3145"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3137 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3137">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>After decades under the tyrant they are also reluctant to trust authority.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3146"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3138 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3138">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraqis will know that when they build a school or repair a bridge they&#039;re not working for the Coalition Provisional Authority they are working for themselves.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3147"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3139 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3139">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>And when they patrol the streets of Baghdad or engage radical militias they will be fighting for their own country.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3148"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3140 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3140">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>By keeping our promise on June 30th the coalition will demonstrate that we have no interest in occupation.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3149"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3141 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3141">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraquis do not trust Americans</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3145"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3146"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3149"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3142 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3142">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>By keeping our promise it is likely that Iraquis will trust us</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3149"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3143 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3143">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>And full sovereignty will give Iraqis a direct interest in the success of their own government.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3150"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3144 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3144">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraquis&#039; direct interest in their own government will have positive consequences for Iraq and the fight against terrorism</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3147"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3148"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3150"/>
+        <aif:creationDate>2012-04-12 18:28:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3145 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3145">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3136"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3141"/>
+        <aif:creationDate>2012-04-12 18:28:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3146 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3146">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3137"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3141"/>
+        <aif:creationDate>2012-04-12 18:28:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3147 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3147">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3138"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3144"/>
+        <aif:creationDate>2012-04-12 18:28:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3148 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3148">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3139"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3144"/>
+        <aif:creationDate>2012-04-12 18:28:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3149 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3149">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3140"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3141"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3142"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3135"/>
+        <aif:creationDate>2012-04-12 18:28:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3150 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3150">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3143"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3144"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3135"/>
+        <aif:creationDate>2012-04-12 18:28:12</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

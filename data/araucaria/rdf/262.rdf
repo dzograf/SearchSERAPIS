@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2489 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2489">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the reason of the progressive effect of the union against US is only the fight against imperialism the progressive effect may be frustrated by the facts</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2494"/>
+        <aif:creationDate>2012-04-12 18:26:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2490 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2490">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Some are arguing that Bush&#039;s extremism actually has a progressive effect because it unites the world against US empire</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2494"/>
+        <aif:creationDate>2012-04-12 18:26:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2491 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2491">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>But a world united against the United States isn&#039;t necessarily united against imperialism.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2495"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2494"/>
+        <aif:creationDate>2012-04-12 18:26:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2492 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2492">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Despite their rhetoric France and Russia opposed the invasion of Iraq because it threatened their own plans to control Iraq&#039;s oil.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2495"/>
+        <aif:creationDate>2012-04-12 18:26:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2493 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2493">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the union against the US is an union against the imperialism the members of the union cannot have imperialistic goals</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2495"/>
+        <aif:creationDate>2012-04-12 18:26:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2494 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2494">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2490"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2491"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2489"/>
+        <aif:creationDate>2012-04-12 18:26:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2495 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2495">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2492"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2493"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2491"/>
+        <aif:creationDate>2012-04-12 18:26:03</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

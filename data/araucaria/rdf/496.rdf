@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4490 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4490">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God doesn&#039;t exist</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4510"/>
+        <aif:creationDate>2012-04-12 18:32:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4491 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4491">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God is omnipotent</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4507"/>
+        <aif:creationDate>2012-04-12 18:32:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4492 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4492">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You&#039;re going to have murder after murder maybe sandwiched between a rape or two maybe cut to a war here or there.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4508"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4493 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4493">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You&#039;re going to see suffering from the beginning of the hour to the end of the hour</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4509"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4494 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4494">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>For all these facts we should be led to believe that there&#039;s basically no suffering in the world or that there&#039;s very very very little</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4511"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4510"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4495 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4495">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I think that a quick look at the evening news any night would show you this is not the case.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4508"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4509"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4510"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4496 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4496">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the kind of evil that exists in this world the kind of suffering just doesn&#039;t seem to be consistent with what we should be led to expect from our suppositions about the nature of God</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4510"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4497 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4497">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God should desire to have a world in which there is as little suffering as possible perhaps none</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4512"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4511"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4498 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4498">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God&#039;s supposed to figure out how to design a world that has basically no harm at all</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4514"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4511"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4499 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4499">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>any design that God brings into being God can actually implement.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4507"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4511"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4500 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4500">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If God wants and can minimize suffering and he knows how to do there should not be any sufference at all</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4511"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4501 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4501">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>given God&#039;s given God&#039;s omnibenevolence</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4512"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4502 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4502">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>this is true of God too.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4513"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4512"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4503 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4503">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We think individuals around here are good because they want to minimize suffering in the world among other reasons</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4513"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4504 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4504">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if we apply the same standard to God</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4513"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4505 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4505">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God is omniscient</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4514"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4506 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4506">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If you&#039;re omniscient you&#039;re really smart and you can figure these things out</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4514"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4507 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4507">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4491"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4499"/>
+        <aif:creationDate>2012-04-12 18:32:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4508 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4508">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4492"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4495"/>
+        <aif:creationDate>2012-04-12 18:32:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4509 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4509">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4493"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4495"/>
+        <aif:creationDate>2012-04-12 18:32:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4510 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4510">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4494"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4495"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4496"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4490"/>
+        <aif:creationDate>2012-04-12 18:32:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4511 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4511">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4497"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4498"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4499"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4500"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4494"/>
+        <aif:creationDate>2012-04-12 18:32:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4512 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4512">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4501"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4502"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4497"/>
+        <aif:creationDate>2012-04-12 18:32:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4513 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4513">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4503"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4504"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4502"/>
+        <aif:creationDate>2012-04-12 18:32:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4514 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4514">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4505"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4506"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4498"/>
+        <aif:creationDate>2012-04-12 18:32:43</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3511 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3511">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This being is God</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3519"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3512 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3512">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it cannot be any physical object. It cannot be any material object. It cannot be any spatial or temporal object</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3520"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3519"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3513 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3513">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It has to be a being which is timeless immaterial spaceless and therefore changeless and enormously powerful</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3521"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3519"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3514 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3514">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it has the properties of God</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3519"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3515 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3515">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>this cause has to transcend space and time</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3520"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3516 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3516">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Spatial or temporal objects cannot transcend time and space</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3520"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3517 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3517">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>in order to bring the universe into existence.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3521"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3518 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3518">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only an enormously powerful being can bring the universe into existence</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3521"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3519 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3519">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3512"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3513"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3514"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3511"/>
+        <aif:creationDate>2012-04-12 18:29:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3520 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3520">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3515"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3516"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3512"/>
+        <aif:creationDate>2012-04-12 18:29:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3521 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3521">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3517"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3518"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3513"/>
+        <aif:creationDate>2012-04-12 18:29:23</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

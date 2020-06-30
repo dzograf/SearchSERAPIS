@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3762 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3762">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>All non-military personnel taking assignments in Iraq should be implanted with GPS tracking devices.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3767"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3763 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3763">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Hopefully this would make potential hostages less attractive if the terrorists knew there was a strong likelihood of their being brought to justice.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3768"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3767"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3764 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3764">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our goal is to reduce kidnappings</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3767"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3765 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3765">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>These devices need to have a pressure sensitive  panic mode  that would activate a signal similar to an EPIRB on marine vessels.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3768"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3766 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3766">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If terrorists know that they can be likely brought to justice they are discouraged from kidnapping people</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3768"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3767 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3767">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3763"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3764"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3762"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3765"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3766"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3763"/>
+        <aif:creationDate>2012-04-12 18:30:15</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

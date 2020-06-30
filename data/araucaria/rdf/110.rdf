@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1012 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1012">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should act in a manner that is independent of the President&#039;s direction..</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1017"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1018"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1013 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1013">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>they have to follow the President&#039;s di-rection.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1017"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1014 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1014">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>we  are not sent here by our people to let  the President or the White House or  any party control us or dictate to us.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2230"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1018"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1015 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1015">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the President did not elect us and our people did not send us to be controlled by any party we should act in a manner that is independent of the President&#039;s direction.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1018"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1016 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1016">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This is  a separate branch of Government. No  President elects any Member of this  body. The President is just the Chief  Executive of the land</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1018"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1017 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1017">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1013"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1012"/>
+        <aif:creationDate>2012-04-12 18:20:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1018 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1018">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1014"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1015"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1016"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1012"/>
+        <aif:creationDate>2012-04-12 18:20:45</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

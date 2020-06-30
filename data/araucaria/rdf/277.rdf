@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2612 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2612">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This is not a question of authority it is a question of will.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2620"/>
+        <aif:creationDate>2012-04-12 18:26:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2613 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2613">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Under Resolutions 678 and 687 -- both still in effect -- the United States and our allies are authorized to use force in ridding Iraq of weapons of mass destruction</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2619"/>
+        <aif:creationDate>2012-04-12 18:26:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2614 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2614">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best explanations for the International non-intervertion in Iraq are the lack of authority or the lack of will</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2620"/>
+        <aif:creationDate>2012-04-12 18:26:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2615 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2615">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The U.S. are authorized to act</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2619"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2621"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2620"/>
+        <aif:creationDate>2012-04-12 18:26:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2616 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2616">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the case of Iraq the Security Council did act in the early 1990s.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2621"/>
+        <aif:creationDate>2012-04-12 18:26:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2617 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2617">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the early 90s the sitaution was similar to now</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2621"/>
+        <aif:creationDate>2012-04-12 18:26:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2618 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2618">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the early 90s the action was considered legal</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2621"/>
+        <aif:creationDate>2012-04-12 18:26:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2619 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2619">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2613"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2615"/>
+        <aif:creationDate>2012-04-12 18:26:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2620 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2620">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2614"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2615"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2612"/>
+        <aif:creationDate>2012-04-12 18:26:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2621 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2621">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2616"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2617"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2618"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2615"/>
+        <aif:creationDate>2012-04-12 18:26:29</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

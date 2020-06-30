@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2006 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2006">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Indeed I think in this case it isn&#039;t silly to think that there is something going on behind the scenes that this did not arise by chance alone but that there is a divine intelligence a cosmic intelligence which ordered the universe.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2012"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2007 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2007">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You would if you were smart suspect some hanky-panky going on.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2013"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2012"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2008 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2008">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Similarly when you look at the array of possible universes practically none of them are life-permitting. And only this tiny tiny infinitesimal segment is a life-permitting universe such as ours.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2012"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2009 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2009">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Suppose the lottery was always won by somebody with Mafia connections</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2013"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2010 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2010">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>you see you&#039;ve specified the probability and it is extremely improbable that people with Mafia connections always win</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2013"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2011 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2011">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You wouldn&#039;t just say in that case [audience laughter]  Well look somebody had to win and anybody is equally improbable.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2013"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2012 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2012">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2007"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2008"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2006"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2013 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2013">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2009"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2010"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2011"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2007"/>
+        <aif:creationDate>2012-04-12 18:24:14</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

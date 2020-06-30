@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3118 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3118">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Helping construct a stable democracy will be easier than we think</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3129"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3119 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3119">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They can incite men to murder and suicide but they cannot inspire men to live and hope and add to the progress of their country.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3127"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3120 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3120">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our enemies in Iraq are good at filling hospitals but they do not build any.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3128"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3121 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3121">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Helping construct a stable democracy after decades of dictatorship is a massive undertaking.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3129"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3122 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3122">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraqui people support us</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3130"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3129"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3123 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3123">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If people support Americans the undertaking will be easier</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3129"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3124 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3124">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The terrorists&#039; only influence is violence and their only agenda is death.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3127"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3128"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3130"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3125 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3125">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our agenda in contrast is freedom and independence security and prosperity for the Iraqi people</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3130"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3126 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3126">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Whenever people are given a choice in the matter they prefer lives of freedom to lives of fear.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3130"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3127 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3127">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3119"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3124"/>
+        <aif:creationDate>2012-04-12 18:28:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3128 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3128">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3120"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3124"/>
+        <aif:creationDate>2012-04-12 18:28:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3129 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3129">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3121"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3122"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3123"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3118"/>
+        <aif:creationDate>2012-04-12 18:28:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3130 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3130">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3124"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3125"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3126"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3122"/>
+        <aif:creationDate>2012-04-12 18:28:08</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

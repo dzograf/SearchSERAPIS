@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/741 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/741">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Al Qaeda and its allies have survived the war in Afghanistan and are regrouping to organize new strikes</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/753"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/756"/>
+        <aif:creationDate>2012-04-12 18:19:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/742 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/742">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This was the latest and deadliest of several recent assaults.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/754"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2033"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2034"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/753"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2032"/>
+        <aif:creationDate>2012-04-12 18:19:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/743 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/743">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Several recent attacks associated with Bin Laden suffice to indicate that Al Qaeda and its allies have survived and are regrouping.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/753"/>
+        <aif:creationDate>2012-04-12 18:19:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/744 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/744">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If an attack causes more death injury and phsychological and economic damage than others in a series of attacks it is by definition the deadliest attack in the series</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/754"/>
+        <aif:creationDate>2012-04-12 18:19:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/745 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/745">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>More damage death and injury was caused in the attack in Indoneasia than in other recent attacks.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/755"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/754"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/746 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/746">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If 200 people are killed hundreds injured and economic and psychological damage done to a country in an attack and no dead injured or extensive national damage is caused in others more damage death and injury is caused in that attack than in others.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/755"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/747 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/747">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Most of the nearly 200 people killed and hundreds others injured on Saturday were foreign tourists but Indonesia has been badly hurt as well. Its sense of security has been jolted its stock market is reeling and Bali&#039;s economically important tourist industry faces ruinous free fall.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/755"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/748 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/748">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Yesterday more gunfire was directed at American troops in Kuwait.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/755"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2039"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/749 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/749">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Two weeks ago Kuwaiti terrorists opened fire on American marines in the country for joint exercises with the Kuwaiti military killing one of them. One of the assailants left behind a tape pledging allegiance to Osama bin Laden.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/755"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/750 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/750">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Late last month a French oil tanker was set ablaze off Yemen in what Paris believes was a terrorist attack.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/755"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/751 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/751">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Meanwhile a new tape by Osama bin Laden&#039;s top deputy Ayman al-Zawahiri has begun circulating. American authorities believe it was recorded recently.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/756"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/752 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/752">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The fact that recent recordings by Al Qaeda leaders are being circulated suggest that Al Qaeda and its allies have survived.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/756"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/753 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/753">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/742"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/743"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/741"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/754 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/754">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/744"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/745"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/742"/>
+        <aif:creationDate>2012-04-12 18:19:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/755 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/755">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/746"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/747"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/748"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/749"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/750"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/745"/>
+        <aif:creationDate>2012-04-12 18:19:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/756 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/756">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/751"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/752"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/741"/>
+        <aif:creationDate>2012-04-12 18:19:55</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5221 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5221">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Pare sempre piu` incerto il futuro di Javier Portillo. Il giovane attaccante della Firoentina arrivato quest&#039;estate dal Real Madrid potrebbe lasciare la squadra viola gia` a gennaio.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5230"/>
+        <aif:creationDate>2012-04-12 18:35:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5222 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5222">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Con il rientro del bomber di Lipari in squadra il sacrificato dovrebbe essere proprio Portillo.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5231"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5230"/>
+        <aif:creationDate>2012-04-12 18:35:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5223 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5223">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se un giocatore viene sacrificato egli deve lasciare la squadra</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5230"/>
+        <aif:creationDate>2012-04-12 18:35:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5224 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5224">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se un giocatore forte arriva il piu` scarso dei giocatori che occupano la sua stessa posizione viene sacrificato</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5231"/>
+        <aif:creationDate>2012-04-12 18:35:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5225 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5225">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Dopo l&#039;infortunio di Rigano` ci si aspettava molto dal 22enne attaccante spagnolo che invece ha deluso le aspettative di dirigenti e tifosi.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5232"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5231"/>
+        <aif:creationDate>2012-04-12 18:35:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5226 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5226">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se un giocatore gioca male le sue statistiche non sono buone</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5233"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5232"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5227 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5227">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se un giocatore da cui ci si aspetatva molto gioca male i tifosi ed i dirigenti ne sono delusi</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5232"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5228 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5228">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Non si puo` dire che Mondonico non l&#039;abbia impiegato avendogli fatto giocare un totale di 200 minuti nelle sei gare di campionato sin qui disputate</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5233"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5229 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5229">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Ma le sue statistiche sono impietose: solo tre tiri in porta e nessun gol per quello che veniva considerato l&#039;erede di Raul nel Real Madrid.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5233"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5230 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5230">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5222"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5223"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5221"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5231 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5231">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5224"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5225"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5222"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5232 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5232">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5226"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5227"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5225"/>
+        <aif:creationDate>2012-04-12 18:35:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5233 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5233">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5228"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5229"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5226"/>
+        <aif:creationDate>2012-04-12 18:35:08</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

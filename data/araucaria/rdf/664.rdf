@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5746 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5746">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>o discurso juridico nao busca seu teor em algo previo (metafisico); sua racionalidade se constitui internamente ao debate juridico; e sao apenas acobertadores do poder dominante constituido que intenciona manter o controle social  de forma disfarcada deixando as coisas como estao (manutencao do status quo).</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5772"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5782"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5796"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5747 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5747">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Verdade (reflexo do real na mente do julgador) se contrap e      interpretacao (expressao de valores abstratos de justica e correcao)</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5773"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5774"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5777"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5772"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5748 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5748">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Essa incoerência não seria apenas a mera  constatacao da existência em todos os processos decisórios em qualquer ramo do saber de que o contexto da descoberta sempre existe em contraparte ao contexto da justificação?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5773"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5749 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5749">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>verdade por correspondencia</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5775"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5776"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5774"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5750 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5750">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>O uso da verdade por correspondência nesse contexto não seria uma incoerência já que se parte do pressuposto de um pragmatismo (verdade pragmática)?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5775"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5751 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5751">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Busca objetividade</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5776"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5752 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5752">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>bem representa o direito</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5779"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5777"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5753 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5753">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Existencia do realismo juridico</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5778"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5754 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5754">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>amparado pelo pragmatismo</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5780"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5781"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5779"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5755 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5755">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Busca solidariedade</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5780"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5756 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5756">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>referencia as consequencias praticas do mundo</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5781"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5757 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5757">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Carater deontológico do direito é matafísico</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5783"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5782"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5758 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5758">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Necessidade da existencia do Direito mormente em sociedades cindidas por conflito de distribuicao de recurso (relac es de propriedade privada ou social   esfera civil) e  conflitos de liberdade (esfera penal)</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5784"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5790"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5783"/>
+        <aif:creationDate>2012-04-12 18:37:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5759 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5759">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Componentes fundamentais da política moderna não levados em consideração no direito pós-moderno: noção de direitos humanos e o funcionamento procedural do estado democrático de direito</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5785"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5789"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5784"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5760 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5760">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Teoria procedimental do discurso jurídico</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5786"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5787"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5785"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5761 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5761">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Verdade como produto de um procedimento e  verdade consensual</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5786"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5762 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5762">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A teoria da ação comunicativa de habermas - razão não instrumental</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5788"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5787"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5763 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5763">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Paradigma da intersubjetividade - inclusão do outro no processo decisório</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5788"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5764 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5764">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Os destinatários do direito são também seus co-autores</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5789"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5765 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5765">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Direito e fundamentalmente um fenomeno Social.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5791"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5792"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5790"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5766 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5766">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Direito nao e uma categoria metafisica</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5791"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5767 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5767">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>teoria critica de Marx vista como um metodo pragmatico</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5793"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5794"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5795"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5792"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Metodo de emancipacao</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5793"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5769 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5769">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>metodo transformador</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5794"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5770 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5770">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Base material determina superestrutura (social político jurídico e ideológico)</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5795"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5771 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5771">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Discursos de justificacao normalmente se ligam a violencias simbolicas dissimuladas (Bourdieu)</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5796"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5772 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5772">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5747"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5746"/>
+        <aif:creationDate>2012-04-12 18:37:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5773 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5773">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5748"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5747"/>
+        <aif:creationDate>2012-04-12 18:37:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5774 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5774">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5749"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5747"/>
+        <aif:creationDate>2012-04-12 18:37:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5775 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5775">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5750"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5749"/>
+        <aif:creationDate>2012-04-12 18:37:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5776 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5776">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5751"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5749"/>
+        <aif:creationDate>2012-04-12 18:37:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5777 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5777">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5752"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5747"/>
+        <aif:creationDate>2012-04-12 18:37:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5778 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5778">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5753"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5752"/>
+        <aif:creationDate>2012-04-12 18:37:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5779 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5779">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5754"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5752"/>
+        <aif:creationDate>2012-04-12 18:37:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5780 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5780">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5755"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5754"/>
+        <aif:creationDate>2012-04-12 18:37:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5781 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5781">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5756"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5754"/>
+        <aif:creationDate>2012-04-12 18:37:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5782 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5782">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5757"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5746"/>
+        <aif:creationDate>2012-04-12 18:37:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5783 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5783">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5758"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5757"/>
+        <aif:creationDate>2012-04-12 18:37:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5784 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5784">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5759"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5758"/>
+        <aif:creationDate>2012-04-12 18:37:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5785 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5785">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5760"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5759"/>
+        <aif:creationDate>2012-04-12 18:37:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5786 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5786">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5761"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5760"/>
+        <aif:creationDate>2012-04-12 18:37:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5787 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5787">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5762"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5760"/>
+        <aif:creationDate>2012-04-12 18:37:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5788 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5788">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5763"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5762"/>
+        <aif:creationDate>2012-04-12 18:37:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5789 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5789">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5764"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5759"/>
+        <aif:creationDate>2012-04-12 18:37:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5790 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5790">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5765"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5758"/>
+        <aif:creationDate>2012-04-12 18:37:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5791 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5791">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5766"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5765"/>
+        <aif:creationDate>2012-04-12 18:37:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5792 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5792">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5767"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5765"/>
+        <aif:creationDate>2012-04-12 18:37:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5793 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5793">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5768"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5767"/>
+        <aif:creationDate>2012-04-12 18:37:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5794 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5794">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5769"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5767"/>
+        <aif:creationDate>2012-04-12 18:37:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5795 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5795">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5770"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5767"/>
+        <aif:creationDate>2012-04-12 18:37:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5796 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5796">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5771"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5746"/>
+        <aif:creationDate>2012-04-12 18:37:07</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

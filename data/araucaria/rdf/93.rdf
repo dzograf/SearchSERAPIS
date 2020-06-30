@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/869 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/869">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Army of Palestine is claiming responsibility for yesterday&#039;s atrocity but that does not rule out the involvement of bin Laden&#039;s organisation</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/875"/>
+        <aif:creationDate>2012-04-12 18:20:17</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/870 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/870">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>That al-Qa&#039;eda operates under the name  the Army of Palestine  is not ruled out</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/876"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/875"/>
+        <aif:creationDate>2012-04-12 18:20:17</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/871 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/871">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The army of Palestine is claiming responsibility for yesterday&#039;s atrocity</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/875"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1933"/>
+        <aif:creationDate>2012-04-12 18:20:17</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/872 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/872">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it is not ruled out that al-Qa&#039;eda is operating under the name  The Army of Palestine  and the Army of Palestine is claiming responsibility for yesterday&#039;s atrocity the Army of Palestine is claiming responsibility for yesterday&#039;s atrocity but that does not rule out al-Qa&#039;eda&#039;s involvement</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/875"/>
+        <aif:creationDate>2012-04-12 18:20:17</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/873 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/873">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>when the American embassy in Nairobi was bombed in 1998 al-Qa&#039;eda operated in the name of the Islamic Army against the Jews and the Crusaders.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/876"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1933"/>
+        <aif:creationDate>2012-04-12 18:20:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/874 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/874">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If al-Qa&#039;eda has operated under a different name in the past that it operates under the name  The Army of Palestine  is not ruled out</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/876"/>
+        <aif:creationDate>2012-04-12 18:20:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/875 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/875">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/870"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/871"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/872"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/869"/>
+        <aif:creationDate>2012-04-12 18:20:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/876 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/876">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/873"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/874"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/870"/>
+        <aif:creationDate>2012-04-12 18:20:18</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

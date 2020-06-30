@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/607 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/607">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I have to say no to war.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/612"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5120"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5122"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5124"/>
+        <aif:creationDate>2012-04-12 18:19:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/608 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/608">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>there is no guarantee that this military adventure will in fact lead to a  regime change  or peace and stability for your region</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/612"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5121"/>
+        <aif:creationDate>2012-04-12 18:19:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/609 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/609">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the balance are not only the dead and mutilated of Iraq (and who knows how many from the invading force) but the very real possibility that such an act of pre-emptive world-destabilising aggression could spin out of control and lead to other despots pre-emptively arming themselves with all manner of apocalyptic weapons and perhaps to Armageddon</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/612"/>
+        <aif:creationDate>2012-04-12 18:19:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/610 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/610">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I am unconvinced along with so many others in the world that your dictator has sufficient weapons of mass destruction truly to pose a threat to other countries or ties to criminal groups who could use them for terror</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/612"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5123"/>
+        <aif:creationDate>2012-04-12 18:19:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/611 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/611">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is no guarantee that the military objectives of regime change and preace will be attained in war there will be civilian casualties and a risk of world-destabilising aggression spinning out of control and the regime does not pose a real threat to other nations then one ought to say no to war.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/612"/>
+        <aif:creationDate>2012-04-12 18:19:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/612 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/612">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/608"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/609"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/610"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/611"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/607"/>
+        <aif:creationDate>2012-04-12 18:19:28</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

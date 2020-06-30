@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4098 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4098">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Students in the public schools are thus to be taught at an early age that  evolution is a fact  and as time goes by they will gradually learn that evolution means naturalism</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4110"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4111"/>
+        <aif:creationDate>2012-04-12 18:31:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4099 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4099">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The student who thinks that 2 and 2 make 5 or that water is not made up of hydrogen and oxygen or that the theory of evolution is not true is not expressing a minority viewpoint. He or she is ignorant and the job of education is to cure that ignorance and to replace it with knowledge.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4110"/>
+        <aif:creationDate>2012-04-12 18:31:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4100 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4100">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The former is then classified as knowledge</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4112"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4111"/>
+        <aif:creationDate>2012-04-12 18:31:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4101 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4101">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Belief cannot be taught as knowledge</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4111"/>
+        <aif:creationDate>2012-04-12 18:31:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4102 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4102">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Theism is never passed as knowledge it is only valid for the believer</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4113"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4111"/>
+        <aif:creationDate>2012-04-12 18:31:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4103 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4103">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If something is labelled as knowledge it becomes a fact that must be taught in the public schools</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4111"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4104 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4104">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It labels naturalism as a science</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4112"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4105 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4105">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Science is knowledge</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4112"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4106 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4106">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The distinction is of critical importance because only knowledge can be objectively valid for everyone; belief is valid only for the believer and should never be passed off as knowledge.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4113"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4107 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4107">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the latter as mere belief</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4114"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4113"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4108 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4108">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it labels naturalism as science and theism as religion</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4114"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4109 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4109">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Religion is belief</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4114"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4110 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4110">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4099"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4098"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4111 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4111">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4100"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4101"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4102"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4103"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4098"/>
+        <aif:creationDate>2012-04-12 18:31:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4112 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4112">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4104"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4105"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4100"/>
+        <aif:creationDate>2012-04-12 18:31:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4113 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4113">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4106"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4107"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4102"/>
+        <aif:creationDate>2012-04-12 18:31:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4114 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4114">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4108"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4109"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4107"/>
+        <aif:creationDate>2012-04-12 18:31:25</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

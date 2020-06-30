@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/885 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/885">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if the carriers are not built and properly equipped a shadow will fall over the whole of Britain&#039;s defence capability. It will not only be the Royal Navy that will be threatened with descent into decline. It will be the Army and the Royal Air Force as well.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/902"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/904"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/905"/>
+        <aif:creationDate>2012-04-12 18:20:20</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/886 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/886">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Britain&#039;s military standing with America currently so high will suffer unless it can maintain some sort of equivalence with the American military machine now so preponderant.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/903"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/902"/>
+        <aif:creationDate>2012-04-12 18:20:20</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/887 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/887">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Britain&#039;s military standing with America will suffer unless it can maintain some sort of equivalence with the American military machine then - if Britain does not build and properly equip the new carriers a shadow will fall over its defence cabability</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/902"/>
+        <aif:creationDate>2012-04-12 18:20:20</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/888 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/888">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Pentagon is already qualifying its admiration of British combat skills it is likely to be less complimentary if Britain falls technically further behind</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/903"/>
+        <aif:creationDate>2012-04-12 18:20:20</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/889 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/889">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Pentagon while expressing its appreciation of British combat skills already qualifies its admiration. The British forces it says compensate for technical deficiencies by human achievement.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/903"/>
+        <aif:creationDate>2012-04-12 18:20:20</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/890 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/890">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Britain is at present enjoying an artificial military superiority over its European partners. The bigger EU states - France Italy Spain and now Germany - are professionalising their armed forces. They are also bracing themselves to accept higher levels of defence spending.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/904"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/891 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/891">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the bigger EU states are professionalising their armed forces then - if Britain does not build and properly equip the new carriers a shadow will fall over its defence cababilities</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/904"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/892 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/892">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Services&#039; ability to mount independent operations will be compromised.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/906"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/905"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/893 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/893">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Services&#039; ability to mount independent operations will be compromised then - if Britain does not build and properly equip the new carriers a shadow will fall over its defence cabability</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/905"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/894 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/894">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Navy&#039;s ability to mount independent operations will be compromised</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/906"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/895 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/895">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Army and the Royal Air Force will not be able to undertake missions at a distance and the Navy&#039;s ability to mount independent operations will be compromised the Services&#039; ability to mount independent operations will be compromised</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/906"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/896 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/896">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Army will not be able to undertake missions at a distance from the home base</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/907"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/906"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/897 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/897">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The same goes for the Royal Air Force</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/908"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/906"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/898 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/898">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Army cannot undertake missions at a distance without aircover essential to its operability</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/907"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/899 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/899">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it will not have the air cover essential to its operability</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/907"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/900 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/900">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It cannot acquire land bases from which to operate outside the home area unless the Navy can provide cover while it does so</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/908"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/901 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/901">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Navy cannot offer the Air Force appropriate aircover at a distance it cannot undertake missions at a distane</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/908"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/902 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/902">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/886"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/887"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/885"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/903 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/903">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/888"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/889"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/886"/>
+        <aif:creationDate>2012-04-12 18:20:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/904 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/904">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/890"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/891"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/885"/>
+        <aif:creationDate>2012-04-12 18:20:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/905 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/905">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/892"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/893"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/885"/>
+        <aif:creationDate>2012-04-12 18:20:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/906 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/906">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/894"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/895"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/896"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/897"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/892"/>
+        <aif:creationDate>2012-04-12 18:20:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/907 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/907">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/898"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/899"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/896"/>
+        <aif:creationDate>2012-04-12 18:20:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/908 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/908">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/900"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/901"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/897"/>
+        <aif:creationDate>2012-04-12 18:20:23</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

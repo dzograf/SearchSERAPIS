@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1095 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1095">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>therefore he must be a literature major</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1101"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1103"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1096 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1096">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>John has taken the Shakespeare course</aif:claimText>
+        <aif:IllocutionaryContent rdf:resource="&http;www.aifdb.org/nodes/1100"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1102"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1101"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1097 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1097">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>All the finalists</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1102"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1098 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1098">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Every literature major must take a course in Shakespeare.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1103"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1099 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1099">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#L-node"/>
+        <aif:claimText>Poostix says &#039;John has taken the Shakespeare course&#039;</aif:claimText>
+        <aif:source>Poostix</aif:source>
+        <aif:Locution rdf:resource="&http;www.aifdb.org/nodes/1100"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1100 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1100">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#YA-node"/>
+        <aif:Locution rdf:resource="&http;www.aifdb.org/nodes/1099"/>
+        <aif:IllocutionaryContent rdf:resource="&http;www.aifdb.org/nodes/1096"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1101 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1101">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1096"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1095"/>
+        <aif:creationDate>2012-04-12 18:21:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1102 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1102">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1097"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1096"/>
+        <aif:creationDate>2012-04-12 18:21:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1103 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1103">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1098"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1095"/>
+        <aif:creationDate>2012-04-12 18:21:01</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

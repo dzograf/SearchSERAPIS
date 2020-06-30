@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/297 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/297">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it were not for the timely intervention and the numbing of the terrorists by the gas all 800+ hostages would be dead.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/299"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1494"/>
+        <aif:creationDate>2012-04-12 18:18:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1492 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1492">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the use of the gas was clearly the right decision</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1494"/>
+        <aif:creationDate>2012-04-12 18:22:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1493 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1493">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Either the forces used the gas or they would have not intervened</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1494"/>
+        <aif:creationDate>2012-04-12 18:22:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1494 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1494">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/297"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1493"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1492"/>
+        <aif:creationDate>2012-04-12 18:22:24</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2335 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2335">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The  optimal solution was to cut back the numbers of Tygodnik Mazowsze we printed at the  center while at the same time producing stencils that local union groups could use to  make their own copies of the journal.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2349"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2336 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2336">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The head of the distribution  network who had contacts with the majority of drop-off points was arrested just a few  months into the  war.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2346"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2337 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2337">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A group arrest of distributors is always a big  blow since rebuilding such a network requires long and tedious work.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2347"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2338 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2338">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If you put something in someone s  hands they d still pass it along but people stopped coming to us on their own</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2348"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2339 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2339">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Our problems however are not so much with printing the material as with distributing it.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2350"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2351"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2349"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2340 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2340">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we cut back the number of papers printed at the center and we produce stencils we cut the number of distributors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2349"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2341 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2341">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is to reduce the number of distributors</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2349"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2342 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2342">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Every so often a large group of distributors gets caught.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2346"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2350"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2343 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2343">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If distributors are caught the distribution has problems</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2347"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2350"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2344 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2344">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Moreover while at  the beginning of martial law we literally had crowds of people clamouring to be  distributors over time this began to come to a halt.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2348"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2351"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2345 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2345">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the distributors decrease in number the distribution has problems</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2351"/>
+        <aif:creationDate>2012-04-12 18:25:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2346 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2346">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2336"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2342"/>
+        <aif:creationDate>2012-04-12 18:25:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2347 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2347">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2337"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2343"/>
+        <aif:creationDate>2012-04-12 18:25:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2348 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2348">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2338"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2344"/>
+        <aif:creationDate>2012-04-12 18:25:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2349 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2349">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2339"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2340"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2341"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2335"/>
+        <aif:creationDate>2012-04-12 18:25:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2350 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2350">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2342"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2343"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2339"/>
+        <aif:creationDate>2012-04-12 18:25:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2351 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2351">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2344"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2345"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2339"/>
+        <aif:creationDate>2012-04-12 18:25:33</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

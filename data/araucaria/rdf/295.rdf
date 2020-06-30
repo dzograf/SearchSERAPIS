@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2796 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2796">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>For Russia it is the most realistic and ideal choice to enhance its cooperation with China so as to enter the Asia-Pacific economic and political space as soon as possible. .</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2806"/>
+        <aif:creationDate>2012-04-12 18:27:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2797 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2797">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>From the west the eastern expansion of NATO has taken on a strong momentum</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2804"/>
+        <aif:creationDate>2012-04-12 18:27:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2798 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2798">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>in the south it is facing infiltration of the separatists.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2805"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2799 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2799">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Russia has made it the top priority to establish  good neighboring areas.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2807"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2806"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2800 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2800">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Developing relations with China is significant not only for the improvement of Russia&#039;s surrounding environment but also for the future prospect of its far east area.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2806"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2801 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2801">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>After the disintegration of the Soviet Union certain changes have taken place in the geopolitical situation which are unfavorable to Russia.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2804"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2805"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2807"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2802 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2802">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal of Russia is to strengthen its geopolitical role</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2807"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2803 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2803">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Russia establishes good neighboring areas its geopolitical situation will improve</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2807"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2804 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2804">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2797"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2801"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2805 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2805">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2798"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2801"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2806 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2806">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2799"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2800"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2796"/>
+        <aif:creationDate>2012-04-12 18:27:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2807 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2807">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2801"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2802"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2803"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2799"/>
+        <aif:creationDate>2012-04-12 18:27:06</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

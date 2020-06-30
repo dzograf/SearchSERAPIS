@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/460 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/460">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The situation was tailor-made for an individual voluntary arrangement ( IVA ).</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/464"/>
+        <aif:creationDate>2012-04-12 18:19:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/461 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/461">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Bankruptcy would destroy the business and yield relatively little for the creditors.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/464"/>
+        <aif:creationDate>2012-04-12 18:19:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/462 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/462">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>An IVA on the other hand would preserve the business and enable the creditors to receive payments from the income of the nursing home.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/464"/>
+        <aif:creationDate>2012-04-12 18:19:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/463 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/463">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Bankruptcy would destroy the business and yield relatively little for the creditors while an AVI would preserve the business and enable the creditors to receive payments from the income the situation is tailor-made for an IVA.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/464"/>
+        <aif:creationDate>2012-04-12 18:19:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/464 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/464">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/461"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/462"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/463"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/460"/>
+        <aif:creationDate>2012-04-12 18:19:01</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

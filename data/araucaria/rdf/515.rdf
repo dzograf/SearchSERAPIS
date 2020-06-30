@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4733 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4733">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We cannot accept this view</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4740"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4734 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4734">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>there is no act  save disobedience to God  which we can safely say is out of bounds no act of a kind which simply must not be done even rape</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4741"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4739"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4735 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4735">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If this God exists and we must obey him unconditionally then anything whatever might turn out to be permissible.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4739"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4740"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4736 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4736">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This view is destructive of morality as we normally think of it.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4740"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4737 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4737">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>there is a God who is liable to command anything</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4741"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4738 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4738">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>our highest loyalty must be to this God</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4741"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4739 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4739">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4734"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4735"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4740 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4740">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4735"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4736"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4733"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4741 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4741">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4737"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4738"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4734"/>
+        <aif:creationDate>2012-04-12 18:33:29</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

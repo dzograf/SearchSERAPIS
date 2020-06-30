@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5205 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5205">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I think the expansion of the EU is playing a part here.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5211"/>
+        <aif:creationDate>2012-04-12 18:35:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5206 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5206">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>So the figures may get worse before they get better</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5212"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5211"/>
+        <aif:creationDate>2012-04-12 18:35:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5207 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5207">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best explanation of the worsening of the pollution figures in the EU is its expansion</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5211"/>
+        <aif:creationDate>2012-04-12 18:35:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5208 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5208">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>New countries joining the EU have been operating with low environmental protection standards</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5212"/>
+        <aif:creationDate>2012-04-12 18:35:03</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5209 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5209">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it is not reasonable to expect them to bring their standards up to scratch quickly because of their (often damaged by bad government) poor infrastructures.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5212"/>
+        <aif:creationDate>2012-04-12 18:35:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5210 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5210">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If new countries with low standars join the union the figures of the pollution will gel worse</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5212"/>
+        <aif:creationDate>2012-04-12 18:35:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5211 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5211">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5206"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5207"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5205"/>
+        <aif:creationDate>2012-04-12 18:35:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5212 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5212">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5208"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5209"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5210"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5206"/>
+        <aif:creationDate>2012-04-12 18:35:04</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

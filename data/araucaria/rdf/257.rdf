@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2440 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2440">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>That&#039;s why I&#039;ve joined the Anybody But Bush camp</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2453"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2441 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2441">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I think we should elect Kerry.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2454"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2453"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2442 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2442">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Anybody But Bush camp supports Kerry</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2453"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2443 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2443">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>My goal si to promote Kerry</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2453"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2444 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2444">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This madness has to stop</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2454"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2445 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2445">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the fastest way of doing that is to elect John Kerry</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2455"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2454"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2446 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2446">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only with a bore like Kerry at the helm will we finally be able to put an end to the presidential pathologizing and focus on the issues again</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2456"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2455"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2447 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2447">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we put an end to the presidential pathologizing and we focus on the issue we can put an end to this madness</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2455"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2448 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2448">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The main difference will be that as Kerry pursues these brutal policies he will come off as intelligent sane and blissfully dull</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2456"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2449 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2449">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Kerry is just as bad as Bush under the political point of view</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2457"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2456"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2450 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2450">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if a person is depress his pathology can be relevant for the publc opinion</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2456"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2451 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2451">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a person takes decisions bad for the country he is bad under this point of view.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2457"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2452 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2452">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>because in most key areas Iraq the  war on drugs  Israel/Palestine free trade corporate taxes he will be just as bad</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2457"/>
+        <aif:creationDate>2012-04-12 18:25:53</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2453 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2453">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2441"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2442"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2443"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2440"/>
+        <aif:creationDate>2012-04-12 18:25:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2454 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2454">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2444"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2445"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2441"/>
+        <aif:creationDate>2012-04-12 18:25:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2455 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2455">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2446"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2447"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2445"/>
+        <aif:creationDate>2012-04-12 18:25:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2456 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2456">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2448"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2449"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2450"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2446"/>
+        <aif:creationDate>2012-04-12 18:25:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2457 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2457">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2451"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2452"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2449"/>
+        <aif:creationDate>2012-04-12 18:25:55</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

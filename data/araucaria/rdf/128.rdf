@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/981 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/981">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Bowers Court &#039;s ini-  tial substantive statement - The issue presented is whether the  Federal Constitution confers a fundamental right upon homosexuals  to engage in sodomy ...  478 U..S.at 190 -discloses the Court &#039;s  failure to appreciate the extent of the liberty at stake</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/991"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1202"/>
+        <aif:creationDate>2012-04-12 18:20:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/988 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/988">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The liberty protected  by the Constitution allows homosexual persons the right to choose to  enter upon relationships in the confines of their homes and their own  private lives and still retain their dignity as free persons.Pp.3 -6.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/994"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1203"/>
+        <aif:creationDate>2012-04-12 18:20:39</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1192 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1192">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>just as it  would demean a married couple were it said that marriage is just  about the right to have sexual intercourse</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1200"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1193 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1193">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They seek to control a personal relationship thatwhether or not en-  titled to formal recognition in the lawis within the liberty of persons  to choose without being punished as criminals.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1201"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1194 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1194">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To say that  the issue in Bowers was simply the right to engage in certain sexual  conduct demeans the claim the individual put forward</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1200"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1202"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1195 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1195">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The claim was about the fact that the law was against a costitutional liberty defending human freedom</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1203"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1202"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1196 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1196">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The law involves the human freedom</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1204"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1203"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1197 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1197">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If  a law is against a liberty that the Constitution protects the law is against a Constitutional liberty</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1203"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1198 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1198">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Although the laws in-  volved in Bowers and here purport to do not more than prohibit a  particular sexual acttheir penalties and purposes have more far-  reaching consequencestouching upon the most private human con-  ductsexual behaviorand in the most private of placesthe home</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1201"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1204"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1199 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1199">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the consequences of the law are against the human freedom the law itself is against the human freedom</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1204"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1200 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1200">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1192"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1194"/>
+        <aif:creationDate>2012-04-12 18:21:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1201 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1201">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1193"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1198"/>
+        <aif:creationDate>2012-04-12 18:21:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1202 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1202">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1194"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1195"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/981"/>
+        <aif:creationDate>2012-04-12 18:21:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1203 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1203">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/988"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1196"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1197"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1195"/>
+        <aif:creationDate>2012-04-12 18:21:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1204 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1204">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1198"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1199"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1196"/>
+        <aif:creationDate>2012-04-12 18:21:23</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

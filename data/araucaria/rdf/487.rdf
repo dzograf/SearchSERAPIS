@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4358 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4358">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>e per cio` ancora ti dico e priego che s&#039;ella ti piace che tu la prenda e te medesimo ne sodisfaccia</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4374"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4359 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4359">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Piccol dono e` donare cento anni; quanto adunque e` minor donarne sei o otto che io a star ci abbia?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4372"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4360 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4360">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>io non so come io la mi possa meglio spendere</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4375"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4373"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4361 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4361">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A te la mia vita serve</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4374"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4362 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4362">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>La vita non mi e` utile ora e quindi non mi e` gravoso donarla</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4372"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4374"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4363 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4363">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A me fa piacere donare la vita</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4373"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4376"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4377"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4374"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4364 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4364">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Io l&#039;ho adoperata gia` ottanta anni e ne&#039;miei diletti e nelle mie consolazioni usata; e so che seguendo il corso della natura come gli altri uomini fanno e generalmente tutte le cose ella mi puo` omai piccol tempo esser lasciata</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4375"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4365 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4365">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se una cosa e` gia` stata completamente usata e poco ne rimane ancora da cui si puo` trarre poco diletto essa e` poco utile</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4375"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4366 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4366">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>per che io giudico molto meglio esser quella donare</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4376"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4367 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4367">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>che tanto volerla guardare che ella mi sia contro a mia voglia tolta dalla natura</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4376"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4368 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4368">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>come io ho sempre i miei tesori donati e spesi</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4376"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4369 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4369">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Spendere e donare i denari e` analogo ad usare e donare la vita</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4376"/>
+        <aif:creationDate>2012-04-12 18:32:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4370 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4370">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>E se pure avvenisse che io ne dovessi alcun trovare conosco che quanto pi  la guardero` di minor pregio sara`;</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4377"/>
+        <aif:creationDate>2012-04-12 18:32:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4371 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4371">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Donare la vita ha conseguenze migliori di continuare a vivere</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4377"/>
+        <aif:creationDate>2012-04-12 18:32:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4372 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4372">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4359"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4362"/>
+        <aif:creationDate>2012-04-12 18:32:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4373 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4373">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4360"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4363"/>
+        <aif:creationDate>2012-04-12 18:32:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4374 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4374">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4361"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4362"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4363"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4358"/>
+        <aif:creationDate>2012-04-12 18:32:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4375 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4375">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4364"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4365"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4360"/>
+        <aif:creationDate>2012-04-12 18:32:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4376 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4376">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4366"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4367"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4368"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4369"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4363"/>
+        <aif:creationDate>2012-04-12 18:32:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4377 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4377">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4370"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4371"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4363"/>
+        <aif:creationDate>2012-04-12 18:32:16</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

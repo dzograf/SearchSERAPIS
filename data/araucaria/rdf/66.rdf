@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/655 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/655">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>many Japanese complain against the new more liberal curriculum and deplore the decline in basic standards that they say is undermining Japan&#039;s ability to compete in the world.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/663"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1926"/>
+        <aif:creationDate>2012-04-12 18:19:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/656 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/656">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Japan&#039;s ability to compete is to be maintained  Japan needs a new more liberal curriculum.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/664"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/663"/>
+        <aif:creationDate>2012-04-12 18:19:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/657 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/657">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>These are qualities that the old system often suppressed.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/664"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1925"/>
+        <aif:creationDate>2012-04-12 18:19:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/658 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/658">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it is to compete Japan needs an education system that creates individuality and imagination.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/665"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/664"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/659 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/659">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Japan needs an education system that encourages individuality and imagination in order to compete and the current education system supresses these qualities then - if it is to compete Japan needs a more liberal education system.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/664"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/660 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/660">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This requires individuality and imagination.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/665"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/661 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/661">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Japan is no longer essentially a manufacturing economy. Its future is going to depend on value-added products and entrepreneurial flair.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/665"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1929"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/662 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/662">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Japan&#039;s future is going to depend on value-added products and entrepreneurial flair and this requires individuality and imagination then  - if it is to compete Japan needs an education system that creates individuality and imagination.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/665"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/663 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/663">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/656"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/655"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/664 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/664">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/657"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/658"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/659"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/656"/>
+        <aif:creationDate>2012-04-12 18:19:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/665 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/665">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/660"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/661"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/662"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/658"/>
+        <aif:creationDate>2012-04-12 18:19:39</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

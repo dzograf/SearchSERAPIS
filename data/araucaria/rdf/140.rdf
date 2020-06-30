@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/816 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/816">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Their impotence frustrates them and makes them want to carry out the type of attacks that rocked Gauteng this week.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1312"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/820"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1310"/>
+        <aif:creationDate>2012-04-12 18:20:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1303 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1303">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The worst mistake therefore will be to write them off and giggle at their antics</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1311"/>
+        <aif:creationDate>2012-04-12 18:21:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1304 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1304">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is the very fact that these people are a fringe minority with no capacity to overthrow the government that makes them all the more dangerous</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1310"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1311"/>
+        <aif:creationDate>2012-04-12 18:21:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1305 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1305">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Write somebody off is a means of reduce somebody to impotence</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1311"/>
+        <aif:creationDate>2012-04-12 18:21:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1306 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1306">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If somebody is frustrated it is plausible that he carries out violent actions</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1312"/>
+        <aif:creationDate>2012-04-12 18:21:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1307 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1307">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They are frustrated</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1313"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1312"/>
+        <aif:creationDate>2012-04-12 18:21:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1308 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1308">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Impotence causes frustration</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1313"/>
+        <aif:creationDate>2012-04-12 18:21:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1309 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1309">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They are impotent</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1313"/>
+        <aif:creationDate>2012-04-12 18:21:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1310 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1310">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/816"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1304"/>
+        <aif:creationDate>2012-04-12 18:21:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1311 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1311">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1304"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1305"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1303"/>
+        <aif:creationDate>2012-04-12 18:21:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1312 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1312">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1306"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1307"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/816"/>
+        <aif:creationDate>2012-04-12 18:21:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1313 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1313">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1308"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1309"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1307"/>
+        <aif:creationDate>2012-04-12 18:21:45</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

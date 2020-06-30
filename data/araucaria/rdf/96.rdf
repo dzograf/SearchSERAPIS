@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/909 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/909">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mr Campbell exercises an extraordinary psychological dominance over the Prime Minister. It seems he can get away with anything.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/914"/>
+        <aif:creationDate>2012-04-12 18:20:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/910 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/910">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He has called him  a prat  in front of one witness has told him to  get a f------ move on  when he believes a meeting has gone on too long and instructed him to drop what he is doing and concentrate on something else  because it can&#039;t f------ wait .</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/914"/>
+        <aif:creationDate>2012-04-12 18:20:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/911 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/911">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Watching him once on a mobile phone to Mr Blair striding up and down and wagging his finger I felt I was hallucinating: surely here was the Prime Minister issuing orders to an official rather than the other way round?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/914"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1364"/>
+        <aif:creationDate>2012-04-12 18:20:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/912 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/912">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>He has allowed television cameras into his office to record a plainly startled Mr Blair stammering out his praises. He has even - at the time of the  Cheriegate  affair before Christmas - briefed against the Prime Minister&#039;s own wife.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/914"/>
+        <aif:creationDate>2012-04-12 18:20:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/913 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/913">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Mr. Campbell has insulted him ordered him around and even briefed against his wife it seems he can get away with anything</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/914"/>
+        <aif:creationDate>2012-04-12 18:20:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/914 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/914">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/910"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/911"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/912"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/913"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/909"/>
+        <aif:creationDate>2012-04-12 18:20:25</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,27 @@
+match <_,?c> back <?pr1, ?c1> rebut <?pr2, ?c2>
+return *
+
+
+
+{"nodes":[
+    {"nodeID":1,"text":"","type":"I"},
+    {"nodeID":2,"text":"","type":"I"},
+    {"nodeID":3,"text":"","type":"I"},
+    {"nodeID":4,"text":"","type":"I"},
+    {"nodeID":6,"text":"Default Inference","type":"RA"},
+    {"nodeID":8,"text":"Default Inference","type":"RA"},
+    {"nodeID":10,"text":"Default Conflict","type":"CA"}],
+ 
+ "edges":[
+     {"edgeID":"e0","fromID":4,"toID":6},
+     {"edgeID":"e1","fromID":6,"toID":3},
+     {"edgeID":"e2","fromID":3,"toID":8},
+     {"edgeID":"e3","fromID":8,"toID":2},
+     {"edgeID":"e4","fromID":2,"toID":10},
+     {"edgeID":"e5","fromID":10,"toID":1}
+ 
+ ],"locutions":[]}
+
+
+
+

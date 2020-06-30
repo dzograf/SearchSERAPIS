@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2835 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2835">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I politici se vogliono essere coerenti con cio` che dicono hanno la responsabilita` di mettere fine ai monopoli televisivi</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2842"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2843"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2836 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2836">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Non si dicono tutti a parole gran riformisti e liberali?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2842"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2837 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2837">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Ebbene se c&#039;e` una grande riforma liberale di cui l&#039;Italia ha urgenza e` la fine dei monopoli televisivi com&#039;e` avvenuto gia` in tutta Europa grazie a governi di destra di centro e di sinistra</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2842"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2838 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2838">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Non hanno tutti a cuore il ritorno al  primato della politica ?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2843"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2839 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2839">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>La riforma dovrebbe essere approvata per poter riportare il  primato della politica</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2844"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2843"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2840 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2840">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>E` stato lo strapotere mediatico di uno solo a minacciare prima dunque asservire e infine sostituirsi alla politica.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2844"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2841 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2841">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>La riforma porrebbe fine allo strapotere mediatico</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2844"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2842 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2842">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2836"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2837"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2835"/>
+        <aif:creationDate>2012-04-12 18:27:12</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2843 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2843">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2838"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2839"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2835"/>
+        <aif:creationDate>2012-04-12 18:27:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2844 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2844">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2840"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2841"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2839"/>
+        <aif:creationDate>2012-04-12 18:27:13</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

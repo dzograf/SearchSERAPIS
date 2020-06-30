@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4000 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4000">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mrs A. Gardner is inconsistent and therefore her argument should not be accepted</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4004"/>
+        <aif:creationDate>2012-04-12 18:31:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4001 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4001">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mrs. A. Gardner discourages people from participating in the so-called AFP test which measures the chances of a pregnant having a baby with spina bifida or Down s syndrome.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4004"/>
+        <aif:creationDate>2012-04-12 18:31:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4002 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4002">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mrs. Gardner knows all about the consequences of the AFP test</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4004"/>
+        <aif:creationDate>2012-04-12 18:31:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4003 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4003">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>So why did she have such a test done herself? Because in fact she preferred not to have a mongoloid baby?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4004"/>
+        <aif:creationDate>2012-04-12 18:31:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4004 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4004">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4001"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4002"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4003"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4000"/>
+        <aif:creationDate>2012-04-12 18:31:02</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

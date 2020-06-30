@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3668 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3668">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The existence of the evil cannot be explained with the human freedom</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3679"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3680"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3669 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3669">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There are evils whose occurrence has no discernible connection with freedom.  Theologians call them natural evils meaning such things as earthquakes floods tornadoes diseases and so on.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3677"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3670 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3670">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We weren&#039;t around then</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3678"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3671 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3671">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a deer dies in a forest fire suffering horribly as it does so that is an evil.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3677"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3679"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3672 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3672">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If evil is in the world only for the human freedom all the evil is connected to the human freedom</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3679"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3680"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3673 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3673">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>none of it seems beyond the power of omnipotence to prevent without the loss of that good.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3681"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3680"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3674 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3674">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if you accept anything like the theory of evolution you will believe there were other animals on this planet long before humans appeared on the scene</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3681"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3675 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3675">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Many of them must have suffered horribly as their species became extinct.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3681"/>
+        <aif:creationDate>2012-04-12 18:29:55</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3676 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3676">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>None of that suffering can be justified as a necessary consequence of permitting humans freedom.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3678"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3681"/>
+        <aif:creationDate>2012-04-12 18:29:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3677 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3677">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3669"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3671"/>
+        <aif:creationDate>2012-04-12 18:29:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3678 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3678">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3670"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3676"/>
+        <aif:creationDate>2012-04-12 18:29:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3679 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3679">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3671"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3672"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3668"/>
+        <aif:creationDate>2012-04-12 18:29:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3680 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3680">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3672"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3673"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3668"/>
+        <aif:creationDate>2012-04-12 18:29:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3681 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3681">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3674"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3675"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3676"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3673"/>
+        <aif:creationDate>2012-04-12 18:29:57</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4214 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4214">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If God does not exist then objective moral values do not exist.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4217"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4221"/>
+        <aif:creationDate>2012-04-12 18:31:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4215 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4215">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Many theists and atheists alike concur on this point</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4218"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4217"/>
+        <aif:creationDate>2012-04-12 18:31:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4216 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4216">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>For example the late J.L. Mackie of Oxford University one of the most influential atheists of our time admitted  If...there are...objective values they make the existence of a god more probable than it would have been without them. Thus we have a...defensible...argument from morality to the existence of a god.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4218"/>
+        <aif:creationDate>2012-04-12 18:31:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4217 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4217">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4215"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4214"/>
+        <aif:creationDate>2012-04-12 18:31:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4218 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4218">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4216"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4215"/>
+        <aif:creationDate>2012-04-12 18:31:46</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

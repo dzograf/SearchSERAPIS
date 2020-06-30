@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1647 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1647">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I believe that a long term prison sentence with hard labour would have been more appropriate though</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1656"/>
+        <aif:creationDate>2012-04-12 18:22:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1648 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1648">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>His suffering should be lifetime</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1657"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1656"/>
+        <aif:creationDate>2012-04-12 18:22:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1649 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1649">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Prison is a means to make the punished suffer for all his life</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1656"/>
+        <aif:creationDate>2012-04-12 18:22:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1650 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1650">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Death does not cause lifetime sufference</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1658"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1656"/>
+        <aif:creationDate>2012-04-12 18:22:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1651 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1651">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal of punishment is to revenge the offended</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1657"/>
+        <aif:creationDate>2012-04-12 18:22:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1652 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1652">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Revenge is similar to offence</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1657"/>
+        <aif:creationDate>2012-04-12 18:22:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1653 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1653">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the lifetime of suffering yet to be endured by the relatives of his victims</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1657"/>
+        <aif:creationDate>2012-04-12 18:22:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1654 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1654">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A punishment causes lifetime sufference only if it is long and hard</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1658"/>
+        <aif:creationDate>2012-04-12 18:22:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1655 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1655">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>His death will be quick and humane</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1658"/>
+        <aif:creationDate>2012-04-12 18:22:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1656 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1656">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1648"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1649"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1650"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1647"/>
+        <aif:creationDate>2012-04-12 18:22:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1657 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1657">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1651"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1652"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1653"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1648"/>
+        <aif:creationDate>2012-04-12 18:22:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1658 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1658">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1654"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1655"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1650"/>
+        <aif:creationDate>2012-04-12 18:22:57</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

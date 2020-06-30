@@ -1,0 +1,14 @@
+match ?a:< _ , "the survey was not reliable">[tm : "Expert opinion"]
+return ?a
+
+prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix aif:<http://www.aifdb.org/nodes/#>
+prefix argtech:<http://www.arg.tech/aif#>
+
+SELECT DISTINCT *
+WHERE {
+  GRAPH ?g { 
+?_i1 rdf:type argtech:I-node.
+?_i1 argtech:claimText ?_txt10.
+FILTER (CONTAINS(?_txt10, "river")).}
+}

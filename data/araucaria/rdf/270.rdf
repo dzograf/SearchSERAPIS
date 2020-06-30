@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2548 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2548">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The ban against smoking should be approved</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2561"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2562"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2564"/>
+        <aif:creationDate>2012-04-12 18:26:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2549 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2549">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Those of us who work in the Health Service see every day the tragic consequences of exposure to the powerful carcinogens contained in tobacco smoke.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2560"/>
+        <aif:creationDate>2012-04-12 18:26:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2550 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2550">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The link between smoking and Glasgow&#039;s ill-health is clear and compelling. Environmental tobacco smoke damages the health of every Scot from the youngest to the oldest</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2561"/>
+        <aif:creationDate>2012-04-12 18:26:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2551 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2551">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is to reduce Glasgow&#039;s ill-health</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2561"/>
+        <aif:creationDate>2012-04-12 18:26:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2552 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2552">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to reduce Glasgow&#039;s ill-health is to eliminare its main cause</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2561"/>
+        <aif:creationDate>2012-04-12 18:26:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2553 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2553">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Environmental smoke is against the fundamental rights</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2563"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2562"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2554 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2554">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If something is against the fundamental rights must be abolished</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2562"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2555 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2555">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A fundamental principle underlying the way we live out lives in Scotland is that people shouls be free to make choices about how they live their lives -so long as those choices do not harm others</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2563"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2556 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2556">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Environmental tobacco smoking harms people without they choosing that</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2560"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2563"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2557 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2557">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The damage done by cigarettes is suffered disproportionately by the poor</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2564"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2558 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2558">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The prime minister is committed to narrowing health inequalities and avoiding the causes of health inequalities</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2564"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2559 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2559">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if we are serious about narrowing health inequalities we must do what we can to discourage cigarette smoking and to protect the majority of Scots who choose not to smoke from damage to their health.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2564"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2560 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2560">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2549"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2556"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2561 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2561">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2550"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2551"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2552"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2548"/>
+        <aif:creationDate>2012-04-12 18:26:15</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2562 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2562">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2553"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2554"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2548"/>
+        <aif:creationDate>2012-04-12 18:26:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2563 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2563">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2555"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2556"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2553"/>
+        <aif:creationDate>2012-04-12 18:26:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2564 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2564">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2557"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2558"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2559"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2548"/>
+        <aif:creationDate>2012-04-12 18:26:16</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

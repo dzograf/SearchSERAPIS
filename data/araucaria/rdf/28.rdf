@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/401 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/401">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There is an increased likelihood that Sheila Cafell shot herself</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/409"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/402 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/402">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There is a likelihood that Sheila Cafell shot herself</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/410"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/409"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/403 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/403">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If available testimony is that some event occured and there already is a likelihood that it occured there is an increased likelihood that it occured.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/409"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/404 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/404">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The caller was the appellant and having given his name and address he said:    You&#039;ve got to help me. My father has rang me and said  Please come over. Your sister has gone crazy and has got the gun.  Then the line went dead.   He went on to say that his sister had a history of psychiatric illness and he confirmed that there were guns at his father&#039;s house which was White House Farm Tolleshunt D&#039;Arcy in Essex.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/409"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/405 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/405">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The scene certainly gave the appearance that Sheila Caffell had shot herself</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/411"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1617"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1618"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/410"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/406 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/406">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If some event appears to be the case there is a likelihood that it is the case.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/410"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/407 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/407">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>At about 7.45 a.m. armed officers entered the farm and found all 5 occupants dead from gunshot wounds. Mr. Bamber lay dead in the kitchen his wife was dead on the floor in her bedroom the boys were dead in their bed and Sheila Caffell was lying on the floor of the same room as her mother. Across her chest and pointing up at her neck through which the wounds that had killed her had been fired was the rifle used to shoot all five members of the family. Beside her body lay a Bible.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/411"/>
+        <aif:creationDate>2012-04-12 18:18:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/408 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/408">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If her body was found to have the murder weapon and found to have it directed at the wounds that killed her and if there were no observations to suggest that anyone else had killed her it certainly appears that she did it.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/411"/>
+        <aif:creationDate>2012-04-12 18:18:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/409 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/409">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/402"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/403"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/404"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/401"/>
+        <aif:creationDate>2012-04-12 18:18:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/410 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/410">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/405"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/406"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/402"/>
+        <aif:creationDate>2012-04-12 18:18:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/411 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/411">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/407"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/408"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/405"/>
+        <aif:creationDate>2012-04-12 18:18:50</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

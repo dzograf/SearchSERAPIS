@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3605 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3605">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Does that not show that Postwatch is a toothless tiger?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3609"/>
+        <aif:creationDate>2012-04-12 18:29:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3606 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3606">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Two post offices in my constituency closed even though Postwatch objected and supported the campaign against closure</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3609"/>
+        <aif:creationDate>2012-04-12 18:29:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3607 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3607">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>On appeal the Post Office decided to go ahead with the closures</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3609"/>
+        <aif:creationDate>2012-04-12 18:29:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3608 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3608">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Is it not about time that it was given powers to ensure that it can overrule the Post Office when it has serious objections to a closure?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3609"/>
+        <aif:creationDate>2012-04-12 18:29:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3609 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3609">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3606"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3607"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3608"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3605"/>
+        <aif:creationDate>2012-04-12 18:29:42</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

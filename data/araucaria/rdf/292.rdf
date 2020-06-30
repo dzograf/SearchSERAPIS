@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2755 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2755">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We will transform these systems so that all citizens are equipped prepared   and thus truly free   to make your own choices and pursue your own dreams.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2766"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2756 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2756">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The workers of our parents&#039; generation typically had one job one skill one career   often with one company that provided health care and a pension. And most of those workers were men</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2764"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2757 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2757">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today workers change jobs even careers many times during their lives and in one of the most dramatic shifts our society has seen two-thirds of all moms also work outside the home</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2765"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2758 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2758">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The system is not good for the world of today</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2767"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2766"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2759 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2759">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>And government must take your side</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2766"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2760 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2760">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to have a system fitting the economic situation of today is to change it</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2766"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2761 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2761">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The times in which we live and work are changing dramatically.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2764"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2765"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2767"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2762 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2762">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Many of our most fundamental systems   the tax code health coverage pension plans worker training   were created for the world of yesterday not tomorrow.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2767"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2763 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2763">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If something is made for the world of yesterday and not tomorrow it does not fit to the world of today</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2767"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2764 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2764">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2756"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2761"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2765 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2765">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2757"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2761"/>
+        <aif:creationDate>2012-04-12 18:26:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2766 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2766">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2758"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2759"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2760"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2755"/>
+        <aif:creationDate>2012-04-12 18:26:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2767 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2767">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2761"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2762"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2763"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2758"/>
+        <aif:creationDate>2012-04-12 18:26:58</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

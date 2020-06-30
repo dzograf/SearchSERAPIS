@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/551 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/551">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>India will certainly not allow it to be achieved in this fashion.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/556"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1772"/>
+        <aif:creationDate>2012-04-12 18:19:17</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1766 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1766">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Pakistan is mistaken.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1773"/>
+        <aif:creationDate>2012-04-12 18:23:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1767 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1767">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the low intensity war or terrorism cannot achieve it</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1772"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1774"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1773"/>
+        <aif:creationDate>2012-04-12 18:23:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Pakistan thinks that it would be able to achieve its objectives by perpetrating terrorism in India in this manner</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1773"/>
+        <aif:creationDate>2012-04-12 18:23:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1769 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1769">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>no war can achieve this</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1774"/>
+        <aif:creationDate>2012-04-12 18:23:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1770 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1770">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>War is analogous to terrorism</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1774"/>
+        <aif:creationDate>2012-04-12 18:23:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1771 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1771">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The effects are proportional to the intensity of their cause</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1774"/>
+        <aif:creationDate>2012-04-12 18:23:21</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1772 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1772">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/551"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1767"/>
+        <aif:creationDate>2012-04-12 18:23:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1773 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1773">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1767"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1768"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1766"/>
+        <aif:creationDate>2012-04-12 18:23:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1774 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1774">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1769"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1770"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1771"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1767"/>
+        <aif:creationDate>2012-04-12 18:23:22</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

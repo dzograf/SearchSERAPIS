@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/763 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/763">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The law must be abrogated</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/779"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1332"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5742"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334249"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334256"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334263"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334270"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334277"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334284"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334291"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334298"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334305"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334312"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334319"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334326"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335142"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335149"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417837"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417844"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422821"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422828"/>
+        <aif:creationDate>2012-04-12 18:19:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/764 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/764">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>California &#039;s law extends the time in which prosecution is allowed</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/776"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1329"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5739"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334246"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334253"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334260"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334267"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334274"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334281"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334288"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334295"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334302"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334309"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334316"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334323"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335139"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335146"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417834"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417841"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422818"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422825"/>
+        <aif:creationDate>2012-04-12 18:19:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/765 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/765">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>California &#039;s law authorizes prosecutions that the passage of time has previously barred</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/777"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1330"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5740"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334247"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334254"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334261"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334268"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334275"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334282"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334289"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334296"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334303"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334310"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334317"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334324"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335140"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335147"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417835"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417842"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422819"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422826"/>
+        <aif:creationDate>2012-04-12 18:19:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/766 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/766">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>California &#039;s law was enacted after prior limitations periods for Stogner&#039;s alleged offenses had expired</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/778"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1331"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5741"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334248"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334255"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334262"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334269"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334276"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334283"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334290"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334297"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334304"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334311"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334318"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334325"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335141"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335148"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417836"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417843"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422820"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422827"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/767 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/767">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Such features produce the kind of retroactivity that the Constitution forbids</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/780"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/782"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1333"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1335"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5743"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5745"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334250"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334252"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334257"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334259"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334264"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334266"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334271"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334273"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334278"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334280"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334285"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334287"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334292"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334294"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334299"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334301"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334306"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334308"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334313"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334315"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334320"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334322"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334327"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334329"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335143"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335145"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335150"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335152"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417838"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417840"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417845"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417847"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422822"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422824"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422829"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422831"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/779"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1332"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5742"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334249"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334256"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334263"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334270"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334277"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334284"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334291"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334298"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334305"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334312"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334319"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334326"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335142"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335149"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417837"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417844"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422821"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422828"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a law is not constitutional it must be abrogated</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/779"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1332"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5742"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334249"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334256"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334263"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334270"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334277"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334284"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334291"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334298"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334305"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334312"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334319"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334326"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335142"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335149"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417837"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417844"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422821"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422828"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/769 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/769">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the law threatens the kinds of harm that the Clause (of the Constitution) seeks to avoid</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/781"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1334"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5744"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334251"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334258"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334265"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334272"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334279"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334286"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334293"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334300"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334307"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334314"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334321"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/334328"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335144"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/335151"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417839"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/417846"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422823"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/422830"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/780"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1333"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5743"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334250"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334257"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334264"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334271"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334278"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334285"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334292"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334299"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334306"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334313"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334320"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334327"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335143"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335150"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417838"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417845"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422822"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422829"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/770 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/770">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a law is against a clause of the Constitution the law is forbidden by the Constitution</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/780"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1333"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5743"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334250"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334257"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334264"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334271"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334278"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334285"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334292"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334299"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334306"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334313"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334320"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334327"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335143"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335150"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417838"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417845"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422822"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422829"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/771 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/771">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Clause protects liberty by preventing governments from enacting statutes with  manifestly unjust and oppressive   retroactive effects. Calder v. Bull 3 Dall. 386 391</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/781"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1334"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5744"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/772 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/772">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The law has  manifestly  unjust and oppressive   retroactive effects</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/776"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/777"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1329"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1330"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1331"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5739"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5740"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5741"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/781"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1334"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5744"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/773 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/773">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the law falls literally within the categorical descriptions of ex post facto laws that Justice Chase set forth more than 200 years ago in Calder v. Bull</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/782"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1335"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5745"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334252"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334259"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334266"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334273"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334280"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334287"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334294"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334301"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334308"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334315"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334322"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334329"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335145"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335152"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417840"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417847"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422824"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422831"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/775 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/775">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Ex post fact laws are not constitutional</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/782"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1335"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5745"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334252"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334259"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334266"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334273"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334280"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334287"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334294"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334301"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334308"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334315"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334322"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/334329"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335145"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/335152"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417840"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/417847"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422824"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/422831"/>
+        <aif:creationDate>2012-04-12 18:19:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5739 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5739">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/764"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/772"/>
+        <aif:creationDate>2012-04-12 18:36:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5740 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5740">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/765"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/772"/>
+        <aif:creationDate>2012-04-12 18:36:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5741 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5741">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/766"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/772"/>
+        <aif:creationDate>2012-04-12 18:36:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5742 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5742">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/767"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/768"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/763"/>
+        <aif:creationDate>2012-04-12 18:36:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5743 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5743">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/769"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/770"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/767"/>
+        <aif:creationDate>2012-04-12 18:36:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5744 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5744">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/771"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/772"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/769"/>
+        <aif:creationDate>2012-04-12 18:36:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5745 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5745">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/773"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/775"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/767"/>
+        <aif:creationDate>2012-04-12 18:36:59</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2916 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2916">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>My opponent&#039;s position is not good</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2922"/>
+        <aif:creationDate>2012-04-12 18:27:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2917 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2917">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>My opponent and his running mate voted against this money for bullets and fuel and vehicles and body armor</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2922"/>
+        <aif:creationDate>2012-04-12 18:27:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2918 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2918">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The proposal is good</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2923"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2922"/>
+        <aif:creationDate>2012-04-12 18:27:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2919 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2919">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I proposed and the Congress overwhelmingly passed $87 billion in funding needed by our troops doing battle in Afghanistan and Iraq.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2923"/>
+        <aif:creationDate>2012-04-12 18:27:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2920 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2920">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Supporting the troops with armours and vehicles means helping them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2923"/>
+        <aif:creationDate>2012-04-12 18:27:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2921 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2921">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Helping the troops is good</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2923"/>
+        <aif:creationDate>2012-04-12 18:27:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2922 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2922">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2917"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2918"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2916"/>
+        <aif:creationDate>2012-04-12 18:27:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2923 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2923">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2919"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2920"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2921"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2918"/>
+        <aif:creationDate>2012-04-12 18:27:28</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

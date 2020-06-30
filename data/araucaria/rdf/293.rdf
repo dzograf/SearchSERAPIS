@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2768 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2768">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>You should vote for me</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2928"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2967"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3073"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3196"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2769 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2769">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I will solve the problem of people without health care</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2780"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2782"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2778"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2770 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2770">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We will offer a tax credit to encourage small businesses and their employees to set up health savings accounts and provide direct help for low-income Americans to purchase them.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2779"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2771 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2771">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>And we will provide low-income Americans with better access to health care:</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2781"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2780"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2772 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2772">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In a new term I will ensure every poor county in America has a community or rural health center.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2781"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2773 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2773">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In a new term we must allow small firms to join together to purchase insurance at the discounts available to big companies.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2782"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2774 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2774">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>These accounts give workers the security of insurance against major illness the opportunity to save tax-free for routine health expenses and the freedom of knowing you can take your account with you whenever you change jobs</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2779"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2782"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2775 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2775">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should help the small business to have an insurance</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2783"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2782"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2776 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2776">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I&#039;ve met many workers and small business owners who have told me they are worried they cannot afford health care. More than half of the uninsured are small business employees and their families</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2783"/>
+        <aif:creationDate>2012-04-12 18:26:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2777 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2777">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to help people that cannot afford insurance is to help small business</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2783"/>
+        <aif:creationDate>2012-04-12 18:27:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2778 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2778">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2769"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2768"/>
+        <aif:creationDate>2012-04-12 18:27:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2779 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2779">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2770"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2774"/>
+        <aif:creationDate>2012-04-12 18:27:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2780 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2780">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2771"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2769"/>
+        <aif:creationDate>2012-04-12 18:27:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2781 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2781">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2772"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2771"/>
+        <aif:creationDate>2012-04-12 18:27:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2782 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2782">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2773"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2774"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2775"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2769"/>
+        <aif:creationDate>2012-04-12 18:27:01</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2783 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2783">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2776"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2777"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2775"/>
+        <aif:creationDate>2012-04-12 18:27:01</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/1393 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1393">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Jefferson State should be created as independent from California and Oregon</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1403"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1394 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1394">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>These northern areas of California and southern Oregon were being taxed on the products they produced from their renewable natural resources-the timber agriculture and mining industries-and receiving no benefits to build better roads from the tax dollars they were obligated to pay.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1401"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1400"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1395 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1395">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Most of the so-called highways in these areas at the time became mud holes in the winters and dust bowls during the summer months.  Many of the roads resembled mountain trails barely fit for mountain goats.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1401"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1396 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1396">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The dense metropolitan areas of northern Oregon and the southern areas of our state had a tendency to dictate their political agenda to those residing in the proposed Jefferson State counties and legislators in both state capitols would pass regulatory mandates and legislative laws that most of the citizens in these regions believed to be unwarranted and unnecessary.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1402"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1397 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1397">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This region is badly administated and exploited by California and Oregon</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1400"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1402"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1403"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1398 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1398">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is to avoid the region to be exploited</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1403"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1399 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1399">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to do that is to separate the region from the two states</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1403"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1400 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1400">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1394"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1397"/>
+        <aif:creationDate>2012-04-12 18:22:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1401 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1401">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1395"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1394"/>
+        <aif:creationDate>2012-04-12 18:22:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1402 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1402">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1396"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1397"/>
+        <aif:creationDate>2012-04-12 18:22:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1403 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1403">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1397"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1398"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1399"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1393"/>
+        <aif:creationDate>2012-04-12 18:22:05</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

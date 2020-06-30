@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4567 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4567">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it may well be the case that an all-good God would want to create a world governed by natural law which includes the possibility of harm.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4578"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4568 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4568">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if God creates a world that operates according to certain natural laws then the fire that warms us will also be the fire that burns us</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4583"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4578"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4569 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4569">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It would mean that you could drive as fast as you wanted on the highway</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4579"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4570 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4570">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>you could drink or eat any substance you wanted to</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4580"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4571 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4571">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>you could do anything to another person</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4581"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4572 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4572">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>you could act anyway you want</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4582"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4573 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4573">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God did not want to create a world without harm</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4584"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4583"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4574 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4574">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best world that could have been created was a world governed by natural laws</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4583"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4575 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4575">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if God were to create a world of free creatures in which He intervened every time to rescue us from harm this would be a world in which rational behavior was completely impossible.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4584"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4576 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4576">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It would lead to total irresponsibility total irrationality in our actions.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4579"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4580"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4581"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4582"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4584"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4577 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4577">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>An irrational and irresponsable behaviour is not acceptable</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4584"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4578 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4578">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4568"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4567"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4579 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4579">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4569"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4576"/>
+        <aif:creationDate>2012-04-12 18:32:56</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4580 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4580">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4570"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4576"/>
+        <aif:creationDate>2012-04-12 18:32:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4581 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4581">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4571"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4576"/>
+        <aif:creationDate>2012-04-12 18:32:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4582 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4582">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4572"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4576"/>
+        <aif:creationDate>2012-04-12 18:32:57</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4583 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4583">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4573"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4574"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4568"/>
+        <aif:creationDate>2012-04-12 18:32:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4584 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4584">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4575"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4576"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4577"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4573"/>
+        <aif:creationDate>2012-04-12 18:32:58</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4751 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4751">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This  murderous  campaign only demonstrates the importance of the governing council in bringing democracy to Iraq</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4759"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4752 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4752">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This shows all those sceptics that the [members of the governing council] are the real targets of those who are trying to destroy the New Iraq</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4760"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4759"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4753 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4753">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The council is extremely dangerous for the terrorists and for whom is trying to destabilize Iraq</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4759"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4754 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4754">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We are trying to bring the democracy to Iraq</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4759"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4755 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4755">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the insurgents and terrorists working to destabilize Iraq understand who their most important enemies are</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4761"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4760"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4756 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4756">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>many critics   including some within the Coalition Provisional Authority   have dismissed the council as a group of squabbling exiles and minor politicians with little popular support</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4760"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4757 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4757">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There is a murderous campaign against the governing council</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4761"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4758 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4758">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If an institution is dangerous for terrorists it is likely to be attacked by them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4761"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4759 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4759">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4752"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4753"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4754"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4751"/>
+        <aif:creationDate>2012-04-12 18:33:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4760 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4760">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4755"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4756"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4752"/>
+        <aif:creationDate>2012-04-12 18:33:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4761 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4761">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4757"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4758"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4755"/>
+        <aif:creationDate>2012-04-12 18:33:33</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3963 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3963">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Why not reread a book that you like now and again?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3967"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3968"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3969"/>
+        <aif:creationDate>2012-04-12 18:30:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3964 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3964">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Does not one also look at the same paintings again and again?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3967"/>
+        <aif:creationDate>2012-04-12 18:30:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3965 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3965">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>does not one listen to the same music all the time?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3968"/>
+        <aif:creationDate>2012-04-12 18:30:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3966 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3966">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Maugham resembles the person who has a room with beautiful view and decides to have the window plastered with paint after having looked out of it once or twice</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3969"/>
+        <aif:creationDate>2012-04-12 18:30:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3967 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3967">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3964"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3963"/>
+        <aif:creationDate>2012-04-12 18:30:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3968 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3968">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3965"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3963"/>
+        <aif:creationDate>2012-04-12 18:30:54</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3969 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3969">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3966"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3963"/>
+        <aif:creationDate>2012-04-12 18:30:55</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

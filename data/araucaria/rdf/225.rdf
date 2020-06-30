@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/949 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/949">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The jury-coercion claim in respondent  s habeas petition is  the same claim rejected on the merits in his direct appeal  to the state appellate court</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/951"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2119"/>
+        <aif:creationDate>2012-04-12 18:20:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2113 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2113">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Ninth Circuit cor-  rectly recognized that  2254(d)was therefore applicable</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2118"/>
+        <aif:creationDate>2012-04-12 18:24:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2114 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2114">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>When a habeas petitioner  s claim has been adjudicated  on the merits in state-court proceedings28 U.S.C.   2254(d)forecloses relief unless the state court  s adjudica-  tion of the claim:    (1)resulted in a decision that was contrary toor  involved an unreasonable application ofclearly es-  tablished Federal lawas determined by the Supreme  Court of the United States;or  (2)resulted in a decision that was based on an un-  reasonable determination of the facts in light of the  evidence presented in the State court proceeding</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2118"/>
+        <aif:creationDate>2012-04-12 18:24:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2115 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2115">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Only if the claim belongs to one of the two exceptional cases 2245 (d) does not apply</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2118"/>
+        <aif:creationDate>2012-04-12 18:24:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2116 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2116">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The claim is not exceptional</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2119"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2118"/>
+        <aif:creationDate>2012-04-12 18:24:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2117 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2117">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the claim is the similar to the one rejected by the appelate court it is not exceptional as well</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2119"/>
+        <aif:creationDate>2012-04-12 18:24:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2118 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2118">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2114"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2115"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2116"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2113"/>
+        <aif:creationDate>2012-04-12 18:24:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2119 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2119">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/949"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2117"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2116"/>
+        <aif:creationDate>2012-04-12 18:24:44</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

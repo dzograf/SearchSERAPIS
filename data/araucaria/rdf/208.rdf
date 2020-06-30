@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/674 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/674">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Japanese people need to take that statement humbly</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/677"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1971"/>
+        <aif:creationDate>2012-04-12 18:19:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/675 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/675">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>there are still many people including politicians who seem to glorify or whitewash some of our nation&#039;s misdeeds.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1969"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/677"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1971"/>
+        <aif:creationDate>2012-04-12 18:19:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1965 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1965">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The latest example is a remark by the policy chief of the Liberal Democratic Party that tried to justify Japan&#039;s colonial policy of forcing Koreans to take Japanese surnames.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1969"/>
+        <aif:creationDate>2012-04-12 18:24:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1966 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1966">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Mutual confidence not narrow nationalism is what the two nations need most as they look to the future.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1970"/>
+        <aif:creationDate>2012-04-12 18:24:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1967 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1967">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Japan does not need nationalism</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1970"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1971"/>
+        <aif:creationDate>2012-04-12 18:24:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1968 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1968">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to meet the needs of the peace is to behave humbly</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1971"/>
+        <aif:creationDate>2012-04-12 18:24:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1969 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1969">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1965"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/675"/>
+        <aif:creationDate>2012-04-12 18:24:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1970 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1970">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1966"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1967"/>
+        <aif:creationDate>2012-04-12 18:24:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1971 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1971">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/675"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1967"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1968"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/674"/>
+        <aif:creationDate>2012-04-12 18:24:05</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/510 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/510">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This portends new uncertainties about the direction of Pakistan&#039;s policies about jehad and related violence inside and across the borders.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/516"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/619"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1745"/>
+        <aif:creationDate>2012-04-12 18:19:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/512 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/512">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The most likely scenario even without the Islamic parties gaining so much ground was an even less co-operative leadership in Islamabad than the current dispensation which had itself stonewalled all pressures to implement its promises made to India the US and the international community to end jehadi terrorism.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/516"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/619"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1745"/>
+        <aif:creationDate>2012-04-12 18:19:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/515 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/515">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Elections in Pakistan are over and they have led to Islamist parties sympathetic to the Taliban-Al Qaeda acquiring majority status in the western provinces besides an influential role for themselves in the governance of the country.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/517"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/620"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1746"/>
+        <aif:creationDate>2012-04-12 18:19:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1741 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1741">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a better scenario was critical a worse one is much more critical for the end of jihad</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1745"/>
+        <aif:creationDate>2012-04-12 18:23:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1742 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1742">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The actual scenario with a majority of Islamic parties is worse than a scenario without them</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1746"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1745"/>
+        <aif:creationDate>2012-04-12 18:23:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1743 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1743">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Islamist parties supports jehad and violence</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1746"/>
+        <aif:creationDate>2012-04-12 18:23:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1744 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1744">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Not islamist parties are not so enthusiastic about jihad</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1746"/>
+        <aif:creationDate>2012-04-12 18:23:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1745 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1745">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/512"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1741"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1742"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/510"/>
+        <aif:creationDate>2012-04-12 18:23:16</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1746 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1746">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/515"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1743"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1744"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1742"/>
+        <aif:creationDate>2012-04-12 18:23:17</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

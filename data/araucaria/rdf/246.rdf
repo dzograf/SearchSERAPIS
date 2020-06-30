@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2312 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2312">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>People that believe that the Italian South is inferior are shortshighted and narrow-minded</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2331"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2313 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2313">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Italian South is  unquestionably inferior economically to the North but economic prosperity is not  necessarily a true indicator of the quality of a society s life.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2327"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2329"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2330"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2326"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2314 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2314">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>While materially  24  impoverished the South has produced many of Italy s greatest men of letters and affairs.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2328"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2327"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2315 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2315">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To cite only a few of her political thinkers of note she can claim Vico Cuoco Mosca  Croce and Dorso.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2328"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2316 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2316">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>She also remains the land of the wondrous scenic beauties described  by Goethe in his Italienische Reise</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2329"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2317 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2317">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>as well as of architectural marvels like the Baroque  churches of Apulia</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2330"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2318 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2318">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It would be extremely shortsighted to view the South as simply or  even primarily a place where poverty illiteracy poor soil earthquakes brigandage and  disease abound</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2332"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2331"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2319 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2319">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Italian South is considered inferior a land of poverty and brigandage</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2333"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2334"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2331"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2320 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2320">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Italian South is incredibly rich of culture and has an high quality of life</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2326"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2332"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2321 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2321">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the stereotype that Italian South is inferior is open-minded and correct the South is lacking in quality of life and culture</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2332"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2322 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2322">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Italian South is economically and culturally different from the North</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2333"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2323 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2323">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Different is often taken to mean inferior by insensitive observers both Italian and foreign.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2333"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2324 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2324">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In much of the recent literature in the social sciences southern Italy is viewed as an  underdeveloped country in comparison with its northern counterpart</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2334"/>
+        <aif:creationDate>2012-04-12 18:25:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2325 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2325">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a country is economically inferior it is inferior under every point of view</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2334"/>
+        <aif:creationDate>2012-04-12 18:25:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2326 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2326">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2313"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2320"/>
+        <aif:creationDate>2012-04-12 18:25:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2327 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2327">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2314"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2313"/>
+        <aif:creationDate>2012-04-12 18:25:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2328 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2328">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2315"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2314"/>
+        <aif:creationDate>2012-04-12 18:25:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2329 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2329">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2316"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2313"/>
+        <aif:creationDate>2012-04-12 18:25:27</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2330 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2330">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2317"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2313"/>
+        <aif:creationDate>2012-04-12 18:25:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2331 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2331">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2318"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2319"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2312"/>
+        <aif:creationDate>2012-04-12 18:25:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2332 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2332">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2320"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2321"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2318"/>
+        <aif:creationDate>2012-04-12 18:25:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2333 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2333">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2322"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2323"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2319"/>
+        <aif:creationDate>2012-04-12 18:25:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2334 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2334">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2324"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2325"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2319"/>
+        <aif:creationDate>2012-04-12 18:25:29</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

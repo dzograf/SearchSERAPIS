@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2725 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2725">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraq is not disarming</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2739"/>
+        <aif:creationDate>2012-04-12 18:26:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2726 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2726">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraqi operatives continue to hide biological and chemical agents to avoid detection by inspectors</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2735"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2736"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2737"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2734"/>
+        <aif:creationDate>2012-04-12 18:26:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2727 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2727">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In some cases these materials have been moved to different locations every 12 to 24 hours or placed in vehicles that are in residential neighborhoods.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2735"/>
+        <aif:creationDate>2012-04-12 18:26:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2728 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2728">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We know from multiple intelligence sources that Iraqi weapons scientists continue to be threatened with harm should they cooperate with U.N. inspectors.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2736"/>
+        <aif:creationDate>2012-04-12 18:26:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2729 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2729">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Scientists are required by Iraqi intelligence to wear concealed recording devices during interviews and hotels where interviews take place are bugged by the regime.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2737"/>
+        <aif:creationDate>2012-04-12 18:26:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2730 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2730">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>our intelligence shows that even as he is destroying these few missiles he has ordered the continued production of the very same type of missiles.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2738"/>
+        <aif:creationDate>2012-04-12 18:26:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2731 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2731">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Iraqi regime were disarming we would know it because we would see it.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2739"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2732 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2732">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Iraq&#039;s weapons would be presented to inspectors and the world would witness their destruction</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2739"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2733 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2733">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Instead with the world demanding disarmament and more than 200000 troops positioned near his country Saddam Hussein&#039;s response is to produce a few weapons for show while he hides the rest and builds even more.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2734"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2738"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2739"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2734 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2734">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2726"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2733"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2735 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2735">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2727"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2726"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2736 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2736">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2728"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2726"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2737 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2737">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2729"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2726"/>
+        <aif:creationDate>2012-04-12 18:26:51</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2738 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2738">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2730"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2733"/>
+        <aif:creationDate>2012-04-12 18:26:52</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2739 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2739">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2731"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2732"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2733"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2725"/>
+        <aif:creationDate>2012-04-12 18:26:52</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

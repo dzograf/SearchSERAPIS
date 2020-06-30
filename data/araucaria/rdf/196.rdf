@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/598 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/598">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>patient power should drive up standards for everyone</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1836"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/601"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1837"/>
+        <aif:creationDate>2012-04-12 18:19:25</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1829 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1829">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Patient power should be increased</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1837"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1838"/>
+        <aif:creationDate>2012-04-12 18:23:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1830 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1830">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>giving more power to patients will mean giving the most power to articulate well-informed and pushy patients who tend to be better-off.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1836"/>
+        <aif:creationDate>2012-04-12 18:23:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1831 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1831">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is improving health services</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1837"/>
+        <aif:creationDate>2012-04-12 18:23:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1832 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1832">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Power in the hands of doctors is contrary to the power given to patients</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1838"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1833 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1833">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Power should not be kept in the hands of doctors</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1839"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1838"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1834 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1834">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>keeping power in the hands of doctors and bureaucrats on the other hand will keep standards low while being just as unequa</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1839"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1835 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1835">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is improving the health services</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1839"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1836 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1836">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1830"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/598"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1837 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1837">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/598"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1831"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1829"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1838 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1838">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1832"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1833"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1829"/>
+        <aif:creationDate>2012-04-12 18:23:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1839 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1839">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1834"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1835"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1833"/>
+        <aif:creationDate>2012-04-12 18:23:38</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

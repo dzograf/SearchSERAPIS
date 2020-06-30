@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4792 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4792">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Il governo deve essere cambiato</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4803"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4793 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4793">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Le conseguenze di mantenere questo governo sono inaccettabili</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4804"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4805"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4807"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4808"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4803"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4794 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4794">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>appena usciti di casa un vu` cumpra` vi assale! non solo non gli comprate un accendino ma gli sparate in mezzo agli occhi</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4809"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4804"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4795 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4795">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>al lavoro fabbriche vuote!</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4806"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4805"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4796 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4796">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>perche` avete spedito a casa tutti i rumeni e i musulmani che sono ormai il 75% della forza lavoro delle fabbriche</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4806"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4797 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4797">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>alla sera capatina in centro. ristoranti cinesi chiusi</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4810"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4807"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4798 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4798">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>coprifuoco alle 20.30</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4808"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4799 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4799">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>potrebbe essere procognato di Bin Laden</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4809"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4800 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4800">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>questo governo pistolero fra un po` permettera` a tutti di possedere la propria colt</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4809"/>
+        <aif:creationDate>2012-04-12 18:33:40</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4801 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4801">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>tanto dopo l&#039;islam ci invaderranno loro</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4810"/>
+        <aif:creationDate>2012-04-12 18:33:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4802 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4802">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se i cinesi possono invaderci e` necessario che siano espulsi</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4810"/>
+        <aif:creationDate>2012-04-12 18:33:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4803 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4803">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4793"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4792"/>
+        <aif:creationDate>2012-04-12 18:33:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4804 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4804">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4794"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4793"/>
+        <aif:creationDate>2012-04-12 18:33:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4805 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4805">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4795"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4793"/>
+        <aif:creationDate>2012-04-12 18:33:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4806 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4806">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4796"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4795"/>
+        <aif:creationDate>2012-04-12 18:33:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4807 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4807">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4797"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4793"/>
+        <aif:creationDate>2012-04-12 18:33:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4808 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4808">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4798"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4793"/>
+        <aif:creationDate>2012-04-12 18:33:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4809 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4809">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4799"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4800"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4794"/>
+        <aif:creationDate>2012-04-12 18:33:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4810 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4810">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4801"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4802"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4797"/>
+        <aif:creationDate>2012-04-12 18:33:43</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

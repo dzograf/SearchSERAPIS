@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2595 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2595">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should intervene</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2608"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3776"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3778"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3788"/>
+        <aif:creationDate>2012-04-12 18:26:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3779 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3779">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Twelve million children have lost one or both of their parents to AIDS. Perhaps the House would just pause for a moment to contemplate losing the most important source of support that we rely on certainly when we are young our parents one or both.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3787"/>
+        <aif:creationDate>2012-04-12 18:30:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3780 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3780">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>HIV virus has terrible consequences for these people</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3787"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3789"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3788"/>
+        <aif:creationDate>2012-04-12 18:30:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3781 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3781">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we intervene we can improve this terrible situation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3788"/>
+        <aif:creationDate>2012-04-12 18:30:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3782 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3782">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We have the means to intervene</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3788"/>
+        <aif:creationDate>2012-04-12 18:30:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3783 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3783">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>One of the consequences is that an entire generation of grandparents now have to look after an entire generation of their grandchildren because the generation in between their children&#039;s generation is in the process of dying.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3790"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3789"/>
+        <aif:creationDate>2012-04-12 18:30:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3784 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3784">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there is one thing that we as parents fear more than anything else it is that our children will die before we do because that is not how it is meant to be; it is not in the natural order of things.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3789"/>
+        <aif:creationDate>2012-04-12 18:30:18</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3785 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3785">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Think of all those children who are growing up without the care of a mother or father. To make matters worse that number is estimated to become a staggering 18 million children by 2010</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3790"/>
+        <aif:creationDate>2012-04-12 18:30:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3786 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3786">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If children&#039;s parents are dead their grandparents have to look after them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3790"/>
+        <aif:creationDate>2012-04-12 18:30:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3787 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3787">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3779"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3780"/>
+        <aif:creationDate>2012-04-12 18:30:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3788 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3788">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3780"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3781"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3782"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2595"/>
+        <aif:creationDate>2012-04-12 18:30:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3789 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3789">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3783"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3784"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3780"/>
+        <aif:creationDate>2012-04-12 18:30:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3790 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3790">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3785"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3786"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3783"/>
+        <aif:creationDate>2012-04-12 18:30:20</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

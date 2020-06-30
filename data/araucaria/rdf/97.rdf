@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/915 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/915">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>No wonder Sinn Fein/RA continues to step up its demands.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/920"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/916 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/916">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It has been trained to do so by the Government.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/921"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/920"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/917 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/917">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Sinn Fein/IRA has been trained to step up its demands it is no wonder it continues to do so.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/920"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/918 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/918">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>experience tells us that there is almost no terrorist demand to which Mr Blair is unprepared to yield in order to preserve the fragile peace in Northern Ireland.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/921"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/919 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/919">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If experience tells us that there is almost no terrorist demand to which Mr. Blair is unprepared to yield in order to preserve the peace the IRA has been trained by the Government to step up its demands.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/921"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/920 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/920">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/916"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/917"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/915"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/921 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/921">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/918"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/919"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/916"/>
+        <aif:creationDate>2012-04-12 18:20:26</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

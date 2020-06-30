@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4907 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4907">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Japan&#039;s current expansion would prove more durable than the  mini-recoveries  of the 1990s which failed to lift the Japanese economy out of the deflationary trap left behind by the collapse of the stock market bubble of the 1980s</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4914"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4918"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4908 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4908">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Taizo Nishimuro Chairman of the Board Toshiba Corporation Japan expressed confidence that</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4914"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4909 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4909">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Japanese banks he said are finally making real progress is dealing with non-performing loans.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4915"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4910 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4910">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Capital spending is rising</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4916"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4911 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4911">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>as are corporate profits</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4917"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4912 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4912">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There has been a basic change in the atmosphere</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4915"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4916"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4917"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4918"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4913 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4913">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If there has been a positive basic change in the economic atmosphere the recovery is likely to be durable</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4918"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4914 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4914">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4908"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4907"/>
+        <aif:creationDate>2012-04-12 18:34:04</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4915 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4915">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4909"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4912"/>
+        <aif:creationDate>2012-04-12 18:34:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4916 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4916">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4910"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4912"/>
+        <aif:creationDate>2012-04-12 18:34:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4917 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4917">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4911"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4912"/>
+        <aif:creationDate>2012-04-12 18:34:05</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4918 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4918">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4912"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4913"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4907"/>
+        <aif:creationDate>2012-04-12 18:34:06</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

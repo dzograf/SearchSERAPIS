@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4037 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4037">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>UK should intervene in Lesotho</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4050"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4038 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4038">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Lesotho&#039;s economy is in difficulty because it has lost most of the income it derived from migrant labour; it is also experiencing drought and food shortages.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4045"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4039 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4039">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Many of the parents who used to work in South Africa are not getting work there any more; furthermore migrant labourers are especially susceptible to HIV/AIDS problems.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4046"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4040 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4040">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The scale of the deaths has led to a lack of community support systems so there is real difficulty in supporting children.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4047"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4041 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4041">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In addition there is no legal framework to tackle many of the problems affecting the children such as with their inheritance and property rights</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4049"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4048"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4042 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4042">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>for example HIV/AIDS orphans have been threatened with having their houses bulldozed or taken away by family members or questions have been raised about their parentage</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4049"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4043 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4043">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The first lady pointed out that as well as resources there was a need for support for the structures and legal frameworks needed to unpick some of the complicated problems.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4045"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4046"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4047"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4048"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4050"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4044 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4044">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is possible for UK to supply Lesotho with structures and to help it under the legal point of view</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4050"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4045 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4045">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4038"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4043"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4046 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4046">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4039"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4043"/>
+        <aif:creationDate>2012-04-12 18:31:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4047 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4047">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4040"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4043"/>
+        <aif:creationDate>2012-04-12 18:31:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4048 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4048">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4041"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4043"/>
+        <aif:creationDate>2012-04-12 18:31:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4049 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4049">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4042"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4041"/>
+        <aif:creationDate>2012-04-12 18:31:11</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4050 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4050">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4043"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4044"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4037"/>
+        <aif:creationDate>2012-04-12 18:31:11</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

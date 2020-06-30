@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/877 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/877">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Tories amazingly can still make a difference.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/883"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/878 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/878">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if fewer than 100 of the 125 Tories who backed Mr Blair had instead voted with Mr Clarke the Prime Minister would have lost</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/884"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/883"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/879 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/879">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it is the case that Blair would have lost if fewer than 100 of the 125 Tories who backed him had voted with Mr. Clarke then - they can still make a difference.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/883"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/880 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/880">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A total of 199 MPs voted against early military action while 393 voted for war</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/884"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/881 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/881">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>125 of the 393 who voted for war were Tories</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/884"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/882 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/882">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If 393 voted for war and 199 against war and 125 Tories voted for war then - if fewer than 100 of those Tories who backed war had voted against it the Prime Minister would have lost.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/884"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/883 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/883">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/878"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/879"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/877"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/884 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/884">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/880"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/881"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/882"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/878"/>
+        <aif:creationDate>2012-04-12 18:20:19</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

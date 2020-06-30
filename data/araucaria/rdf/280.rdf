@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2651 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2651">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>New jobs should be created</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2660"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2662"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2663"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2664"/>
+        <aif:creationDate>2012-04-12 18:26:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2652 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2652">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Bush&#039; plan is to create more jobs</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2661"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2660"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2662"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2663"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2664"/>
+        <aif:creationDate>2012-04-12 18:26:35</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2653 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2653">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To create more jobs in America America must be the best place in the world to do business.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2660"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2654 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2654">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We now compete in a global market that provides new buyers for our goods but new competition for our workers.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2661"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2655 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2655">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to win the competition and providing the security and opportunity of a growing economy is to create more jobs</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2661"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2656 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2656">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>My plan begins with providing the security and opportunity of a growing economy.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2661"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2657 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2657">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To create jobs my plan will encourage investment and expansion by restraining federal spending reducing regulation and making tax relief permanent.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2662"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2658 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2658">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To create jobs we will make our country less dependent on foreign sources of energy.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2663"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2659 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2659">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>To create jobs we will expand trade and level the playing field to sell American goods and services across the globe.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2664"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2660 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2660">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2652"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2653"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2651"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2661 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2661">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2654"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2655"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2656"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2652"/>
+        <aif:creationDate>2012-04-12 18:26:36</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2662 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2662">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2652"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2657"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2651"/>
+        <aif:creationDate>2012-04-12 18:26:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2663 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2663">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2652"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2658"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2651"/>
+        <aif:creationDate>2012-04-12 18:26:37</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2664 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2664">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2652"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2659"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2651"/>
+        <aif:creationDate>2012-04-12 18:26:38</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

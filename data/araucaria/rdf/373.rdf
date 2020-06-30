@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3430 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3430">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>persuades me of his existence</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3434"/>
+        <aif:creationDate>2012-04-12 18:29:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3431 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3431">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Either god exists or he does not exist</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3434"/>
+        <aif:creationDate>2012-04-12 18:29:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3432 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3432">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>At least one of the two possibilities is true</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3434"/>
+        <aif:creationDate>2012-04-12 18:29:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3433 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3433">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The very impossibility of my proving that God does not exist</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3434"/>
+        <aif:creationDate>2012-04-12 18:29:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3434 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3434">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3431"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3432"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3433"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3430"/>
+        <aif:creationDate>2012-04-12 18:29:06</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

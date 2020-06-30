@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5239 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5239">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Il CEO di Microsoft ha rigettato l idea che la popolarita` di Linux come sistema operativo client stia aumentando ai danni di Windows.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5247"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5240 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5240">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In nessun posto esiste una presenza consistente di Linux tra i sistemi client</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5247"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5241 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5241">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Nessun paese plausiblmente adottera` Linux</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5248"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5247"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5242 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5242">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Solo se i paesi adottano come sistema client Linux invece di Windows la popolarita` di Linux si puo` dire che danneggi Windows</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5247"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5243 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5243">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Francia e Brasile probabilmente non adotteranno Linux</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5249"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5248"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5244 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5244">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Altri paesi ragionano nello stesso modo di  Brasile e Francia</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5248"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5245 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5245">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Tutti sono liberi di credere alle favole. Ma il fatto e` che Parigi ha dichiarato che Linux e` decisamente piu` costoso di Windows e in Brasile e` la stessa cosa</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5249"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5246 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5246">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Se Linux viene adottato bisognera` spendere molto denaro per avere delle prestazioni non di molto superiori a Windows</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5249"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5247 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5247">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5240"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5241"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5242"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5239"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5248 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5248">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5243"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5244"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5241"/>
+        <aif:creationDate>2012-04-12 18:35:10</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5249 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5249">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5245"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5246"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5243"/>
+        <aif:creationDate>2012-04-12 18:35:11</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

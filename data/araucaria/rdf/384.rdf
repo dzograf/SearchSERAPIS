@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3555 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3555">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should not accept the proposal</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3562"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3563"/>
+        <aif:creationDate>2012-04-12 18:29:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3556 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3556">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Is my hon. Friend aware that if we had substituted gas-fired power stations for British Energy production we would have created an extra 27 million tonnes of carbon emissions from August 2003 to August 2004?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3564"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3562"/>
+        <aif:creationDate>2012-04-12 18:29:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3557 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3557">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Is he not concerned about our being dependent on gas in future and our losing energy production capacity in this country?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3565"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3563"/>
+        <aif:creationDate>2012-04-12 18:29:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3558 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3558">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The hon. Member for Hazel Grove (Mr. Stunell) is interested in doing away not only with the DTI but with nuclear energy</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3564"/>
+        <aif:creationDate>2012-04-12 18:29:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3559 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3559">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If nuclear and DTI energy stations are sostituted with gas ones carbon emissions will be produced</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3564"/>
+        <aif:creationDate>2012-04-12 18:29:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3560 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3560">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Hazel Grove is interested in doing away not only with the DTI but with nuclear energy</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3565"/>
+        <aif:creationDate>2012-04-12 18:29:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3561 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3561">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the country does away with neuclear energy and DTI it will lose energy production capacity and will depend more on gas</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3565"/>
+        <aif:creationDate>2012-04-12 18:29:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3562 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3562">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3556"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3555"/>
+        <aif:creationDate>2012-04-12 18:29:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3563 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3563">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3557"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3555"/>
+        <aif:creationDate>2012-04-12 18:29:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3564 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3564">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3558"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3559"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3556"/>
+        <aif:creationDate>2012-04-12 18:29:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3565 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3565">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3560"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3561"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3557"/>
+        <aif:creationDate>2012-04-12 18:29:33</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

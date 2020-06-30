@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3281 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3281">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The nationalization is not acceptable</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3286"/>
+        <aif:creationDate>2012-04-12 18:28:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3282 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3282">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>it can be maintained that the nationalization of a concern or even of a whole industrial branch is not a socialistic measure</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3285"/>
+        <aif:creationDate>2012-04-12 18:28:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3283 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3283">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The nationalization of a concern leads to nationalizations of industrial branches then to the nationalization of the industry then to the socialization of the whole economy</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3285"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3286"/>
+        <aif:creationDate>2012-04-12 18:28:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3284 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3284">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The socialization of the economy is not acceptable</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3286"/>
+        <aif:creationDate>2012-04-12 18:28:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3285 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3285">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3282"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3283"/>
+        <aif:creationDate>2012-04-12 18:28:38</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3286 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3286">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3283"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3284"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3281"/>
+        <aif:creationDate>2012-04-12 18:28:39</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

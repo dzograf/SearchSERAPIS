@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5197 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5197">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The world bank should not loan money</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5204"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5198 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5198">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This last one the road into the Amazon will likely result in commercialization and destruction of the valuable Amazon habitat regardless of how careful the plans. It is similar to allowing drilling in ANWR!</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5203"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5202"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5199 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5199">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It seems that the money is used to foster development of off-shore drilling development of hydro-electric plants and a road into the heart of the Amazon.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5203"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5200 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5200">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In a way then the world bank is loaning Brazil money which will ultimately result in environmental destruction in the name of environmental and economic progress</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5202"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5204"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5201 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5201">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>These consequences are extremely negative</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5204"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5202 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5202">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5198"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5200"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5203 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5203">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5199"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5198"/>
+        <aif:creationDate>2012-04-12 18:35:02</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5204 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5204">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5200"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5201"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5197"/>
+        <aif:creationDate>2012-04-12 18:35:03</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3809 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3809">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Accusing the Palestinians of irresponsibility ignores the essential character of the conflict responded Aaron D. Miller President Seeds of Peace USA.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3814"/>
+        <aif:creationDate>2012-04-12 18:30:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3810 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3810">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This fundamental asymmetry Miller added makes it impossible for Israelis and Palestinians to negotiate a solution without US aid</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3815"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3814"/>
+        <aif:creationDate>2012-04-12 18:30:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3811 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3811">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If only one of the two complementary causes of the conflict is accused the essential character of the conflict is ignored</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3814"/>
+        <aif:creationDate>2012-04-12 18:30:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3812 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3812">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Israel exercises the power of the strong sometimes in legitimate self-defence sometimes in illegitimate ways</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3815"/>
+        <aif:creationDate>2012-04-12 18:30:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3813 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3813">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Palestinians on the other hand rely on the power of the weak which is based on the belief that the occupation relieves them of responsibility to combat terrorism.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3815"/>
+        <aif:creationDate>2012-04-12 18:30:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3814 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3814">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3810"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3811"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3809"/>
+        <aif:creationDate>2012-04-12 18:30:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3815 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3815">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3812"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3813"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3810"/>
+        <aif:creationDate>2012-04-12 18:30:25</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

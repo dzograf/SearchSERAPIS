@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2985 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2985">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Faced with that choice I will defend America every time.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3000"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2986 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2986">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Members of both political parties including my opponent and his running mate saw the threat and voted to authorize the use of force</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2997"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2987 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2987">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The council saw in Saddam a threath</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3001"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2998"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2988 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2988">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Leaders in the Middle East think his policy is a threat to the West</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3002"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2999"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2989 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2989">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In Saddam Hussein we saw a threat.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2997"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2998"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2999"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3000"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2990 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2990">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If somebody is a threath he can attack</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3000"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2991 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2991">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Do I forget the lessons of September 11th and take the word of a madman or do I take action to defend our country?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3000"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2992 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2992">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Forgetting the lesson of September 11th is not acceptable</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3000"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2993 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2993">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We went to the United Nations Security Council which passed a unanimous resolution demanding the dictator disarm or face serious consequences.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3001"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2994 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2994">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Council sees in somebody a threath it acts against him</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3001"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2995 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2995">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Leaders in the Middle East urged him to comply.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3002"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2996 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2996">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If leaders in the Middle East urge a person to comply it means that they think his policy is a threat to the West</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3002"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2997 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2997">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2986"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2989"/>
+        <aif:creationDate>2012-04-12 18:27:41</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2998 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2998">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2987"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2989"/>
+        <aif:creationDate>2012-04-12 18:27:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2999 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2999">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2988"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2989"/>
+        <aif:creationDate>2012-04-12 18:27:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3000 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3000">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2989"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2990"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2991"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2992"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2985"/>
+        <aif:creationDate>2012-04-12 18:27:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3001 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3001">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2993"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2994"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2987"/>
+        <aif:creationDate>2012-04-12 18:27:43</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3002 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3002">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2995"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2996"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2988"/>
+        <aif:creationDate>2012-04-12 18:27:43</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5595 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5595">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>he ought to allow extra time for boarding his flight</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5598"/>
+        <aif:creationDate>2012-04-12 18:36:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5596 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5596">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Sam must allow the airport security people to search his luggage</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5598"/>
+        <aif:creationDate>2012-04-12 18:36:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5597 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5597">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Allowing extra time for boarding his flight will make it possible for Sam to meet the obligation to allow security people to inspect his luggage</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5598"/>
+        <aif:creationDate>2012-04-12 18:36:19</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5598 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5598">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5596"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5597"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5595"/>
+        <aif:creationDate>2012-04-12 18:36:19</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

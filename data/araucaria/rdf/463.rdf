@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4128 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4128">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Richard Dawkins calls the process of creation by mutation and selection  the blind watchmaker  by which label he means that a purposeless materialistic designing force substitutes for the  watchmaker  deity of natural theology</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4139"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4141"/>
+        <aif:creationDate>2012-04-12 18:31:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4129 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4129">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>a moth population in which the percentage of dark moths increased during a period when the birds were better able to see light moths against the smoke-darkened background trees</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4138"/>
+        <aif:creationDate>2012-04-12 18:31:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4130 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4130">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This may be taken to show that natural selection can do something but not that it can create anything that was not already in existence.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4138"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4140"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4139"/>
+        <aif:creationDate>2012-04-12 18:31:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4131 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4131">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If nature could not create anything a creator is needed to explain the creation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4139"/>
+        <aif:creationDate>2012-04-12 18:31:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4132 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4132">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Creation presupposes a creator</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4140"/>
+        <aif:creationDate>2012-04-12 18:31:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4133 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4133">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>nature had to do its own creating</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4140"/>
+        <aif:creationDate>2012-04-12 18:31:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4134 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4134">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There was a creation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4140"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4135 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4135">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>There can be argument about the details but if God was not in the picture something very much like Darwinism simply has to be true regardless of the evidence.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4141"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4136 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4136">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Either the creation is admitter or the Darwinism is accepted</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4141"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4137 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4137">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Darwinism cannot explain everything</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4141"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4138 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4138">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4129"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4130"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4139 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4139">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4130"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4131"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4128"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4140 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4140">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4132"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4133"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4134"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4130"/>
+        <aif:creationDate>2012-04-12 18:31:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4141 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4141">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4135"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4136"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4137"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4128"/>
+        <aif:creationDate>2012-04-12 18:31:31</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

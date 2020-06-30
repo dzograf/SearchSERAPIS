@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/499 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/499">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the government&#039;s determination to prevent the international community from learning the full extent of its ongoing crackdown against Tibetan activists.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/502"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1800"/>
+        <aif:creationDate>2012-04-12 18:19:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/500 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/500">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>China&#039;s failure to acknowledge long prison sentences against Tibetans</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/502"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1800"/>
+        <aif:creationDate>2012-04-12 18:19:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1798 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1798">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The acknowledge of long prison sentences is a means to let the international community know about the Chinese crackdown on Tibetians</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1800"/>
+        <aif:creationDate>2012-04-12 18:23:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1799 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1799">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a state does not  want the International community to learn its politics against a population it does not reveal all the measures taken against it</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1800"/>
+        <aif:creationDate>2012-04-12 18:23:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1800 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1800">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/500"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1798"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1799"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/499"/>
+        <aif:creationDate>2012-04-12 18:23:29</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

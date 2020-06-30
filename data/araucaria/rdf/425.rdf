@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3900 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3900">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should help them and invest money in that</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3909"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3901 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3901">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In sub-Saharan Africa alone some 12 million children have lost one or both parents to AIDS and it is predicted that the number of AIDS orphans will rise to 25 million by 2010. The Secretary of State said that the figure is 18 million but the scale of the problem is so massive that it almost does not matter how many millions we cite.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3906"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3902 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3902">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We must remember that the sufferers live in countries with a national income per head that is typically a small fraction of ours.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3907"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3903 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3903">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the fight against the disease AIDS to Africa is the equivalent of the Somme to this country in 1916 or even much worse.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3908"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3904 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3904">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The problem in Africa is tragic</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3906"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3907"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3908"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3909"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3905 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3905">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We have the means for helping them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3909"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3906 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3906">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3901"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3904"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3907 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3907">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3902"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3904"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3908 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3908">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3903"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3904"/>
+        <aif:creationDate>2012-04-12 18:30:42</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3909 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3909">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3904"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3905"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3900"/>
+        <aif:creationDate>2012-04-12 18:30:43</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

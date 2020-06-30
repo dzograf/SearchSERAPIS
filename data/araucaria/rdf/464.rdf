@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4142 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4142">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Bush&#039; administration has been extremely negative</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4153"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4143 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4143">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They bully instead of persuade.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4150"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4144 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4144">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They act alone when they could assemble a team.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4151"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4145 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4145">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>They confuse leadership with going it alone. They fail to understand that real leadership means standing by your principles and rallying others to join you.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4152"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4146 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4146">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Throughout our history we have forged powerful alliances to defend encourage and promote that idea around the world. Through two World Wars the Cold War the Gulf War and Kosovo America led instead of going it alone. We respected the world - and the world respected us.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4153"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4147 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4147">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Today our leadership has walked away from more than a century of American leadership in the world to embrace a new - and dangerously ineffective - American disregard for the world.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4150"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4151"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4152"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4153"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4148 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4148">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The present international leadership is extremely negative</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4153"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4149 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4149">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Bush&#039; administration created this situation</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4153"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4150 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4150">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4143"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4147"/>
+        <aif:creationDate>2012-04-12 18:31:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4151 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4151">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4144"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4147"/>
+        <aif:creationDate>2012-04-12 18:31:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4152 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4152">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4145"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4147"/>
+        <aif:creationDate>2012-04-12 18:31:33</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4153 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4153">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4146"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4147"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4148"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4149"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4142"/>
+        <aif:creationDate>2012-04-12 18:31:33</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

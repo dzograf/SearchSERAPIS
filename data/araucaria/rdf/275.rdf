@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2583 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2583">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Therefore the God of the Bible does not exist</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2593"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5012"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2584 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2584">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Bible teaches no such thing</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2592"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2594"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2591"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2585 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2585">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I challenge Dr. Curley to read me a single passage of Scripture that teaches that infants are damned because of original sin</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2592"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2586 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2586">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Infants are damned because of original sin.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2591"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2593"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2587 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2587">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Bible teaches original sin.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2593"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2588 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2588">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is contradictory that a perfectly good entity allows children to be damned</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2593"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2589 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2589">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>On the contrary Jesus took up the little children in his arms and blessed them saying  Let the little children come to me... for such is the kingdom of heaven</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2594"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2590 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2590">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the Bible teaches the contrary the claim is not true</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2594"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2591 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2591">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2584"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2586"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2592 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2592">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2585"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2584"/>
+        <aif:creationDate>2012-04-12 18:26:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2593 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2593">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2586"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2587"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2588"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2583"/>
+        <aif:creationDate>2012-04-12 18:26:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2594 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2594">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2589"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2590"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2584"/>
+        <aif:creationDate>2012-04-12 18:26:23</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

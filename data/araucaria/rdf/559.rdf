@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5179 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5179">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the original Parkweb Oracle site was launched</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5190"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5192"/>
+        <aif:creationDate>2012-04-12 18:34:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5180 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5180">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I made a promise to them all when I was back on my feet so to speak I would do something to try and make a difference</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5189"/>
+        <aif:creationDate>2012-04-12 18:34:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5181 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5181">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The first was to find something to do with an aweful lot of spare time and to make some money</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5191"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5190"/>
+        <aif:creationDate>2012-04-12 18:34:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5182 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5182">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>although it wasnt the kind of money I was used to it is enough to comfortable survive.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5190"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5183 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5183">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The creation of a web site is a good means to get money and usefully spend his own time</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5190"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5184 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5184">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>cant live on freah air</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5191"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5185 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5185">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I had not money</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5191"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5186 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5186">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If I want money I have to find a way to get them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5191"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5187 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5187">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>I wanted to give a little back to all of the people that helped me and stood by me through my addiction</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5189"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5192"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5188 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5188">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A web site is thebest means to reach addicted and talk to them</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5192"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5189 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5189">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5180"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5187"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5190 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5190">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5181"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5182"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5183"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5179"/>
+        <aif:creationDate>2012-04-12 18:34:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5191 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5191">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5184"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5185"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5186"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5181"/>
+        <aif:creationDate>2012-04-12 18:35:00</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5192 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5192">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5187"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5188"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5179"/>
+        <aif:creationDate>2012-04-12 18:35:00</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

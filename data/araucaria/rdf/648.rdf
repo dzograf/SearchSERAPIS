@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5655 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5655">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>o have good transport you should buy a plane.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5661"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5664"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5665"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5668"/>
+        <aif:creationDate>2012-04-12 18:36:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5656 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5656">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>a plane is an efficient method of transport.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5662"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5666"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5661"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5665"/>
+        <aif:creationDate>2012-04-12 18:36:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5657 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5657">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A bird is not a plane</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5662"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5666"/>
+        <aif:creationDate>2012-04-12 18:36:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5658 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5658">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>this is an amazing missing premise</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5663"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5667"/>
+        <aif:creationDate>2012-04-12 18:36:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5659 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5659">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>well not yet but it will.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5663"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5667"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5664"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5668"/>
+        <aif:creationDate>2012-04-12 18:36:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5660 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5660">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>his contains lots of stuff</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5664"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5668"/>
+        <aif:creationDate>2012-04-12 18:36:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5661 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5661">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5656"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5655"/>
+        <aif:creationDate>2012-04-12 18:36:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5662 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5662">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5657"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5656"/>
+        <aif:creationDate>2012-04-12 18:36:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5663 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5663">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5658"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5659"/>
+        <aif:creationDate>2012-04-12 18:36:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5664 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5664">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5659"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5660"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5655"/>
+        <aif:creationDate>2012-04-12 18:36:32</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

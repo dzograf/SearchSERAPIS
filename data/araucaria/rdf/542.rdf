@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2583 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2583">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Therefore the God of the Bible does not exist</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2593"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5012"/>
+        <aif:creationDate>2012-04-12 18:26:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4999 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4999">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the first premise is false</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5010"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5013"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5009"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5000 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5000">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Nowhere does the New Testament teach that justifying faith is arbitrarily bestowed by God.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5010"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5001 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5001">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Jesus said  Whosoever will may come  (John 7.37).</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5011"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5002 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5002">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Bible teaches that God gives justifying faith to those He arbitrarily chooses and excludes others.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5009"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5012"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5003 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5003">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It is unfair to do this.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5012"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5004 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5004">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>God therefore excludes no one</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5011"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5014"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5013"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5005 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5005">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If it is true that God excludes not one it is false that he excludes somebody</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5013"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5006 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5006">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>justification by faith is the wonderful doctrine that God&#039;s forgiveness and salvation is a free gift that you can&#039;t do anything to merit</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5014"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5007 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5007">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>This is a wonderful doctrine because it gets us off the treadmill of trying to earn favor with God and trying to merit salvation.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5014"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5008 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5008">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>All we have to do is freely place our trust in Him.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5014"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5009 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5009">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#CA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4999"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5002"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5010 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5010">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5000"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4999"/>
+        <aif:creationDate>2012-04-12 18:34:23</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5011 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5011">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5001"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5004"/>
+        <aif:creationDate>2012-04-12 18:34:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5012 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5012">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5002"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5003"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2583"/>
+        <aif:creationDate>2012-04-12 18:34:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5013 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5013">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5004"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5005"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4999"/>
+        <aif:creationDate>2012-04-12 18:34:24</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5014 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5014">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5006"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5007"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5008"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5004"/>
+        <aif:creationDate>2012-04-12 18:34:25</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

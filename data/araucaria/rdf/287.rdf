@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2714 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2714">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Russia&#039;s continued influence in international affairs.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2722"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2715 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2715">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>As a consequence the latter played the role of mediator and increased its international status.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2723"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2722"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2716 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2716">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a nation increases its International status and plays important roles in international affairs it is internationally influent</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2722"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2717 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2717">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In the political settlement of the Kosovo issue Russia played a unique important role.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2724"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2723"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2718 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2718">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a nation plays an unique role in international affairs its international status increases</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2723"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2719 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2719">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>For a considerable period of time the United States has adopted the policy of pressuring and intimidating Russia weakening its role in international affairs.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2724"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2720 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2720">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>However when the United States was in a dilemma over the Kosovo issue it had to seek Russia&#039;s assistance.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2724"/>
+        <aif:creationDate>2012-04-12 18:26:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2721 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2721">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If Russia was the only nation able to play the role of mediator its role was extremely important and unique</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2724"/>
+        <aif:creationDate>2012-04-12 18:26:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2722 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2722">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2715"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2716"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2714"/>
+        <aif:creationDate>2012-04-12 18:26:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2723 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2723">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2717"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2718"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2715"/>
+        <aif:creationDate>2012-04-12 18:26:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2724 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2724">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2719"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2720"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2721"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2717"/>
+        <aif:creationDate>2012-04-12 18:26:49</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

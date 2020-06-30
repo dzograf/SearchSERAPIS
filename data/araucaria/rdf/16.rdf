@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/309 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/309">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We should not impose gun control</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/313"/>
+        <aif:creationDate>2012-04-12 18:18:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/310 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/310">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>are we going to make it illegal for everything we can think of that might kill.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/313"/>
+        <aif:creationDate>2012-04-12 18:18:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/311 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/311">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We can create all the legal issues laws and strict gun control we want. But if someone wants to kill they could kill someone with a pen pencil knife baseball bat or even a sling shot</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/313"/>
+        <aif:creationDate>2012-04-12 18:18:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/312 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/312">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If gun control alone does not ensure that people are not able to kill and the additional steps needed in order to do so are not going to be taken we should not impose gun control.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/313"/>
+        <aif:creationDate>2012-04-12 18:18:32</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/313 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/313">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/310"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/311"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/312"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/309"/>
+        <aif:creationDate>2012-04-12 18:18:32</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

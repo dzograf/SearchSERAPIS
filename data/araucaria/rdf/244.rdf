@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2293 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2293">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Then why me? Why not Shirley? How is she better than I am?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2299"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2294 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2294">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Janet is worse than Shirley</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2300"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2299"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2295 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2295">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If A is worse than B B is better than A</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2299"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2296 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2296">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The girl has been moved in the room downstairs</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2300"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2297 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2297">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Being put in a worse room is a bad treatment</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2300"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2298 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2298">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a person is worse than another she will be treated in a worse manner</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2300"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2299 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2299">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2294"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2295"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2293"/>
+        <aif:creationDate>2012-04-12 18:25:22</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2300 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2300">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2296"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2297"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2298"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2294"/>
+        <aif:creationDate>2012-04-12 18:25:23</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

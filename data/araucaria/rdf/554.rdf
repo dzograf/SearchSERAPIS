@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/940 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/940">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Why should we believe that he has got it right now?</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/943"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5129"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5130"/>
+        <aif:creationDate>2012-04-12 18:20:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5126 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5126">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The Chancellor of the Exchequer downgraded his economic growth predictions in his statement last autumn and again in April.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5129"/>
+        <aif:creationDate>2012-04-12 18:34:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5127 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5127">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Even his new figures are out of step with those of the Institute for Fiscal Studies.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5130"/>
+        <aif:creationDate>2012-04-12 18:34:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5128 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5128">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>When Chancellors&#039;s figures are inaccurate or wrong they usually are out of step with those of the Institute for Fiscal Studies</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5130"/>
+        <aif:creationDate>2012-04-12 18:34:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5129 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5129">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5126"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/940"/>
+        <aif:creationDate>2012-04-12 18:34:48</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5130 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5130">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5127"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5128"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/940"/>
+        <aif:creationDate>2012-04-12 18:34:48</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

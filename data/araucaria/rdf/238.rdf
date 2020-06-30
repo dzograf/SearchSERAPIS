@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2250 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2250">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the Vice-President had given the  16  order no umbrellas</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2260"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2251 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2251">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The order not to raise the umbrellas was the only means not to remind the President of Munich</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2260"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2252 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2252">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The umbrella would have made clear the analogy to the president</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2261"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2260"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2253 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2253">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Nixon wanted no such untoward  symbol</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2260"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2254 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2254">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Geneva&#039;s traties on appeasement were at the moment similar to Munich ones that is they could be bringing disastrous consequences</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2262"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2261"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2255 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2255">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The umbrella had been Chamberlain s  trademark and the emblem of his appeasement policy</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2261"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2256 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2256">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a symbol is showed what it represents is recalled</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2261"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2257 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2257">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>At that  moment it was still not clear whether Geneva had been a triumph or a setback for the  West</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2262"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2258 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2258">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>for lack of a better estimate of the situation there were uncomfortable  reminders of Neville Chamberlain and Munich</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2262"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2259 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2259">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The appeasement in Munich brought disastrous consequences</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2262"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2260 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2260">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2251"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2252"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2253"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2250"/>
+        <aif:creationDate>2012-04-12 18:25:13</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2261 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2261">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2254"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2255"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2256"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2252"/>
+        <aif:creationDate>2012-04-12 18:25:14</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2262 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2262">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2257"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2258"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2259"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2254"/>
+        <aif:creationDate>2012-04-12 18:25:14</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

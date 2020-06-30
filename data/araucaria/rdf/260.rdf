@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2467 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2467">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>What we really need to do is recall and totally reconfigure the state of California.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2477"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2468 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2468">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Large concentrations of power and money will always attract those who can leverage those resources to their own ends.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2476"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2469 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2469">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The goal is to reduce the perks and lobbies caused by burocracy</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2478"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2477"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2470 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2470">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>What we need to do is downsize state government - make it more accessible to the average citizen while reducing the size of the public trough - by splitting the state into smaller regional units.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2477"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2471 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2471">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>With a population projected to reach 45 million by 2020 California could easily be split into three or four viable states each with a distinct regional identity</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2477"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2472 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2472">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Tinkering with the existing system - whether it&#039;s recalling public officials or passing stricter campaign finance laws - will make no difference as long as there are billions in taxpayer dollars for the taking.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2477"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2473 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2473">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A nation-state like California with its multilayered government its myriad boards and commissions may look like a bureaucratic quagmire to most of us but to veteran lobbyists it&#039;s a veritable smorgasbord of tax breaks and other perks</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2476"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2478"/>
+        <aif:creationDate>2012-04-12 18:25:58</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2474 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2474">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Nobody accepts the corruption</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2478"/>
+        <aif:creationDate>2012-04-12 18:25:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2475 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2475">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The best means to eliminate a problem is to act against it or its causes</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2478"/>
+        <aif:creationDate>2012-04-12 18:25:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2476 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2476">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2468"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2473"/>
+        <aif:creationDate>2012-04-12 18:25:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2477 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2477">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2469"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2470"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2471"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2472"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2467"/>
+        <aif:creationDate>2012-04-12 18:25:59</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2478 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2478">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2473"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2474"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2475"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2469"/>
+        <aif:creationDate>2012-04-12 18:25:59</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

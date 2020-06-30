@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/5332 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5332">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>China should ally with Russia</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5349"/>
+        <aif:creationDate>2012-04-12 18:35:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5333 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5333">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The alliance between Japan and USA should be contrasted</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5350"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5343"/>
+        <aif:creationDate>2012-04-12 18:35:28</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5334 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5334">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Ancient Chinese statecraft warns that a state needs powerful  partners  to survive in a multipolar environment</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5344"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5335 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5335">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Chinese military estimates of Russian national power by 2010 to 2020 place Russia as the second- or at least the third-ranking country in terms of overall military power</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5345"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5336 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5336">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Russia is interested in the alliance</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5347"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5346"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5337 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5337">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>cause China to assess the Russians as far more likely to exploit successfully the revolution in military affairs (RMA) than the United States</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5348"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5347"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5338 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5338">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>its potential partnership with China and advanced military concepts and technology</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5348"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5339 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5339">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>China needs an alliance</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5343"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5344"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5349"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5340 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5340">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>A strong Chinese partnership with a recovering Russia is the preferred countermeasure.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5345"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5346"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5349"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5341 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5341">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Chinese authors refer to the geopolitical nightmare of a powerful predatory Japan joining with a declining but still powerful America to isolate and contain China</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5350"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5342 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5342">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the alliance won&#039;t be contrasted Japan can invade China</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5350"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5343 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5343">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5333"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5339"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5344 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5344">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5334"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5339"/>
+        <aif:creationDate>2012-04-12 18:35:29</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5345 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5345">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5335"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5340"/>
+        <aif:creationDate>2012-04-12 18:35:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5346 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5346">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5336"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5340"/>
+        <aif:creationDate>2012-04-12 18:35:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5347 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5347">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5337"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5336"/>
+        <aif:creationDate>2012-04-12 18:35:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5348 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5348">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5338"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5337"/>
+        <aif:creationDate>2012-04-12 18:35:30</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5349 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5349">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5339"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5340"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5332"/>
+        <aif:creationDate>2012-04-12 18:35:31</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/5350 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/5350">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5341"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/5342"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/5333"/>
+        <aif:creationDate>2012-04-12 18:35:31</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

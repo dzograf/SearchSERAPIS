@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/2396 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2396">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>We cannot allow censorship in universities</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2404"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2397 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2397">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>proliferation of censorship in the society at large is not acceptable</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2404"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2398 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2398">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Censorship will proliferate in the society at large</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2405"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2404"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2399 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2399">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we allow censorship in universities censorship will be allowed in society at large</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2404"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2400 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2400">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we allow censorship where there is a documented guarantee of academic freedom of inquiry unencumbered by prejudice and intolerance how much more likely is it that censorship will proliferate in the society at large where no such rigorous commitment to intellectual inquiry exists?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2405"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2401 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2401">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If we allow censorship in universities we will allow it in the society</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2405"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2402 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2402">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>University and society are similar under the point of view of reaction to rules</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2405"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2403 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2403">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The application of a rule ina society is proportional to its moral commitments</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2405"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2404 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2404">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2397"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2398"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2399"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2396"/>
+        <aif:creationDate>2012-04-12 18:25:44</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/2405 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/2405">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2400"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2401"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2402"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/2403"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/2398"/>
+        <aif:creationDate>2012-04-12 18:25:45</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

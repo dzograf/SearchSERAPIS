@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/4620 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4620">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Adesso bisogna pensare a cancellare la par condicio   una questione vitale .</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4632"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4633"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4636"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4621 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4621">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Un sistema elettorale senza par condicio funzionera` benissimo anche in Italia</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4635"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4632"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4622 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4622">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>La par condicio non e` accettabile</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4634"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4633"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4623 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4623">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Non sta ne` in cielo ne` in terra questo obbligo di dare spazi uguali a tutti i partiti a prescindere dai voti che prendono .</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4634"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4624 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4624">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Guardate gli Usa  spiega il Cavaliere  li` non ci sono tutti questi divieti lacci lacciuoli...</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4635"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4625 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4625">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Il sistema senza par condicio negli USA funziona molto bene</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4635"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4626 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4626">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Gli USA hanno un sistema politico analogo a quello Italiano</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4635"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4627 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4627">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>L`unico modo per avere maggior spazio e` abolire la par condicio</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4636"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4628 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4628">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Berlusconi dovrebbe avere maggior spazio</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4637"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4636"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4629 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4629">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>E vi pare giusto che io mi debba trovare al Costanzo Show o da Vespa come un qualsiasi altro leaderino di serie c?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4637"/>
+        <aif:creationDate>2012-04-12 18:33:06</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4630 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4630">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>In America Berlusconi avrebbe uno spazio maggiore</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4637"/>
+        <aif:creationDate>2012-04-12 18:33:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4631 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4631">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>L`Italia dovrebbe essere come gli USA</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4637"/>
+        <aif:creationDate>2012-04-12 18:33:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4632 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4632">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4621"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4620"/>
+        <aif:creationDate>2012-04-12 18:33:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4633 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4633">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4622"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4620"/>
+        <aif:creationDate>2012-04-12 18:33:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4634 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4634">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4623"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4622"/>
+        <aif:creationDate>2012-04-12 18:33:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4635 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4635">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4624"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4625"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4626"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4621"/>
+        <aif:creationDate>2012-04-12 18:33:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4636 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4636">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4627"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4628"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4620"/>
+        <aif:creationDate>2012-04-12 18:33:08</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/4637 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/4637">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4629"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4630"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/4631"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/4628"/>
+        <aif:creationDate>2012-04-12 18:33:08</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

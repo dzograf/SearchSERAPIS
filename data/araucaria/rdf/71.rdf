@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/694 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/694">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The kid will be cured of depression.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/702"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/695 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/695">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>when that belly rumbles and a chill creeps up there will be no more depression. That need to survive will kick in and that will be it.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/702"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/696 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/696">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The kid will be cold and hungry.</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/703"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/702"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/697 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/697">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>It will probably take at least two days</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/704"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/703"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/698 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/698">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the kid spends at least two days out in the woods he or she will be hungry or cold.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/703"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/699 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/699">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>the kid won&#039;t think your serious</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/704"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/700 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/700">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>take the kid 20 miles into the woods with a map compass and trail markers and tell that kid to walk due east to a camp with food shelter and a two way radio.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/704"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/701 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/701">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If the kid doesn&#039;t think you are serious and is told to travel 20 miles to a camp on foot it will probably take at least two days for him to arrive at the camp..</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/704"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/702 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/702">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/695"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/696"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/694"/>
+        <aif:creationDate>2012-04-12 18:19:45</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/703 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/703">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/697"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/698"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/696"/>
+        <aif:creationDate>2012-04-12 18:19:46</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/704 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/704">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/699"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/700"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/701"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/697"/>
+        <aif:creationDate>2012-04-12 18:19:46</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

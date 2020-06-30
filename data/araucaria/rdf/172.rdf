@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/405 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/405">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The scene certainly gave the appearance that Sheila Caffell had shot herself</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/411"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1617"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/1618"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/410"/>
+        <aif:creationDate>2012-04-12 18:18:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1612 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1612">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>Across her chest and pointing up at her neck through which the wounds that had killed her had been fired was the rifle used to shoot all five members of the family.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1617"/>
+        <aif:creationDate>2012-04-12 18:22:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1613 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1613">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If a person shoots at himself the weapon is close to his corpse</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1617"/>
+        <aif:creationDate>2012-04-12 18:22:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1614 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1614">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The caller was the appellant and having given his name and address he said:    You&#039;ve got to help me. My father has rang me and said  Please come over. Your sister has gone crazy and has got the gun.  Then the line went dead.</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1618"/>
+        <aif:creationDate>2012-04-12 18:22:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1615 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1615">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>his sister had a history of psychiatric illness</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1618"/>
+        <aif:creationDate>2012-04-12 18:22:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1616 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1616">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>he confirmed that there were guns at his father&#039;s house</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1618"/>
+        <aif:creationDate>2012-04-12 18:22:49</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1617 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1617">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1612"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1613"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/405"/>
+        <aif:creationDate>2012-04-12 18:22:50</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/1618 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/1618">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1614"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1615"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/1616"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/405"/>
+        <aif:creationDate>2012-04-12 18:22:50</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>

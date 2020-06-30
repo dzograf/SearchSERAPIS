@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY http "http://" >
+    <!ENTITY www "http://www.ArgOWL.org#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY aif "http://www.arg.tech/aif#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="&http;www.w3.org/2002/07/owl#"
+     xml:base="&http;www.w3.org/2002/07/owl"
+     xmlns:rdfs="&http;www.w3.org/2000/01/rdf-schema#"
+     xmlns:http="http://"
+     xmlns:www="&http;www.ArgOWL.org#"
+     xmlns:owl="&http;www.w3.org/2002/07/owl#"
+     xmlns:xsd="&http;www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="&http;www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:aif="&http;www.arg.tech/aif#">
+    <Ontology rdf:about="&http;www.arg.tech/aif">
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">A number of argumentation schemes are taken from Bita Banihashemi and Iyad Rahwan&apos;s previous version of the AIF ontology.</rdfs:comment>
+        <www:createdBy rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">Floris Bex</www:createdBy>
+        <rdfs:comment rdf:datatype="&http;www.w3.org/2001/XMLSchema#string">The AIF Ontology. </rdfs:comment>
+        <versionInfo>version 1.0</versionInfo>
+    </Ontology>
+
+    <!-- http://www.aifdb.org/nodes/3435 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3435">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The father is not coherent with his judgement</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3443"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3436 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3436">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>if you consider Chresphontes to be an evil man why did you give him to me as a husband?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3441"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3437 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3437">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>If on the other hand he is a good man why did you force me against my will and his to leave him?</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3442"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3438 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3438">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The father can judge the husband either to be a good man or an evil man</aif:claimText>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3443"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3439 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3439">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The father thinks that the husband is not evil</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3441"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3443"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3440 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3440">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#I-node"/>
+        <aif:claimText>The father thinks that the husband is evil</aif:claimText>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3442"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3443"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3441 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3441">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3436"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3439"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3442 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3442">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3437"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3440"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+
+    <!-- http://www.aifdb.org/nodes/3443 -->
+    <NamedIndividual rdf:about="&http;www.aifdb.org/nodes/3443">
+        <rdf:type rdf:resource="&http;www.arg.tech/aif#RA-node"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3438"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3439"/>
+        <aif:Premise rdf:resource="&http;www.aifdb.org/nodes/3440"/>
+        <aif:Conclusion rdf:resource="&http;www.aifdb.org/nodes/3435"/>
+        <aif:creationDate>2012-04-12 18:29:07</aif:creationDate>
+    </NamedIndividual>
+</rdf:RDF>
